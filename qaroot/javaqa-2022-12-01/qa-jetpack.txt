@@ -1,0 +1,218 @@
+"<starting>Jetpack</heading>
+Android Jetpack is a set of software components
+ that help you accelerate your app development. 
+These components provide a range of features, 
+ including a new set of tools and libraries,
+ that make it easier to develop high-quality apps.
+
+Android Jetpack is a set of libraries, tools and guidance to help
+ make it easier to write high-quality, robust, and maintainable apps.
+One way it helps to reduce boilerplate code is by providing libraries
+ that handle common tasks, such as navigation, lifecycle management,
+ and data binding. 
+This means that you don’t have to write as much code
+ to handle these tasks yourself,
+ which can help to reduce the amount of boilerplate in your app.
+</ending>"
+"<starting>Jetpack pros</heading>
+1. Forms a recommended way for app architecture through its components
+2. Eliminate boilerplate code
+3. Simplify complex task
+4. Provide backward compatibility as libraries like support are unbundled
+ from Android API and are re-packaged to androidx.* package
+5. Inbuilt productivity feature of the Kotlin Integration
+</ending>"
+"<starting>Jetpack- ViewModel</heading>
+ViewModel is one of the most critical classes
+ of the Android Jetpack Architecture Component that support data
+ for UI components.
+Its purpose is to hold and manage the UI-related data. 
+Moreover, its main function is to maintain the integrity
+ and allows data to be serviced during configuration changes
+ like screen rotations. 
+Any kind of configuration change in Android devices tends to recreate
+ the whole activity of the application. 
+It means the data will be lost if it has not been saved and restored properly
+ from the activity which was destroyed. 
+To avoid these issues, it is recommended to store all UI data in the ViewModel
+ instead of an activity. 
+</ending>"
+"<starting>Jetpack- Room</heading>
+The requirement of a database in Android is fulfilled by SQLite
+ from the very beginning. 
+However, it comes with some severe drawbacks like not checking the queries
+ at compile-time, it does not save POJOs. 
+Developers also need to write a lot of boilerplate code 
+to make the SQLite database. 
+The Room component comes into the picture
+ as an SQLite Object Mapping Library which overcomes
+ all the mentioned challenges. 
+Room converts queries directly into objects,
+ checks errors in queries at the compile-time,
+ and is also capable of persisting the Java POJOs. 
+Moreover, it produces LiveData results/observables
+ from the given query result. 
+Because of this versatile nature of the Room component, 
+Google officially supports and recommends developers to use it. 
+The Room consists of sub-components:
+1. Entity: It is the annotated class for which the Room creates a table
+ within the database. 
+The field of the class represents columns in the table.
+2. DAO(Data Access Object): It is responsible for defining the methods
+ to access the database and to perform operations.
+3. Database: It is an abstract class that extends RoomDatabase class
+ and it serves as the main access point to the underlying app’s relational data.
+</ending>"
+"<starting>Room Entity</heading>
+Entity: It is the annotated class for which the Room creates a table
+ within the database.
+</ending>"
+"<starting>Room DAO</heading>
+DAO(Data Access Object): It is responsible for defining the methods
+ to access the database and to perform operations.
+</ending>"
+"<starting>Room Database</heading>
+Database: It is an abstract class that extends RoomDatabase class
+ and it serves as the main access point to the underlying app’s relational data.
+</ending>"
+"<starting>Jetpack- Data Binding</heading>
+Data Binding library is a support library
+ that provides the feature of binding UI components in an activity/fragment
+ to the data sources of the application. 
+The library carries out this binding task in a declarative format
+ and not in a programmatic way. 
++++++++++++++++++++++++++++++++++++++++
+Below is an example to understand the working of this library accurately:
+To find a TextView widget and bind it to the userName property of the ViewModel variable, the findViewById() method is called:
+TextView textView = findViewById(R.id.sample_text);
+textView.setText(viewModel.getUserName());
+After using the Data Binding library, the above code changes by using the assignment expression as follows:
+<TextView
+ android:text=”@{viewmodel.userName}” />
+****************************************
+Advantages of Data Binding Component:
+1. Make code simpler and easy to maintain by removing UI frameworks
+ called in the activity.
+2. Allows classes and methods to observe changes in data
+3. Allows to make objects and fill which works as collection observables.
+</ending>"
+"<starting>Jetpack- Data Binding pros</heading>
+1. Make code simpler and easy to maintain by removing UI frameworks
+ called in the activity.
+2. Allows classes and methods to observe changes in data
+3. Allows to make objects and fill which works as collection observables.
+</ending>"
+"<starting>Jetpack- LiveData</heading>
+LiveData component is an observable data holder class
+ i.e, the contained value can be observed. 
+LiveData is a lifecycle-aware component and thus it performs its functions
+ according to the lifecycle state of other application components. 
+Further, if the observer’s lifecycle state is active 
+i.e., either STARTED or RESUMED, 
+only then LiveData updates the app component. 
+LiveData always checks the observer’s state
+ before making any update to ensure
+ that the observer must be active to receive it. 
+If the observer’s lifecycle state is destroyed, LiveData is capable of removing it,
+ and thus it avoids memory leaks. 
+It makes the task of data synchronization easier.
+Advantages of LiveData component:
+1. UI is updated as per the appropriate change in the data
+2. It removes the stopped or destroyed activities
+ which reduce the chance of app crash
+3. No memory leaks as LiveData is a lifecycle-aware component.
+</ending>"
+"<starting>Jetpack- LiveData pros</heading>
+1. UI is updated as per the appropriate change in the data
+2. It removes the stopped or destroyed activities
+ which reduce the chance of app crash
+3. No memory leaks as LiveData is a lifecycle-aware component.
+</ending>"
+"<starting>Jetpack- Dagger</heading>
+Dagger is a Dependency Injection framework that will generate a lot of boilerplate code for you to achieve the goal of Dependency injection in Android development. Not that one must have a good understanding of Dependency Injection before answering this question. 
+
+There are a number of reasons why you might want to use dagger to inject dependencies instead of injecting them manually. First, dagger can help to reduce the amount of boilerplate code that you need to write in order to inject dependencies. Second, dagger can help to improve the performance of your application by caching injected objects and avoiding repeated object creation. Finally, dagger can help to make your code more modular and easier to test by allowing you to easily swap out different implementations of injected dependencies.
+</ending>"
+"<starting>Jetpack- Architecture Components</heading>
+1. Room
+2. WorkManager
+3. Lifecycle
+4. ViewModel
+5. LiveData
+6. Navigation
+7. Paging
+8. Data Binding
+</ending>"
+"<starting>Navigation component Jetpack</heading>
+The Navigation component is a Jetpack library
+ that helps you manage fragment transactions
+ and back stack management in your app. 
+It also provides a way to create a consistent navigation UI across your app. 
+The benefits of using the Navigation component include a simpler
+ and more robust way to manage fragment transactions,
+ as well as a more consistent navigation experience for users.
+</ending>"
+"<starting>Lifecycles component Jetpack</heading>
+The Lifecycles component is designed to help manage the lifecycle
+ of an Android app. 
+It provides a number of features that can help to automate tasks
+ and manage memory usage. 
+For example, you can use the Lifecycles component
+ to automatically start and stop services based on the lifecycle of your app.
+</ending>"
+"<starting>Lifecycle Jetpack</heading>
+Lifecycle is a class that holds the information
+ about the lifecycle state of a component (like an activity or a fragment)
+ and allows other objects to observe this state.
+Lifecycle uses two main enumerations to track the lifecycle status
+ for its associated component:
+1. Event
+The lifecycle events that are dispatched
+ from the framework and the Lifecycle class. 
+These events map to the callback events in activities and fragments.
+2. State
+The current state of the component tracked by the Lifecycle object.
+</ending>"
+"<starting>Jetpack- inter-fragment communication</heading>
+There are two ways of implementing inter-fragment communication:
+1. Using an interface: In this approach, you would create an interface
+ in the parent fragment, and then have the child fragment
+ implement that interface. 
+The parent fragment can then call methods on the child fragment
+ through the interface.
+2. Using a ViewModel: With this approach, you would create a ViewModel
+ that is shared between the parent and child fragments. 
+The ViewModel can then be used to store data that needs to be shared
+ between the fragments, and the fragments can observe changes
+ to the ViewModel.
+</ending>"
+"<starting>Jetpack- Data Binding library</heading>
+Data Binding library is used to bind data to UI elements in Android applications. 
+It eliminates the need for manual data handling in the application code,
+ making the code simpler and more efficient. 
+Data Binding library is an important part of Android Jetpack,
+ as it helps to improve the performance of Android applications.
+</ending>"
+"<starting>Workmanager pros Jetpack</heading>
+WorkManager is an Android Jetpack library
+ that allows you to schedule and manage background tasks in your app. 
+It is designed to be used with tasks that are not time-critical,
+ and it provides a number of features that make it a good choice
+ for managing background work in Android apps. 
+WorkManager is flexible, allowing you to specify constraints
+ on when your tasks should run,
+ and it is also able to intelligently schedule tasks based on the state of the app
+ and the device. 
+WorkManager is also able to persist tasks across device reboots,
+ and it integrates with other Android Jetpack libraries
+ to provide a complete solution for background work in Android apps.
+</ending>"
+"<starting>Paging Library Jetpack</heading>
+Paging Library makes it easier to load and display
+ large datasets from a database or network asynchronously
+ by providing a way to load data in small chunks (called “pages”). 
+This way, only the data that is needed is loaded at any given time,
+ which makes it more efficient
+ and reduces the amount of time and resources
+ required to load and display large datasets.
+</ending>"

@@ -1,0 +1,162 @@
+<hitle>	Coroutine	<chare>	1	<pext>	<starting>Kotlin</heading>
+1. A coroutine is an instance of suspendable computation.
+It is conceptually similar to a thread, in the sense that
+  it takes a block of code to run that works concurrently
+  with the rest of the code.
+However, a coroutine is not bound to any particular thread.
+It may suspend its execution in one thread and resume in another one.
+
+2. The Kotlin team defines coroutines as “lightweight threads”.
+They are sort of tasks that the actual threads can execute.
+Kotlin coroutines introduce a new style of concurrency
+  that can be used on Android to simplify async code.
+The official documentation says that coroutines are lightweight threads.
+By lightweight, it means that creating coroutines doesn’t allocate new threads.
+Instead, they use predefined thread pools and smart scheduling
+  for the purpose of which task to execute next and which tasks later.
+</ending>	</end>
+<hitle>	Coroutine Features	<chare>	2	<pext>	1. Lightweight: We can run many coroutines on a single thread
+ due to support for suspension, which doesn't block the thread
+ where the coroutine is running. 
+Suspending saves memory over blocking while supporting
+ many concurrent operations.
+2. Fewer memory leaks: We can use structured concurrency
+ to run operations within a scope.
+3. Built-in cancellation support: Cancellation is propagated automatically
+ through the running coroutine hierarchy.
+4. Jetpack integration: Many Jetpack libraries include extensions
+ that provide full coroutines support. Some libraries also provide
+ their own coroutine scope that you can use for structured concurrency.
+</end>
+<hitle>	viewModelScope	<chare>	2	<pext>	viewModelScope is a predefined CoroutineScope
+ that is included with the ViewModel KTX extensions. 
+All coroutines must run in a scope. 
+A CoroutineScope manages one or more related coroutines.	</end>
+<hitle>	launch	<chare>	2	<pext>	launch is a function that creates a coroutine and dispatches the execution
+ of its function body to the corresponding dispatcher.	</end>
+<hitle>	Dispatchers.IO	<chare>	2	<pext>	Dispatchers.IO indicates that this coroutine should be executed
+ on a thread reserved for I/O operations.	</end>
+<hitle>	android corutine example	<chare>	2	<pext>	sealed class Result<out R> {
+    data class Success<out T>(val data: T) : Result<T>()
+    data class Error(val exception: Exception) : Result<Nothing>()
+}
+
+class LoginRepository(private val responseParser: LoginResponseParser) {
+    private const val loginUrl = "https://example.com/login"
+
+    // Function that makes the network request, blocking the current thread
+    fun makeLoginRequest(
+        jsonBody: String
+    ): Result<LoginResponse> {
+        val url = URL(loginUrl)
+        (url.openConnection() as? HttpURLConnection)?.run {
+            requestMethod = "POST"
+            setRequestProperty("Content-Type", "application/json; utf-8")
+            setRequestProperty("Accept", "application/json")
+            doOutput = true
+            outputStream.write(jsonBody.toByteArray())
+            return Result.Success(responseParser.parse(inputStream))
+        }
+        return Result.Error(Exception("Cannot open HttpURLConnection"))
+    }
+}
+class LoginViewModel(
+    private val loginRepository: LoginRepository
+): ViewModel() {
+
+    fun login(username: String, token: String) {
+        val jsonBody = "{ username: \"$username\", token: \"$token\"}"
+        loginRepository.makeLoginRequest(jsonBody)
+    }
+}
+makeLoginRequest is synchronous and blocks the calling thread.
+The ViewModel triggers the network request
+ like when the user clicks on a login button.
+With the previous code, LoginViewModel is blocking the UI thread
+ when making the network request. 
+The simplest solution to move the execution off the main thread
+ is to create a new coroutine and execute the network request
+ on an I/O thread, So we can do like this.
+class LoginViewModel(
+    private val loginRepository: LoginRepository
+): ViewModel() {
+
+    fun login(username: String, token: String) {
+        // Create a new coroutine to move the execution off the UI thread
+        viewModelScope.launch(Dispatchers.IO) {
+            val jsonBody = "{ username: \"$username\", token: \"$token\"}"
+            loginRepository.makeLoginRequest(jsonBody)
+        }
+    }
+}
+The login function is executed as follows:
+The app calls the login function from the View layer on the main thread.
+launch creates a new coroutine, and the network request is made
+ independently on a thread reserved for I/O operations.
+While the coroutine is running, the login function continues execution
+ and returns, possibly before the network request is finished. 
+	</end>
+<hitle>	coroutine lifecycle on viewModelScope	<chare>	3	<pext>	A coroutine started with viewModelScope, it is executed in the scope
+ of the ViewModel and if the ViewModel is destroyed like the user is navigating away from that ViewModel’s screen, viewModelScope is automatically cancelled, and all running coroutines are canceled as well.	</end>
+<hitle>	main-safety	<chare>	3	<pext>	We consider a function main-safe when it doesn't block UI updates
+ on the main thread.
+class LoginRepository(...) {
+    ...
+    suspend fun makeLoginRequest(
+        jsonBody: String
+    ): Result<LoginResponse> {
+
+        // Move the execution of the coroutine to the I/O dispatcher
+        return withContext(Dispatchers.IO) {
+            // Blocking network request code
+        }
+    }
+}
+The makeLoginRequest function is not main-safe,
+ as calling makeLoginRequest from the main thread does block the UI.	</end>
+<hitle>	move the execution of coroutine	<chare>	3	<pext>	We can use the withContext() function from the coroutines library
+ to move the execution of a coroutine to a different thread.
+withContext(Dispatchers.IO) moves the execution
+ of the coroutine to an I/O thread, making our calling function main-safe
+ and enabling the UI to update as needed.	</end>
+<hitle>	withContext() example	<chare>	3	<pext>	As makeLoginRequest moves the execution off the main thread,
+ the coroutine in the login function can be now executed
+ in the main thread:
+class LoginViewModel(
+    private val loginRepository: LoginRepository
+): ViewModel() {
+
+    fun login(username: String, token: String) {
+
+        // Create a new coroutine on the UI thread
+        viewModelScope.launch {
+            val jsonBody = "{ username: \"$username\", token: \"$token\"}"
+
+            // Make the network call and suspend execution until it finishes
+            val result = loginRepository.makeLoginRequest(jsonBody)
+
+            // Display result of the network request to the user
+            when (result) {
+                is Result.Success<LoginResponse> -> // Happy path
+                else -> // Show error in UI
+            }
+        }
+    }
+}
+The coroutine is still needed here, since makeLoginRequest is
+ a suspend function, and all suspend functions must be executed
+ in a coroutine.
+The login function now executes like this:
+1. The app calls the login() function from the View layer
+ on the main thread.
+2. launch creates a new coroutine on the main thread,
+ and the coroutine begins execution.
+3. Within the coroutine,
+ the call to loginRepository.makeLoginRequest() now suspends
+ further execution of the coroutine until the withContext block
+ in makeLoginRequest() finishes running.
+4. Once the withContext block finishes, the coroutine in login()
+ resumes execution on the main thread with the result
+ of the network request.	</end>
+<hitle>	launch without Dispatcher	<chare>	3	<pext>	When you don't pass a Dispatcher to launch, any coroutines
+ launched from viewModelScope run in the main thread.	</end>

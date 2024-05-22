@@ -1,0 +1,206 @@
+@charset "utf-8";
+/* CSS Document 
+
+/* ---------------------------------------------------------------------
+body
+--------------------------------------------------------------------- */
+body {
+	min-width:1200px;
+}
+
+/* ---------------------------------------------------------------------
+header
+--------------------------------------------------------------------- */
+
+h1 {
+	width:900px;
+	height:20px;
+	margin:0px auto;
+	font-size:14px;
+	text-align:center;
+	font-weight:lighter;
+}
+
+.h1_bg {
+	min-width:1200px;
+	height:20px;
+	background-color:#ccc;
+}
+
+.header_bg {
+	min-width:1200px;
+	height:130px;
+}
+
+.header {
+	width:900px;
+	height:120px;
+	margin:0px auto;
+}
+
+.header div {
+	height:110px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.header_logo {
+	width:500px;
+	float:left;
+}
+
+.header_contact {
+	width:367px;
+	float:right;
+	padding-left:33px;
+}
+
+
+/* ---------------------------------------------------------------------
+gnavi
+--------------------------------------------------------------------- */
+
+.gnavi {
+	min-width:1200px;
+	height:50px;
+	margin:0px auto;
+	clear:both;
+	background-image:url(../img/template/gnavi/gn_.png);
+	border-top:solid 1px #ccc;
+}
+
+.gnavi ul {
+	width:1190px;
+	height:50px;
+	margin:0px auto;
+	background-color:#FFF;
+}
+
+.gnavi ul li {
+	float:left;
+}
+
+
+/* ---------------------------------------------------------------------
+container
+--------------------------------------------------------------------- */
+
+#container {
+	width:900px;
+	margin:20px auto;
+	clear:both;
+}
+
+/* ---------------------------------------------------------------------
+contents
+--------------------------------------------------------------------- */
+
+.contents {
+}
+
+.contact {
+	margin-bottom:20px;
+	clear:both;
+}
+
+.contents .toplink {
+	text-align:right;
+	margin-bottom:10px;
+}
+
+
+/* ---------------------------------------------------------------------
+footer
+--------------------------------------------------------------------- */
+
+.footer {
+	width:900px;
+	margin:0px auto;
+	text-align:center;
+	padding:10px 0px 5px 0px;
+}
+
+.footer_box {
+	width:880px;
+	font-size:16px;
+	margin:0px auto;
+}
+
+.footer_box a {
+	font-size:13px;
+}
+
+
+.footer_bg {
+	min-width:1200px;
+	clear:both;
+	background-image:url(../img/template/footer_bg.png);
+	box-shadow:3px -3px 3px #CCC;
+}
+
+.footer .area_title {
+	font-size:18px;
+	width:750px;
+	margin:5px auto ;
+	font-weight:bold;
+	}
+
+.footer .area {
+	font-size:16px;
+	width:750px;
+	margin:0px auto 20px;
+	text-align:left;
+	}
+
+.footer_toplink {
+	text-align:right;
+	margin-bottom:10px;
+	}
+
+/* ---------------------------------------------------------------------
+copyright
+--------------------------------------------------------------------- */
+
+.copyright {
+	width:900px;
+	height:20px;
+	margin:0px auto;
+	text-align:center;
+	color:#fff;
+}
+
+.copyright_bg {
+	min-width:1200px;
+	height:20px;
+	background-color:#666;
+}
+
+.copyright a {
+	color:#FFF;
+	text-decoration:none;
+}
+
+
+.copyright a:hover {
+	color:#FFF;
+}
+
+/* ---------------------------------------------------------------------
+text
+--------------------------------------------------------------------- */
+
+.blue {
+	color:#00F;
+	font-size:inherit;
+}
+
+.red {
+	color:#F00;
+	font-size:inherit;
+}
+
+.green {
+	color:#009900;
+	font-size:inherit;
+}
+

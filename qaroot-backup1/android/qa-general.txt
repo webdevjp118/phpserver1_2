@@ -1,0 +1,81 @@
+<hitle>	Introduce	<chare>	1	<pext>	<starting>Introduce</heading>
+Let me introduce my background and my experience in Android.
+As you can see in my background, I have more than 7 yrs of experience in Android development based object-oriented programming languages and worked for several companies for building diverse Android applications.
+I handled various responsibilities in my previous Android Developer position and quickly established talents in prioritizing tasks, meeting deadlines and finding solutions to eliminate obstacles.
+For the past years, I have built several useful and popular Android apps that includes video streaming app, shopping app and so on and also uploaded them on Google Play store.
+Those apps are popular and have more than millions of users.
+During the building several kinds of, several types of Android applications, I have implemented tons of new features, optimized their performance, improved user interface and experience, and also shared my knowledge for collaborating other team members.
+</ending>	</end>
+<hitle>	About Disney	<chare>	1	<pext>	<starting>About Disney</heading>
+While working on Upwork, I met one client who's working for Disney as Senior developer. He had some problems in his task and was looking for the solution by help of Upwork talents and it looked like my solution inspired him. After that he suggested me to join in his team and I applied to the Disney having simple process by his reference.
+--------------------------------
+1. In a week, we had two of standup meetings, and 3 of team's work grooming meetings, and sometimes, company events, like native speakers's meeting, etc...
+and on daily basis, I worked in an Agile team, with a two weeks sprint circle and used JIRA to assign, audit, track issues and the progress of the sprints.
+And also, I collaborated with cross-functional teams via slack to define, design, implement, test, and deploy new features in a fast paced environment.
+2. I worked with internal and external data sources and API's.
+3. I wrote unit tests in order to increase reliability and quality of the application.
+4. I worked on converting java to kotlin, mvc arthicture to mvvm, RxJava to Kotlin's Coroutine to modernize the application
+5. I addressed system defects and implemented enhancements to existing functionality.
+6. I troubleshot issues with minimal guidance, identified bottlenecks in existing workflows and provided solutions for a scalable, defect-free application.
+7. I kept up on industry trends and current technological standards, languages, coding techniques, utilities and operational considerations.
+8. I made suggestions for process, coding, implementation, and performance improvements.
+-------------------------------
+At Walt Disney, I started with the role of Junior android developer. About two years later, feeling my skills grown up I was wanted to be promoted. But they have many of senior developers so that I couldn't get promoted. That's why I decided to quit Walt Disney and looked for new job position.
+</ending>	</end>
+<hitle>	About NASurfaces	<chare>	1	<pext>	<starting>About NASurfaces</heading>
+NEWAGESURFACES is a small countertop store manufacturing showers, vanity tops, and decorative bathroom surfaces for remodeling businesses.
+Before I was employed, they had no website, and all the records of their business were on the paper, and the manager had been enjoying his business analyzation by Microsoft Access. I couldn't apply Agile methodology because the manager is out of knowledge about software engineering and I had to follow his special milestone book.
+The manager of NASurfaces was one of my client who was impressed by my talent as well. While thinking of new job at Walt Disney, I got the invitation from him to take care of their software development.
+-------------------------------
+1. On daily basis, The manager and me had a meeting twice in a week to check out the development progress,
+And I reviewed the business requirements, wire frames, and designs for technical feasibility, estimated build timelines, and followed established software development best practices.
+2. I designed and built the company website, ios/android application.
+3. I kept high performance, quality, and responsiveness of iOS and Android application.
+4. I evaluated and reviewed design frameworks and methodologies in order to achieve functional and non-functional requirements and conformance to architecture plans.
+5. I did Unit-test code for robustness, usability, and general reliability.
+6. I identified solutions and implemented bug fixes to improve application performance and usability.
+--------------------------------
+When I started NASurface, It was the Full-Time role and for several months I finished all of their software platforms and deployed on live server. So there had been no more work for me but maintenance. So under the discussion, my contract level had been dropped down to freelancer level that when they meet bugs or upgrade feature, they assign to me on hourly pay.
+</ending>	</end>
+<hitle>	Motive	<chare>	1	<pext>	<starting>Motive</heading>
+1. I’ve been honing my android development skills for a few years now and, first and foremost, I’m looking for a position where I can continue to exercise those skills.
+2. Another thing that’s important to me is that the position allows me to not only write the code, but also present my findings and suggestions directly to the team members. That would be really refreshing! I’m always very motivated by being able to see the impact of my work on other people.
+3. And, I’m definitely looking for a position where I can grow—professional development is something that’s really important to me since I hope to take on managerial responsibilities in the future.
+4. To sum it up, I’d love a position where I can use my skills to make an impact that I can see with my own eyes. Of course, the position is only part of the equation. Being at a company where I can grow and work toward something I care about matters, too. 
+</ending>	</end>
+<hitle>	App Link	<chare>	1	<pext>	<starting>App Link</heading>
+I have developed about 8 apps but I'm not sure they are still alive on google play store.  But I have an amazing app that I worked on while working for Walt Disney which is very famous on the appstore having more than 50 Millions of Users and that is covering most of my skills.
+https://play.google.com/store/apps/details?id=me.tidesnear.free&hl=en
+https://play.google.com/store/apps/details?id=com.espn.score_center&hl=en&gl=US
+</ending>	</end>
+<hitle>	Low Salary Reason	<chare>	1	<pext>	<starting>Low Salary Reason</heading>
+
+</ending>	</end>
+<hitle>	When you find it difficult to work with someone, how did you handle the situation?	<chare>	1	<pext>	<starting>When you find it difficult to work with someone, how did you handle the situation?</heading>
+I had to try to find a way to communicate which is less time consuming.
+Before communication with someone, I spent some time thoroughly reading and understanding the work details and write down what I think the problem is.
+And then I spent some time looking at the code and thinking up a proper solution. And I wrote down in a new paragraph what I believe the ideal solution would be. And then I communicated on both paragraphs of me outlining the problem and the solution. And then I asked if he agrees with my solution, and took his feedback if any and modified my solution if need be. And then implemented the solution and only after all of that, submitted my work done.
+So:
+1. Thoroughly read and understand the work details (on my own)
+2. Write down the problem in my own words
+3. Spend time reading the code and thinking of a solution
+4. Write down the solution
+5. Communicate with someone on my understanding of the problem / solution
+6. Incorporate any feedback and implement the solution
+7. Finally submit my work
+</ending>	</end>
+<hitle>	troubleshooting	<chare>	1	<pext>	<starting>troubleshooting</heading>
+If an Android application is crashing frequently, you can follow the below-given techniques:
+1. Compatibility Check:
+It is not possible to test an application for all kinds of devices and operating systems. There might be a possibility that an application is not compatible with your OS.
+2. Memory Management:
+2-1. Some apps run perfectly on one mobile device but might crash on other devices. This is where processing power, memory management, and CPU speed are considered.
+2-2. As there is a limited amount of memory space on mobile devices, you can free up memory space for the application to function properly.
+2-3. If an application is frequently crashing, you can delete the application’s data, which will clear its cache memory and allow some free space on your device and might boost the app’s performance.
+</ending>	</end>
+<hitle>	how to prevent memory leaks?	<chare>	1	<pext>	<starting>how to prevent memory leaks?</heading>
+1. Use Application Context rather than Activity Context because Activities are more likely to be leaked.
+2. Avoid long-lived references to Activities i.e.AsyncTask.
+3. Avoid non-static inner classes in Activities. Use static inner classes with weak references so they can't be Garbge Collected when they are not used.
+4. Use LeakCanary - A memory leak detection library for Android.
+</ending>	</end>

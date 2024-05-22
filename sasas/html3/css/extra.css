@@ -1,0 +1,48 @@
+.taego_text {
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    margin-left: 1vw;
+}
+@media (max-width: 767px) {
+    .taego_text {
+        font-size: 4vw;
+        margin-left: 0;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+}
+.hobi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/hobi_bg.jpg);
+    padding: 50px 15px;
+}
+.hobi img {
+    max-width: 100%;
+}
+.hobi_text {
+    font-size: 1.4vw;
+    font-weight: bold;
+    color: #fff;
+    max-width: 1600px;
+}
+@media (max-width: 767px) {
+    .hobi {
+        padding: 40px 15px;
+        display: block;
+    }
+    .hobi img {
+        width: 100%;
+    }
+    .hobi_text {
+        font-size: 4vw;
+    }
+}

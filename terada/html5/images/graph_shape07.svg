@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="687.988" height="256.645" viewBox="0 0 687.988 256.645">
+  <g id="Group_626" data-name="Group 626" transform="translate(-623.455 -3942.5)">
+    <g id="Group_555" data-name="Group 555" transform="translate(-226.193 -506.078)">
+      <text id="_5名" data-name="5名" transform="translate(928 4680)" fill="#f2e724" font-size="54" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-27.065" y="0">5</tspan><tspan y="0" fill="#fff" font-size="22" font-family="NotoSansJP-Bold, Noto Sans JP">名</tspan></text>
+      <text id="_40代" data-name="40代" transform="translate(872 4665)" fill="#fff" font-size="18" font-family="NotoSansJP-Medium, Noto Sans JP" font-weight="500"><tspan x="-19.26" y="0">40代</tspan></text>
+    </g>
+    <g id="Group_553" data-name="Group 553" transform="translate(143.443 -518.5)">
+      <text id="_4名" data-name="4名" transform="translate(1138 4515)" fill="#f2e724" font-size="54" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-29.603" y="0">4</tspan><tspan y="0" fill="#fff" font-size="22" font-family="NotoSansJP-Bold, Noto Sans JP">名</tspan></text>
+      <text id="_20代" data-name="20代" transform="translate(1082 4500)" fill="#fff" font-size="18" font-family="NotoSansJP-Medium, Noto Sans JP" font-weight="500"><tspan x="-19.26" y="0">20代</tspan></text>
+    </g>
+    <g id="Group_554" data-name="Group 554" transform="translate(109.183 -436.855)">
+      <text id="_1名" data-name="1名" transform="translate(1155 4622)" fill="#f2e724" font-size="54" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-21.584" y="0">1</tspan><tspan y="0" fill="#fff" font-size="22" font-family="NotoSansJP-Bold, Noto Sans JP">名</tspan></text>
+      <text id="_30代" data-name="30代" transform="translate(1099 4607)" fill="#fff" font-size="18" font-family="NotoSansJP-Medium, Noto Sans JP" font-weight="500"><tspan x="-19.26" y="0">30代</tspan></text>
+    </g>
+    <g id="Group_552" data-name="Group 552" transform="translate(-214.545 -555)">
+      <text id="_4名-2" data-name="4名" transform="translate(914 4567)" fill="#f2e724" font-size="54" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-29.603" y="0">4</tspan><tspan y="0" fill="#fff" font-size="22" font-family="NotoSansJP-Bold, Noto Sans JP">名</tspan></text>
+      <text id="_50代" data-name="50代" transform="translate(858 4552)" fill="#fff" font-size="18" font-family="NotoSansJP-Medium, Noto Sans JP" font-weight="500"><tspan x="-19.26" y="0">50代</tspan></text>
+    </g>
+    <path id="Path_231" data-name="Path 231" d="M-7782.183-13235.222l50.405,50.405h69.369" transform="translate(8837.184 17346.145)" fill="none" stroke="#fff" stroke-width="1"/>
+    <path id="Path_232" data-name="Path 232" d="M-7795.016-13409l38.727-38.727h81.048" transform="translate(8858.572 17421.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <path id="Path_233" data-name="Path 233" d="M-8040.768-13396.347l-29.944-29.943h-70.795" transform="translate(8887.769 17414.789)" fill="none" stroke="#fff" stroke-width="1"/>
+    <path id="Path_234" data-name="Path 234" d="M-8011.324-13195.3l-22.6,22.595h-75.791" transform="translate(8858.324 17333.922)" fill="none" stroke="#fff" stroke-width="1"/>
+    <g id="Group_624" data-name="Group 624">
+      <g id="Group_551" data-name="Group 551" transform="translate(-6.545 -507)">
+        <g id="Layer_2" data-name="Layer 2" transform="translate(843 4451)">
+          <g id="Group_550" data-name="Group 550">
+            <path id="Path_202" data-name="Path 202" d="M150,123.807h.008L271.95,145.317A123.941,123.941,0,0,0,150,0Z" transform="translate(-26.193)" fill="#fff" stroke="#2c4298" stroke-width="3"/>
+            <path id="Path_203" data-name="Path 203" d="M124.292,150h-.008L2.73,173.631a123.833,123.833,0,0,0,216.4,55.961L124.292,150Z" transform="translate(-0.477 -26.193)" fill="#fff" stroke="#2c4298" stroke-width="3"/>
+            <path id="Path_204" data-name="Path 204" d="M123.807,0A123.914,123.914,0,0,0,2.253,147.438l121.554-23.631Z" fill="#fff" stroke="#2c4298" stroke-width="3"/>
+            <path id="Path_205" data-name="Path 205" d="M150.01,150l94.836,79.591a123.394,123.394,0,0,0,27.106-58.082Z" transform="translate(-26.195 -26.193)" fill="#fff" stroke="#2c4298" stroke-width="3"/>
+          </g>
+        </g>
+        <circle id="Ellipse_79" data-name="Ellipse 79" cx="79.5" cy="79.5" r="79.5" transform="translate(887.807 4495.807)" fill="#2c4298"/>
+      </g>
+      <text id="年代別_比率" data-name="年代別
+比率" transform="translate(960.455 4058)" fill="#fff" font-size="30" font-family="NotoSansJP-Bold, Noto Sans JP" font-weight="700"><tspan x="-45" y="0">年代別</tspan><tspan x="-30" y="45">比率</tspan></text>
+    </g>
+  </g>
+</svg>

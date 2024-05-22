@@ -1,0 +1,891 @@
+@media(min-width:0px) and (max-width:767px){
+.container{ max-width:100%; }
+
+
+
+.common_title_hp p{padding-top:15px;}
+.common_title_hp h2{font-size:28px; line-height:40px; padding-top:10px;}
+
+
+.common_btn_hp{min-width:200px;}
+
+
+/*--------------- HEADER_START --------------*/
+#header{ padding:0;}
+.header-left-hp{ width:90px; }
+.header-in-hp { height:80px; padding: 0 15px; }
+.header-left-hp{width:40px;}
+.header-left-mobile-hp{display:block;}
+.mobile-menu-hp{display: flex; align-items: center; justify-content: end;}
+.header-right-hp{width:calc(100% - 40px);  justify-content:end;}
+
+.navigation-hp{ min-height:inherit;}
+.navigation-main-hp{ display:none; background:#ffffff; position:fixed; top:80px; left:0px; height:calc(100vh - 80px); width:100%; padding:0 0px 0 0; overflow-y:scroll;}
+.navigation-main-hp > ul{ text-align:center; width:100%; text-align:left; padding:0px;} 
+.navigation-main-hp > ul > li{ width:100%; padding:0px;  }
+.navigation-main-hp > ul > li > a{ padding:20px 40px 20px 15px; line-height:inherit; color: #000; border-bottom:1px solid #E9F2EE; background:none; background-size:20px; }
+.navigation-main-hp > ul > li > a:before{ display:none;}
+.navigation-main-hp > ul > li > a.contact-btn-hp{ margin:20px auto; background:#3E9B4C url(../images/white_arrow.png) no-repeat right 20px center; background-size:20px; border:1px solid #3E9B4C; text-align:left; padding:0 25px;     max-width: 280px; }
+.navigation-main-hp > ul > li.dropdown.show > a{ background:#348441 url(../images/up_arrow_menu.png) no-repeat right 15px center; background-size:16px; color:#fff; border-bottom:1px solid #348441; }
+.dropdown-menu-in{ padding:30px 0; }
+.product-info-left-hp{ width:100%;}
+.product-info-right-hp{ width:100%; padding-left:0px; padding-top:20px; }
+.search-box-hp{ width:100%; margin-bottom:10px;}
+.search-box-main-hp{ padding-bottom:0px;}
+.navigation-main-hp > ul > li > a.header_btn_hp{ min-width:100%; margin:0; }
+
+.header_title_hp{display:none;}
+.navigation-main-hp > ul > li:last-child{padding-left:0;}
+
+.header_row_hp{display:none;}
+
+/*--------------- HEADER_END --------------*/
+
+
+/*--------------- CONTAIN_START --------------*/
+
+#contain{margin:0 0 0 0; padding:0px;}
+
+
+.banner_slider_in_hp{min-height:450px;}
+.banner_title_hp h6{font-size:20px; line-height:28px;}
+.banner_title_hp h4{padding-top: 15px; font-size: 34px; line-height: 40px;}
+/* .banner_slider_hp .owl-theme .owl-dots{bottom:-210px;} */
+.banner_slider_hp .owl-theme .owl-dots .owl-dot span{width:7px; height:7px; margin:0 5px;}
+.banner_slider_hp .owl-carousel .owl-nav button.owl-prev{background-size:15px; width:15px; height:32px; left:10px; margin-top:-18px;}
+.banner_slider_hp .owl-carousel .owl-nav button.owl-next{background-size:15px; width:15px; height:32px; right:10px; margin-top:-18px;}
+
+
+.swiss_block_hp{padding-top:60px;}
+.swiss_middle_hp{max-width:100%;}
+.swiss_info_hp{font-size:14px; line-height:32px;}
+
+
+.reason_block_hp{padding-top:40px;}
+.reason_top_hp{padding-top:40px; display:block;}
+.reason_box_hp{width:100%; margin:0 0 40px 0; padding:30px 25px;}
+.reason_box_hp:last-child{margin-bottom:0;}
+.reason_digit_hp{font-size:26px; line-height:32px; top:-15px;}
+.reason_info_hp{padding-top:30px;}
+.reason_info_hp h3{font-size:18px; line-height:24px;}
+
+
+.service_block_hp{padding-top:40px;}
+.service_top_hp{padding-top:40px;}
+.service_box_hp{display:block; margin-bottom:40px;}
+.service_left_hp{width:100%;}
+.service_digit_hp{left:50%; transform:translate(-50%, 0);}
+.service_img_hp{text-align:center;}
+.service_right_hp{width:100%; padding:30px 0 0 0;}
+.service_title_hp{text-align:center;}
+.service_info_hp{padding-top:20px;}
+.service_info_hp p{font-size:14px; text-align:center; min-height:auto;}
+.service_btn_hp{padding-top:30px; text-align:center;}
+.service_reverse_hp .service_digit_hp{right:50%; transform:translate(-50%, 0); left:50%;}
+
+
+.price_change_hp{padding-top:40px;}
+
+
+.overhaul_block_hp{padding-top:40px;}
+.overhaul_top_hp{padding-top:40px; display:block;}
+.overhaul_box_hp{width:100%; margin:0 30px 40px 0;}
+.overhaul_info_hp{padding-top:20px; font-size:14px; line-height:20px;}
+.overhaul_grid_hp{padding-top:30px;}
+.overhaul_subinfo_hp{margin-bottom:15px;}
+.overhaul_bg_hp{margin-top:15px;}
+
+
+.newsletter_change_hp{padding:40px 0;}
+.newsletter_title_hp{font-size:17px; line-height:32px;}
+.newsletter_change_hp .newsletter_boxes_op{padding-top:20px;}
+
+
+.contact_block_hp{padding:32px 0 40px 0;}
+.contact_top_hp{padding-top:30px; max-width:100%;}
+.contact_info_hp{font-size:14px; line-height:20px;}
+.contact_title_hp{padding-top:40px;}
+.contact_bottom_hp{padding-top:35px;}
+.form-field-cop{display:block;}
+.form-field-lable-cop{width:100%; justify-content:flex-start; font-size:12px;}
+.form-field-lable-cop span{margin-left:10px;}
+.form-field-input-cop{ width:100%; padding:20px 0 0 0; }
+.form-field-input-cop input{height:40px; width:100%; padding:10px; font-size:12px;}
+.form-field-input-cop textarea{padding:10px; font-size:12px;}
+.form-field-input-cop select{height:40px; padding:10px; font-size:12px;}
+.contact_form_info_hp{font-size:9px; line-height:14px;}
+.contact_subtitle_hp{font-size:9px; line-height:14px;}
+.contact_padding_hp{padding:60px 0 30px 0;}
+.contact_btn_hp button{font-size:16px; line-height:22px; padding:12px; min-width:200px;}
+
+
+/*--------------- CONTAIN_END --------------*/
+
+
+/*--------------- FOOTER_START --------------*/
+
+.back-to-top{bottom:75px; width:40px; height:40px;}
+#footer{padding:40px 0 40px 0;}
+.footer_in_hp{padding:0 15px;}
+.footer_top_hp{display:block;}
+.footer_left_hp{width:100%; display:block;}
+.footer_logo_hp{width:63px; margin:auto;}
+.footer_left_info_hp{width:100%; padding:20px 0 0 0; text-align:center;}
+.footer_right_hp{width:100%; padding:30px 0 0 0;}
+.footer_links_hp{display:flex; flex-wrap:wrap; justify-content:center;}
+.footer_links_hp ul{padding:0 17px 20px 0;}
+.footer_links_hp ul:nth-child(3n){padding-right:0;}
+.footer_row_hp{display:flex; padding-top:10px; justify-content:space-between; align-items:end;}
+.footer_icon_hp{margin-right:20px;}
+.footer_title_hp{padding-top:10px;}
+
+/*--------------- FOOTER_END --------------*/
+
+
+/*--------------- overhaul_page_START --------------*/
+
+.banner_block_op{padding:140px 0 100px 0;}
+.banner_title_op h4{font-size:14px; line-height:20px;}
+.banner_title_op h1{font-size:28px; line-height:42px; padding-top:12px;}
+
+
+.importance_block_op{padding:40px 0 0 0;}
+.importance_top_op{padding-bottom:50px;}
+.importance_title_op{font-size:22px; line-height:30px;}
+.importance_info_op{font-size:14px; line-height:20px; padding-top:30px;}
+
+
+.flow_block_op{padding:40px 0 60px 0;}
+.flow_boxes_op{display:block; padding-top:40px;}
+.flow_box_op{width:100%; margin:0 0 50px 0;}
+.flow_box_op:last-child{margin-bottom:0;}
+
+
+.newsletter_block_op{padding:40px 0;}
+.newsletter_boxes_op{display:block;}
+.newsletter_box_op{width:100%; margin:0 0 40px 0;}
+.newsletter_box_op:last-child{margin-bottom:0;}
+.newsletter_box_name_op{padding-top:10px;}
+.newsletter_box_btn_op{padding-top:20px;}
+.newsletter_box_btn_op a{padding:0; min-width:100%;}
+
+/*--------------- overhaul_page_END --------------*/
+
+
+/*--------------- Partial_Repair_1_page_START --------------*/
+
+.part_block_pp{padding-top:60px;}
+.part_top_pp{display:block;}
+.part_left_pp{width:100%; padding-bottom:30px;}
+.part_right_pp{width:100%; padding-left:0px;}
+.part_change_pp{margin:35px 0 0 0 !important;}
+.dial_block_pp{padding:70px 0;}
+.dial_box_pp{padding:60px 0 35px 0;}
+.dial_img_pp{margin-left:0px;}
+.dial_bottom_pp{padding-top:30px; display:block;}
+.dial_bottom_left_pp{width:100%; padding-right:0px;}
+.dial_bottom_right_pp{width:100%; padding-top:20px;}
+.dial_change_pp .dial_img_pp{margin-right:0px;}
+
+/*--------------- Partial_Repair_1_page_END --------------*/
+
+
+/*--------------- Battery_replacement_START --------------*/
+
+.premium_block_bp{padding:40px 0 0 0;}
+.premium_title_bp{font-size:24px; line-height:30px;}
+.premium_info_bp{padding-top:30px;}
+.premium_info_bp p{font-size:14px;}
+.reseal_block_bp{padding:40px 0;}
+.reseal_title_bp{font-size:20px; line-height:30px;}
+.reseal_row_left_bp{width:180px; padding:18px 20px; font-size:17px; line-height:22px;}
+.reseal_row_right_bp{width:220px; padding:18px 13px; font-size:16px; line-height:22px;}
+.reseal_grid_bp{margin:30px auto 0 auto;}
+.reseal_box_leftright_bp{display:block;}
+.reseal_box_left_bp{width:100%; text-align:center;}
+.reseal_box_right_bp{width:100%; padding:25px 0 0 0px;}
+
+/*--------------- Battery_replacement_END --------------*/
+
+
+/*--------------- exterior_polishing_START --------------*/
+
+.polish_block_ep{padding:40px 0 40px 0;}
+.polish_block_in_ep{padding:0 15px;}
+.polish_title_ep{font-size:17px; line-height:28px;}
+.polish_top_ep{display:block; padding-top:40px;}
+.polish_left_ep{width:100%; padding-right:0px; padding-bottom:30px;}
+.polish_info_ep p{font-size:14px; line-height:20px; padding-bottom:15px;}
+.polish_right_ep{width:100%;}
+.polish_top_reverse_ep.polish_top_reverse_ep{padding-top:45px;}
+.polish_top_reverse_ep .polish_left_ep{padding:0 0 30px 0;}
+
+/*--------------- exterior_polishing_END --------------*/
+
+
+/*--------------- system_maintenance_page_START --------------*/
+
+.clean_change_smp{padding:60px 0 80px 0;}
+.clean_box_change_smp .reseal_row_right_bp p{font-size:16px; line-height:22px; padding-bottom:15px;}
+.clean_bottom_box_smp{margin-top:40px; padding:20px;}
+.clean_bottom_box_info_smp p{font-size:17px; line-height:22px; padding-bottom:30px;}
+
+/*--------------- system_maintenance_page_END --------------*/
+
+
+/*--------------- Fee_page_START --------------*/
+
+
+.price_top_fp{padding-top:40px;}
+.price_block_fp .accordion-item{margin-top:30px;}
+.price_img_fp img{max-width:70px;}
+.price_table_scroll_fp{overflow:scroll;}
+.price_table_main_fp{min-width:1161px;}
+.price_table_heading_fp{font-size:13px; line-height:16px;}
+.price_title_1_fp{font-size:13px; line-height:16px;}
+.price_change_fp{height:80px;}
+.price_change_4_fp{height:80px;}
+
+
+.finish_block_fp{padding:40px 0 0 0;}
+.finish_top_fp{display:block;}
+.finish_left_fp{width:100%; padding:0;}
+.finish_left_box_fp{padding-bottom:25px;}
+.finish_box_top_fp{padding:12px;}
+.finish_box_title_fp{font-size:12px;}
+.finish_box_row_fp{padding:15px;}
+.finish_box_row_left_fp{font-size:12px; line-height:17px;}
+.finish_box_row_right_fp{font-size:14px; line-height:16px;}
+.finish_box_info_fp{font-size:11px; padding:16px;}
+.finish_box_width_fp .finish_box_row_left_fp{width:100%; padding:12px; font-size:12px;}
+.finish_box_width_fp .finish_box_row_right_fp{width:100%; padding:12px; font-size:12px;}
+.finish_right_fp{width:100%; padding:30px 0 0 0;}
+.finish_box_change_fp .finish_box_row_left_fp{width:235px;}
+
+
+.repair_block_fp{padding:40px 0;}
+.repair_top_fp{padding:17px 20px 20px 20px;}
+.repair_info_fp ul li{font-size:12px; line-height:18px; padding-bottom:13px;}
+
+/*--------------- Fee_page_END --------------*/
+
+
+/*--------------- system_maintenance_1_START --------------*/
+
+.system_block_sp{padding:80px 0 95px 0;}
+.system_info_in_sp{padding-top:30px;}
+.system_info_in_sp:first-child{padding-top:0;}
+.system_info_in_sp h4{font-size:19px; line-height:30px;}
+.system_info_in_sp p{font-size:15px; line-height:20px; padding:20px 0 0 18px;}
+.system_pd_1_sp{padding-top:50px;}
+.system_pd_2_sp{padding-top:40px;}
+.system_pd_3_sp{padding-top:60px;}
+
+/*--------------- system_maintenance_1_END --------------*/
+
+
+
+
+}
+@media(min-width:768px) {background-image: url();}
+@media(min-width:768px) and (max-width:991px){
+.container{max-width:768px;}
+
+.common_title_hp p{padding-top:20px;}
+.common_title_hp h2{font-size:30px; line-height:36px; padding-top:10px;}
+
+
+.common_btn_hp{font-size:14px; line-height:20px; padding:12px; min-width:160px;}
+.common_btn_hp img{right:12px;}
+
+
+/*--------------- HEADER_START --------------*/
+#header{ padding:0;}
+.header-left-hp{ width:90px; }
+.header-in-hp { height: 80px; padding: 0 15px; }
+.header-left-hp{width:50px;}
+.header-left-mobile-hp{display:block;}
+.mobile-menu-hp{display: flex; align-items: center; justify-content: end;}
+.header-right-hp{width:calc(100% - 50px); justify-content:end;}
+
+.navigation-hp{ min-height:inherit;}
+.navigation-main-hp{ display:none; background:#ffffff; position:fixed; top:80px; left:0px; height:calc(100vh - 80px); width:100%; padding:0 0px 0 0; overflow-y:scroll;}
+.navigation-main-hp > ul{ text-align:center; width:100%; text-align:left; padding:0px;} 
+.navigation-main-hp > ul > li{ width:100%; padding:0px;  }
+.navigation-main-hp > ul > li > a{ padding:20px 40px 20px 15px; line-height:inherit; color: #000; border-bottom:1px solid #E9F2EE; background:none; background-size:20px; }
+.navigation-main-hp > ul > li > a:before{ display:none;}
+.navigation-main-hp > ul > li > a.contact-btn-hp{ margin:20px auto; background:#3E9B4C url(../images/white_arrow.png) no-repeat right 20px center; background-size:20px; border:1px solid #3E9B4C; text-align:left; padding:0 25px;     max-width: 280px; }
+.navigation-main-hp > ul > li.dropdown.show > a{ background:#348441 url(../images/up_arrow_menu.png) no-repeat right 15px center; background-size:16px; color:#fff; border-bottom:1px solid #348441; }
+.dropdown-menu-in{ padding:30px 0; }
+.product-info-left-hp{ width:100%;}
+.product-info-right-hp{ width:100%; padding-left:0px; padding-top:20px; }
+.search-box-hp{ width:100%; margin-bottom:10px;}
+.search-box-main-hp{ padding-bottom:0px;}
+.navigation-main-hp > ul > li > a.header_btn_hp{ min-width:100%; margin:0; }
+
+.header_title_hp{display:none;}
+.navigation-main-hp > ul > li:last-child{padding-left:0;}
+
+.header_row_hp{display:none;}
+
+/*--------------- HEADER_END --------------*/
+
+
+
+/*--------------- CONTAIN_START --------------*/
+#contain{ margin:0 0 0 0; padding:0px; }
+
+
+.banner_slider_in_hp{min-height:500px;}
+.banner_title_hp h6{font-size:20px; line-height:26px;}
+.banner_title_hp h4{padding-top:30px; font-size:32px; line-height:42px;}
+/* .banner_slider_hp .owl-theme .owl-dots{bottom:-225px;} */
+.banner_slider_hp .owl-theme .owl-dots .owl-dot span{width:8px; height:8px; margin:0 6px;}
+.banner_slider_hp .owl-carousel .owl-nav button.owl-prev{background-size:20px; width:20px; height:35px; left:10px; margin-top:-20px;}
+.banner_slider_hp .owl-carousel .owl-nav button.owl-next{background-size:20px; width:20px; height:35px; right:10px; margin-top:-20px;}
+
+
+.swiss_block_hp{padding-top:60px;}
+.swiss_middle_hp{max-width:500px;}
+.swiss_info_hp{font-size:16px; line-height:34px;}
+
+
+.reason_block_hp{padding-top:60px;}
+.reason_top_hp{padding-top:60px;}
+.reason_box_hp{width:calc(25% - 6px); margin-right:8px; padding:40px 15px 20px 15px;}
+.reason_digit_hp{font-size:20px; line-height:30px; top:-15px;}
+.reason_info_hp{padding-top:30px;}
+.reason_info_hp h3{font-size:14px; line-height:20px;}
+.reason_info_hp p{font-size:12px; line-height:16px; padding-top:15px;}
+
+
+.service_block_hp{padding-top:60px;}
+.service_top_hp{padding-top:40px;}
+.service_right_hp{padding:0 20px;}
+.service_title_hp h4{font-size:24px; line-height:30px; padding-top:5px;}
+.service_info_hp{padding-top:10px;}
+.service_info_hp p{font-size:13px; line-height:22px; min-height:auto;}
+.service_btn_hp{padding-top:20px;}
+
+
+.price_change_hp{padding-top:60px;}
+
+
+.overhaul_block_hp{padding-top:60px;}
+.overhaul_box_hp{width:calc(33.33% - 7px); margin:0 10px 50px 0;}
+.overhaul_bottom_hp{padding:20px 10px 0 10px;}
+.overhaul_info_hp{padding-top:20px; font-size:12px; line-height:20px;}
+.overhaul_grid_hp{padding-top:20px;}
+.overhaul_subinfo_hp{margin-bottom:15px;}
+.overhaul_name_hp{font-size:10px; line-height:12px;}
+.overhaul_price_hp{font-size:10px; line-height:12px;}
+.overhaul_bg_hp{margin-top:15px; padding:10px;}
+
+
+.newsletter_title_hp{font-size:20px; line-height:32px;}
+
+
+.contact_padding_hp{padding:70px 0 37px 0;}
+.contact_btn_hp button{font-size:16px; line-height:24px; padding:14px; min-width:200px;}
+
+
+/*--------------- CONTAIN_END --------------*/
+
+
+
+/*--------------- FOOTER_START --------------*/
+.back-to-top{bottom:75px; width:45px; height:45px;}
+
+.footer_in_hp{padding:0 15px;}
+.footer_top_hp{display:block;}
+.footer_left_hp{width:100%; display:block;}
+.footer_logo_hp{width:60px; margin:auto;}
+.footer_left_info_hp{padding:10px 0 0 0; text-align:center; width:100%;}
+.footer_right_hp{width:100%; padding:40px 0 0 0;}
+.footer_links_hp ul{padding-right:26px;}
+.footer_links_hp ul li{font-size:12px; line-height:20px;}
+.footer_row_hp{padding-top:30px;}
+.footer_title_hp{padding-top:15px;}
+
+/*--------------- FOOTER_END --------------*/
+
+
+/*--------------- overhaul_page_START --------------*/
+
+.banner_block_op{padding:150px 0 120px 0;}
+.banner_title_op h4{letter-spacing:3.4px;}
+.banner_title_op h1{font-size:36px; line-height:50px; padding-top:14px;}
+
+
+.importance_block_op{padding:60px 0 0 0;}
+.importance_top_op{padding-bottom:60px;}
+.importance_title_op{font-size:24px; line-height:30px;}
+.importance_info_op{font-size:14px; line-height:20px; padding-top:20px;}
+
+
+.flow_block_op{padding:60px 0 40px 0;}
+.flow_boxes_op{padding-top:50px;}
+.flow_box_op{width:calc(25% - 8px); margin:0 10px 50px 0; min-height:400px;}
+.flow_box_title_op{font-size:12px; line-height:18px;}
+.flow_box_img_op{padding-top:14px;}
+.flow_box_info_op{font-size:11px; line-height:18px; padding-top:14px;}
+
+
+.newsletter_block_op{padding:40px 0 60px 0;}
+.newsletter_box_op{width:calc(33.33% - 13px); margin-right:40px;}
+.newsletter_box_name_op{padding-top:15px;}
+.newsletter_box_btn_op{padding-top:20px;}
+.newsletter_box_btn_op a{font-size:15px; line-height:24px; padding:5px; min-width:200px; min-height:58px;}
+.newsletter_box_btn_op a.active{min-width:200px;}
+.newsletter_box_btn_change_op a{font-size:14px; line-height:19px;}
+.newsletter_box_btn_change_op a .to{font-size:18px; line-height:20px; margin-left:5px;}
+.newsletter_box_btn_change_op a .bottom{font-size:10px; line-height:15px;}
+
+/*--------------- overhaul_page_END --------------*/
+
+
+/*--------------- Partial_Repair_1_page_START --------------*/
+
+.part_block_pp{padding-top:60px;}
+.part_left_pp{width:300px;}
+.part_right_pp{width:calc(100% - 300px); padding-left:30px;}
+.part_change_pp{margin:25px 0 0 0 !important;}
+.dial_block_pp{padding:80px 0;}
+.dial_box_pp{padding:80px 0 40px 0;}
+.dial_img_pp{margin-left:0px;}
+.dial_img_pp img{max-width:100%;}
+.dial_bottom_pp{padding-top:30px;}
+.dial_bottom_left_pp{padding-right:30px;}
+.dial_bottom_right_pp .premium_info_bp{padding-top:0;}
+.dial_change_pp .dial_img_pp{margin-right:0px;}
+
+/*--------------- Partial_Repair_1_page_END --------------*/
+
+
+/*--------------- Battery_replacement_START --------------*/
+
+.premium_block_bp{padding:80px 0 0 0;}
+.premium_title_bp{font-size:24px; line-height:35px;}
+.premium_info_bp{padding-top:30px;}
+.premium_info_bp p{font-size:15px; line-height:20px; padding-bottom:15px;}
+
+
+.reseal_block_bp{padding:100px 0 60px 0;}
+.reseal_title_bp{font-size:28px; line-height:30px;}
+.reseal_grid_bp{margin:50px auto 0 auto;}
+.reseal_boxes_bp{padding-top:56px;}
+.reseal_box_bp{margin:70px 0 0 0;}
+.reseal_box_right_bp{padding:15px 0 0 40px;}
+.reseal_right_title_bp h3{font-size:18px; line-height:25px;}
+.reseal_right_info_bp{padding-top:18px;}
+.reseal_bottom_bp{padding-top:30px;}
+.reseal_row_left_bp{width:200px; padding:18px; font-size:16px; line-height:22px;}
+.reseal_row_right_bp{width:200px; padding:18px 10px; font-size:16px; line-height:22px;}
+
+/*--------------- Battery_replacement_END --------------*/
+
+
+/*--------------- exterior_polishing_START --------------*/
+
+.polish_block_ep{padding:50px 0 90px 0;}
+.polish_block_in_ep{padding:0 15px;}
+.polish_title_ep{font-size:27px; line-height:35px;}
+.polish_top_ep{padding-top:55px;}
+.polish_left_ep{padding-right:30px;}
+.polish_info_ep p{font-size:15px; line-height:22px; padding-bottom:20px;}
+.polish_top_reverse_ep.polish_top_reverse_ep{padding-top:50px;}
+.polish_top_reverse_ep .polish_left_ep{padding:0 0 0 30px;}
+
+/*--------------- exterior_polishing_END --------------*/
+
+
+/*--------------- system_maintenance_page_START --------------*/
+
+.clean_change_smp{padding:50px 0 70px 0;}
+.clean_bottom_box_smp{margin-top:100px; padding:22px;}
+.clean_box_change_smp .reseal_row_right_bp p{font-size:16px; line-height:20px; padding-bottom:25px;}
+.clean_bottom_box_info_smp p{font-size:16px; line-height:22px; padding-bottom:30px;}
+
+/*--------------- system_maintenance_page_END --------------*/
+
+
+/*--------------- Fee_page_START --------------*/
+
+.price_top_fp{padding-top:50px;}
+.price_block_fp .accordion-item{margin-top:40px;}
+.price_img_fp img{max-width:80px;}
+.price_table_scroll_fp{overflow:scroll;}
+.price_table_main_fp{min-width:1161px;}
+.price_table_heading_fp{font-size:13px; line-height:16px;}
+.price_title_1_fp{font-size:13px; line-height:16px;}
+.price_change_fp{height:80px;}
+.price_change_4_fp{height:80px;}
+
+
+
+.finish_block_fp{padding:45px 0 0 0;}
+.finish_left_fp{padding-right:20px;}
+.finish_left_box_fp{padding-bottom:30px;}
+.finish_box_title_fp{font-size:12px; line-height:18px;}
+.finish_box_row_fp{padding:16px;}
+.finish_box_row_left_fp{font-size:13px; line-height:18px;}
+.finish_box_row_right_fp{font-size:14px;}
+.finish_box_info_fp{font-size:12px; line-height:16px; padding:16px;}
+.finish_box_width_fp .finish_box_row_left_fp{padding:10px; font-size:12px;}
+.finish_box_width_fp .finish_box_row_right_fp{padding:10px; font-size:12px;}
+.finish_right_fp{padding-left:20px;}
+.finish_box_change_fp .finish_box_row_left_fp{width:240px;}
+
+
+.repair_block_fp{padding:50px 0;}
+.repair_top_fp{padding:17px 20px 25px 25px;}
+.repair_info_fp ul li{font-size:12px; line-height:16px; padding-bottom:13px;}
+
+/*--------------- Fee_page_END --------------*/
+
+
+/*--------------- system_maintenance_1_START --------------*/
+
+.system_block_sp{padding:80px 0 105px 0;}
+.system_info_in_sp{padding-top:30px;}
+.system_info_in_sp h4{font-size:22px; line-height:32px; font-weight:600; color:#254558;}
+.system_info_in_sp p{font-size:15px; line-height:22px; padding:20px 0 0 20px;}
+.system_pd_1_sp{padding-top:75px;}
+.system_pd_2_sp{padding-top:54px;}
+.system_pd_3_sp{padding-top:63px;}
+
+/*--------------- system_maintenance_1_END --------------*/
+
+
+
+}
+
+@media(min-width:992px) and (max-width:1250px){
+.container{ max-width:992px; }
+
+
+.common_title_hp p{padding-top:20px;}
+.common_title_hp h2{font-size:34px; line-height:45px; padding-top:15px;}
+
+.common_btn_hp{font-size:16px; line-height:21px; padding:15px 19px 14px 19px; min-width:202px;}
+.common_btn_hp img{right:20px;}
+
+
+/*--------------- HEADER_START --------------*/
+
+#header{padding:0 15px;}
+.header-in-hp{height:120px;}
+.header-left-hp{width:40px;}
+.navigation-main-hp > ul > li > a { font-size: 14px; line-height: 26px;}
+.navigation-main-hp > ul > li {padding-left:20px;}
+.navigation-main-hp > ul > li > a.header_btn_hp{font-size:12px; line-height:16px; min-width:100px; min-height:100px; padding:26px 8px 10px 8px;}
+.header-right-hp{width:calc(100% - 40px); padding-left:30px;justify-content: flex-end; }
+.header_title_hp{font-size:11px;}
+.navigation-main-hp > ul > li:last-child{padding-left:12px;}
+.header_row_hp{width:343px;}
+.header_btn1_hp a{min-width:165px; font-size:12px; line-height:16px; padding:0 4px 4px 4px;}
+.header_btn1_change1_hp{font-size:18px; line-height:28px; padding-left:5px;}
+.header_btn1_change2_hp{font-size:8px; line-height:12px; padding-top:3px;}
+.header_btn2_hp{margin-left:8px;}
+.header_btn2_hp a{font-size:11px; line-height:20px; min-width:165px; padding:14px;}
+.header_btn2_hp img{padding-right:8px; width:30px;}
+.header_row_hp{ display:none;  }
+
+/*--------------- HEADER_END --------------*/
+
+
+/*--------------- CONTAIN_START --------------*/
+#contain{ margin:0 0 0 0; padding:0px; }
+
+
+.banner_slider_in_hp{min-height:550px;}
+.banner_title_hp h6{font-size:26px; line-height:32px;}
+.banner_title_hp h4{padding-top:30px; font-size:36px; line-height:45px;}
+/* .banner_slider_hp .owl-theme .owl-dots{bottom:-245px;} */
+.banner_slider_hp .owl-theme .owl-dots .owl-dot span{width:8px; height:8px; margin:0 6px;}
+.banner_slider_hp .owl-carousel .owl-nav button.owl-prev{background-size:20px; width:20px; height:35px; left:10px; margin-top:-20px;}
+.banner_slider_hp .owl-carousel .owl-nav button.owl-next{background-size:20px; width:20px; height:35px; right:10px; margin-top:-20px;}
+
+
+.swiss_block_hp{padding-top:80px;}
+.swiss_middle_hp{max-width:600px;}
+.swiss_info_hp{font-size:17px; line-height:40px;}
+
+
+.reason_block_hp{padding-top:80px;}
+.reason_info_hp h3{font-size:18px; line-height:26px;}
+.reason_info_hp p{font-size:11px; padding-top:20px;}
+
+
+.service_block_hp{padding-top:80px;}
+.service_right_hp{padding:0 20px;}
+.service_title_hp h4{font-size:28px; line-height:28px;}
+.service_info_hp{padding-top:20px;}
+.service_info_hp p{font-size:14px; line-height:22px; min-height:auto;}
+.service_btn_hp{padding-top:40px;}
+
+
+.price_change_hp{padding-top:80px;}
+
+
+.overhaul_block_hp{padding-top:80px;}
+.overhaul_box_hp{width:calc(33.33% - 14px); margin:0 20px 70px 0;}
+.overhaul_info_hp{font-size:14px;}
+
+
+.newsletter_title_hp{font-size:22px; line-height:34px;}
+
+
+.contact_btn_hp button{padding:15px;}
+
+/*--------------- CONTAIN_END --------------*/
+
+
+/*--------------- FOOTER_START --------------*/
+
+.back-to-top{bottom:75px; width:50px; height:50px; right:30px;}
+.footer_in_hp{padding:0 15px;}
+.footer_left_hp{width:280px;}
+.footer_logo_hp{width:40px;}
+.footer_left_info_hp{width:calc(100% - 40px); padding-left:10px;}
+.footer_left_info_hp h5{font-size:10px; line-height:16px;}
+.footer_left_info_hp p{font-size:8px; line-height:12px;}
+.footer_right_hp{width:calc(100% - 280px); padding-left:60px;}
+.footer_links_hp ul{padding-right:22px;}
+.footer_links_hp ul li{font-size:10px; line-height:18px;}
+.footer_links_hp ul li span{line-height:18px;}
+.footer_row_hp{padding-top:50px;}
+
+/*--------------- FOOTER_END --------------*/
+
+
+/*--------------- overhaul_page_START --------------*/
+
+.importance_block_op{padding:80px 0 0 0;}
+.importance_top_op{padding-bottom:80px;}
+.importance_title_op{font-size:28px; line-height:36px;}
+.importance_info_op{font-size:16px; line-height:22px; padding-top:30px;}
+
+
+.flow_block_op{padding:80px 0 20px 0;}
+.flow_boxes_op{padding-top:55px;}
+.flow_box_op{width:calc(25% - 9px); margin:0 12px 60px 0; min-height:430px;}
+.flow_box_title_op{font-size:13px; line-height:20px;}
+.flow_box_info_op{font-size:12px;}
+
+
+.newsletter_box_op{width:calc(33.33% - 53px); margin-right:80px;}
+
+/*--------------- overhaul_page_END --------------*/
+
+
+/*--------------- Partial_Repair_1_page_START --------------*/
+
+.part_block_pp{padding-top:70px;}
+.part_left_pp{width:400px;}
+.part_right_pp{width:calc(100% - 400px); padding-left:60px;}
+.dial_block_pp{padding:65px 0 70px 0;}
+.dial_box_pp{padding:80px 0 40px 0;}
+.dial_img_pp{margin-left:0px;}
+.dial_bottom_pp{padding-top:35px;}
+.dial_bottom_left_pp{padding-right:50px;}
+.dial_change_pp .dial_img_pp{margin-right:0px;}
+
+/*--------------- Partial_Repair_1_page_END --------------*/
+
+
+/*--------------- Battery_replacement_START --------------*/
+
+.premium_block_bp{padding:80px 0 0 0;}
+.premium_info_bp{padding-top:35px;}
+
+
+.reseal_block_bp{padding:120px 0 60px 0;}
+.reseal_title_bp{font-size:28px; line-height:35px;}
+.reseal_grid_bp{margin:55px auto 0 auto;}
+.reseal_boxes_bp{padding-top:50px;}
+.reseal_box_bp{margin:60px 0 0 0;}
+.reseal_right_title_bp h3{font-size:19px; line-height:23px;}
+.reseal_bottom_bp{padding-top:35px; }
+
+/*--------------- Battery_replacement_END --------------*/
+
+
+/*--------------- exterior_polishing_START --------------*/
+
+.polish_block_ep{padding:80px 0 100px 0;}
+.polish_block_in_ep{padding:0 15px;}
+.polish_title_ep{font-size:28px;}
+.polish_top_ep{padding-top:70px;}
+.polish_left_ep{padding-right:45px;}
+.polish_info_ep p{font-size:17px; line-height:22px; padding-bottom:22px;}
+.polish_top_reverse_ep.polish_top_reverse_ep{padding-top:52px;}
+.polish_top_reverse_ep .polish_left_ep{padding:0 0 0 45px;}
+
+/*--------------- exterior_polishing_END --------------*/
+
+
+/*--------------- system_maintenance_page_START --------------*/
+
+.clean_change_smp{padding:110px 0 90px 0;}
+.clean_box_change_smp .reseal_row_right_bp p{font-size:15px; line-height:22px; padding-bottom:25px;}
+.clean_bottom_box_smp{margin-top:53px; padding:23px;}
+.clean_bottom_box_info_smp p{font-size:17px; line-height:22px; padding-bottom:30px;}
+
+/*--------------- system_maintenance_page_END --------------*/
+
+
+/*--------------- Fee_page_START --------------*/
+
+.price_top_fp{padding-top:60px;}
+.price_block_fp .accordion-item{margin-top:35px;}
+.price_table_heading_fp{font-size:13px; line-height:16px;}
+.price_title_1_fp{font-size:13px; line-height:16px;}
+.price_change_fp{height:75px;}
+.price_change_4_fp{height:75px;}
+
+
+
+.finish_block_fp{padding:50px 0 0 0;}
+.finish_left_fp{padding-right:25px;}
+.finish_left_box_fp{padding-bottom:30px;}
+.finish_box_title_fp{font-size:14px;}
+.finish_box_row_fp{padding:16px;}
+.finish_box_row_left_fp{font-size:12px; line-height:17px;}
+.finish_box_row_right_fp{font-size:14px;}
+.finish_box_info_fp{font-size:11px; line-height:18px; padding:17px;}
+.finish_box_width_fp .finish_box_row_left_fp{padding:14px; font-size:12px;}
+.finish_box_width_fp .finish_box_row_right_fp{padding:14px; font-size:12px;}
+.finish_right_fp{padding-left:25px;}
+.finish_box_change_fp .finish_box_row_left_fp{width:320px;}
+
+
+.repair_block_fp{padding:50px 0;}
+.repair_top_fp{padding:17px 20px 25px 25px;}
+.repair_info_fp ul li{font-size:12px; line-height:18px; padding-bottom:12px;}
+
+/*--------------- Fee_page_END --------------*/
+
+
+/*--------------- system_maintenance_1_START --------------*/
+
+.system_block_sp{padding:85px 0 120px 0;}
+.system_info_in_sp{padding-top:30px;}
+.system_pd_1_sp{padding-top:75px;}
+.system_pd_2_sp{padding-top:60px;}
+.system_pd_3_sp{padding-top:65px;}
+
+/*--------------- system_maintenance_1_END --------------*/
+
+
+
+
+}
+
+@media(min-width:1251px) and (max-width:1500px){
+
+
+/*--------------- HEADER_START --------------*/
+
+#header{padding:0 15px;}
+.header-in-hp{height:120px;}
+.header-left-hp{width:50px;}
+.navigation-main-hp > ul > li > a {    font-size: 12px; line-height: 16px;}
+.navigation-main-hp > ul > li {padding-left:15px;}
+.navigation-main-hp > ul > li > a.header_btn_hp{font-size:12px; line-height:16px; min-width:100px; min-height:100px; padding:26px 8px 10px 8px;}
+.header-right-hp{width:calc(100% - 50px); padding-left:40px;}
+.header_title_hp{font-size:12px;}
+.navigation-main-hp > ul > li:last-child{padding-left:15px;}
+.header_row_hp{width:360px;}
+.header_btn1_hp a{min-width:175px; font-size:12px; line-height:16px; padding:0 4px 4px 4px;}
+.header_btn1_change1_hp{font-size:18px; line-height:28px; padding-left:5px;}
+.header_btn1_change2_hp{font-size:8px; line-height:12px; padding-top:3px;}
+.header_btn2_hp{margin-left:10px;}
+.header_btn2_hp a{font-size:11px; line-height:20px; min-width:175px; padding:14px;}
+.header_btn2_hp img{padding-right:8px; width:30px;}
+
+/*--------------- HEADER_END --------------*/
+
+
+/*--------------- FOOTER_START --------------*/
+
+.back-to-top{bottom:75px; width:50px; height:50px; right:30px;}
+.footer_in_hp{padding:0 15px;}
+.footer_left_hp{width:335px;}
+.footer_logo_hp{width:50px;}
+.footer_left_info_hp{width:calc(100% - 50px); padding-left:10px;}
+.footer_left_info_hp h5{font-size:12px; line-height:18px;}
+.footer_left_info_hp p{font-size:10px; line-height:14px;}
+.footer_right_hp{width:calc(100% - 335px); padding-left:70px;}
+.footer_links_hp ul{padding-right:39px;}
+.footer_links_hp ul li{font-size:12px; line-height:20px;}
+.footer_row_hp{padding-top:55px;}
+
+/*--------------- FOOTER_END --------------*/
+
+/*--------------- Partial_Repair_1_page_START --------------*/
+
+.dial_img_pp{margin-left:0px;}
+.dial_change_pp .dial_img_pp{margin-right:0px;}
+
+/*--------------- Partial_Repair_1_page_END --------------*/
+
+
+
+}
+
+
+@media(min-width:1501px) and (max-width:1880px){
+
+
+/*--------------- HEADER_START --------------*/
+
+#header{padding:0 15px;}
+.header-in-hp{height:120px;}
+.header-left-hp{width:60px;}
+.navigation-main-hp > ul > li > a {font-size:13px; line-height:20px;}
+.navigation-main-hp > ul > li {padding-left:25px;}
+.navigation-main-hp > ul > li > a.header_btn_hp{font-size:12px; line-height:16px; min-width:100px; min-height:100px; padding:26px 8px 10px 8px;}
+.header-right-hp{width:calc(100% - 60px); padding-left:30px;}
+.header_title_hp{font-size:12px;}
+.navigation-main-hp > ul > li:last-child{padding-left:25px;}
+.header_row_hp{width:452px;}
+.header_btn1_hp a{min-width:220px; font-size:13px; line-height:18px; padding:0 4px 4px 4px;}
+.header_btn1_change1_hp{font-size:22px; line-height:30px; padding-left:5px;}
+.header_btn1_change2_hp{font-size:10px; line-height:18px; padding-top:3px;}
+.header_btn2_hp{margin-left:12px;}
+.header_btn2_hp a{font-size:15px; line-height:22px; min-width:220px; padding:14px;}
+.header_btn2_hp img{padding-right:8px; width:40px;}
+
+/*--------------- HEADER_END --------------*/
+
+
+/*--------------- FOOTER_START --------------*/
+
+.back-to-top{bottom:85px; right:30px;}
+.footer_in_hp{padding:0 15px;}
+.footer_logo_hp{width:60px;}
+.footer_left_info_hp{width:calc(100% - 60px); padding-left:15px;}
+.footer_right_hp{padding-left:70px;}
+.footer_links_hp ul{padding-right:56px;}
+
+/*--------------- FOOTER_END --------------*/
+
+
+/*--------------- Partial_Repair_1_page_START --------------*/
+
+.dial_img_pp{margin-left:0px;}
+.dial_change_pp .dial_img_pp{margin-right:0px;}
+
+/*--------------- Partial_Repair_1_page_END --------------*/
+
+
+}
+
+
+
+
+@media(min-width:992px) and (max-width:9999px){
+.navbar-nav .dropdown:hover .dropdown-menu{display:block; opacity:1; height:auto; transform: translate(0px, 0px); }
+.navbar-nav .nav-link:after{ display:none; }
+}

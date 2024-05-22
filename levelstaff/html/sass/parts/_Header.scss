@@ -1,0 +1,98 @@
+@use '../global'as g;
+
+/* header */
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+
+
+  .headerInner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 135px;
+
+    @include g.sp {
+      height: 3.75rem;
+    }
+
+    .headerLogo {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        margin-left: 35px;
+
+        @include g.sp {
+          margin-left: 0.4em;
+          height: 100%;
+
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .headerNav {
+
+      @include g.pc {
+        padding-right: 50px;
+      }
+
+      .navList {
+        display: flex;
+        font-size: 22px;
+        font-weight: 900;
+        line-height: 30px;
+        color: #271F46;
+
+        @include g.pc {
+          justify-content: space-around;
+          margin-top: 43px;
+        }
+
+
+        .navItem {
+          margin-right: 30px;
+          text-align: center;
+
+          @include g.sp {
+            margin-bottom: 1em;
+          }
+
+          span {
+            display: block;
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+
+      .btnBox {
+        display: flex;
+        justify-content: space-around;
+
+        @include g.pc {
+          margin-top: 20px;
+        }
+
+        @include g.sp {
+          align-items: center;
+        }
+
+        a {
+          @include g.pc {
+            margin-right: 30px;
+          }
+
+          @include g.sp {
+            margin-left: 1em;
+          }
+        }
+      }
+    }
+  }
+}

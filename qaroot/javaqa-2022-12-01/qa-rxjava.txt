@@ -1,0 +1,378 @@
+"<starting>Observable RxJava</heading>
+Observable represents any object that can get data from a data source
+ and whose state may be of interest in a way
+ that other objects may register an interest.
+In Observable, there are two types: Cold and Hot Observables.
+Cold Observables will perform work and subsequently emit items only once
+ someone has subscribed, whereas Hot Observables will perform work
+ and emit items regardless of observers or not.
+Also, there are two types:
+1. Non-Blocking – asynchronous execution is supported and is allowed
+ to unsubscribe at any point in the event stream.
+2. Blocking – all onNext observer calls will be synchronous, and it is not possible to unsubscribe in the middle of an event stream. We can always convert an Observable into a Blocking Observable, using the method toBlocking:
+</ending>"
+"<starting>Observable types</heading>
+In Observable, there are two types: Cold and Hot Observables.
+Cold Observables will perform work and subsequently emit items only once
+ someone has subscribed, whereas Hot Observables will perform work
+ and emit items regardless of observers or not.
+Also, there are two types:
+1. Non-Blocking – asynchronous execution is supported and is allowed
+ to unsubscribe at any point in the event stream.
+2. Blocking – all onNext observer calls will be synchronous, and it is not possible to unsubscribe in the middle of an event stream. We can always convert an Observable into a Blocking Observable, using the method toBlocking:
+</ending>"
+"<starting>COLD vs HOT observables</heading>
+They start emitting items differently.
+Cold observables are created multiple times
+ and each instance can be triggered on it’s own.
+Hot observables are like a “stream” of ongoing events –
+ observers can come and go, but the stream is created ones and just goes on.
+</ending>"
+"<starting>transform a COLD observable to a HOT</heading>
+One way to make a Cold observable Hot is by using publish().connect(). publish() converts the Cold observable to a ConnectableObservable,
+ which pretty much behaves like a Hot one.
+Once triggered with the .connect() operator, it’ll publish events
+ regardless if there are any subscribers.
+Another way to transform a Cold observable to a Hot one
+ is by wrapping it with a Subject.
+The Subject subscribes to the Cold observable immediately
+ and exposes itself as an Observable to future subscribers.
+Again, the work is performed regardless whether there are any subscribers.
+And on the other hand multiple subscribers to the Subject
+ won’t trigger the initial work multiple times.
+</ending>"
+"<starting>observer RxJava</heading>
+An observer subscribes to an Observable sequence.
+The sequence sends items to the observer one at a time.
+</ending>"
+"<starting>Scheduler RxJava</heading>
+Schedulers are used to switch execution to a different thread.
+RxJava is single-threaded by default,
+i.e., all operations are executed on a single thread.
+Also used as an abstraction overtime concept for time-sensitive operations
+ such as delay(), buffer(), timeout(), window(), etc.
+</ending>"
+"<starting>flatMap(), switchMap(), concatMap()</heading>
+1. flatMap() is used to split chain to multiple intermediary streams,
+ and results of which are flattened to a single stream.
+Emissions of these intermediary streams are directly propagated
+ to the main stream in any order.
+2. switchMap() is similar to flatMap(),
+ but whenever a new item is being emitted from a source,
+ all the intermediary streams generated are terminated,
+ and hence only the latest intermediary stream remains active.
+3. concatMap() also works similar to flatMap(),
+ with an exception such that intermediary streams are activated
+ based on the order appearance.
+</ending>"
+"<starting>onNext(), onComplete(), onError()</heading>
+1. OnNext is called on our observer each time a new event is published
+ to the attached Observable.
+This is the method where we'll perform some action on each event.
+2. OnCompleted is called when the sequence of events
+ associated with an Observable is complete, indicating that
+ we should not expect any more onNext calls on our observer.
+3. OnError is called when an unhandled exception is thrown
+ during the RxJava framework code or our event handling code.
+These are the callbacks an Observable / Flowable will receive.
+onNext is called for each emission of the Observable / Flowable
+ (e.g. zero to infinity times).
+onComplete() and onError() are mutually exclusive
+ – only ONE of them will be called at most once.
+In other words a stream cannot complete and error out at the same time.
+
+onNext() – from zero between infinite number of times
+onComplete() – maximum once per stream
+onError() – maximum once per stream
+</ending>"
+"<starting>Observable chain</heading>
+List of operations or transformations performed in
+ between the source and end subscriber.
+One of the examples, it to emit User objects, filtering out the admin users
+ and checking for authentication of users, and finally map full name.
+</ending>"
+"<starting>custom operators in RxJava</heading>
+Users can create custom operators in RxJava, and this is highly recommended
+ to reuse existing or any combination.
+It is tricky to implement a new operator as it would lead to too many of errors,
+ such as thread safety, API breaking, etc.
+</ending>"
+"<starting>error handling operators in RxJava</heading>
+We have two categories of such operators, one for side effects only
+ and the other for handle error and continue.
+doOnError(…), onErrorReturn(…), onErrorResumeNext(…) are
+ some of the error handling operators in RxJava.
+</ending>"
+"<starting>Marble Diagram</heading>
+It is a graphical representation of how the RxJava operators work.
+In most of the cases, RxJava has a source stream, operator,
+ and resulting stream.
+Each of the streams is represented by a timeline with all emissions,
+ known as marbles and terminating events.
+</ending>"
+"<starting>Backpressure</heading>
+Backpressure is the inability of a subscriber to handle incoming events in time. Backpressure can occur when the producer of events
+ is much faster than consumers; if not will error stream.
+
+The first important thing is
+ to choose the correct RxJava construct for your stream.
+If you thing Backpressure might occur,
+ then Flowable with a correct BackpressureStrategy is the safest choice.
+You can also try to manually “slow-down” the Producer
+ by adding buffer-type (buffer(), window(), etc) operators
+ before your event handling.
+Finally you can try to speed up your Consumer
+ – ideally it should be doing small and fast operations.
+If you require more computation-intensive ones,
+ perhaps some of that logic can be moved to-
+ and parallelised by the Rx stream ifself.
+</ending>"
+"<starting>Subject RxJava</heading>
+Subject means both subscriber and observer at the same time.
+With subjects in RxJava, users can transform cold observables to hot ones. They are also used to introduce some type of local and temporary caching 
+of the stream.
+Also, help in transforming non-reactive code to reactive
+ if the user does not find any operator for use case creation.
+Types of Subjects in RxJava:
+1. PublishSubject: It passes incoming events to all subscribers. New subscribers will receive events only from the point of subscription.
+2. BehaviourSubject: Similar to publish subject, but each new subscriber will receive the latest value of the stream, i.e., the default value. Here, the default value of the stream provides a good user experience.
+3. AsyncSubject: It emits only the last value of Observable, and that too only after the source observable completes emitting.
+4. ReplaySubject: Each subscriber will receive all the events emitted by the source, regardless of at which point it is subscribed. If Observable emits too many items, they need to be in-memory cache.
+</ending>"
+"<starting>Subject types RxJava</heading>
+1. PublishSubject: It passes incoming events to all subscribers.
+New subscribers will receive events only from the point of subscription.
+2. BehaviourSubject: Similar to publish subject, but each new subscriber
+ will receive the latest value of the stream, i.e., the default value.
+Here, the default value of the stream provides a good user experience.
+3. AsyncSubject: It emits only the last value of Observable,
+ and that too only after the source observable completes emitting.
+4. ReplaySubject: Each subscriber will receive all the events
+ emitted by the source, regardless of at which point it is subscribed.
+If Observable emits too many items, they need to be in-memory cache.
+</ending>"
+"<starting>Parallelism RxJava</heading>
+RxJava will support parallelism, and this is achieved in two ways;
+ using flatMap() operator, each stream inside flatMap() should subscribe
+ background thread.
+Using ParallelFlowable, it provides easier and explicit API
+ to achieve parallelism.
+a) Using the flatMap() operator.
+Each inner stream inside the flatMap() operation should subscribeOn()
+ a background thread (preferably Schedulers.io()).
+b) Although the above pattern works correctly to achieve parallelism,
+ in recent versions of RxJava a better construct was introduced
+ – the ParallelFlowable.
+It provides an easier and more explicit API to achieve parallelism.
+</ending>"
+"<starting>Transformer</heading>
+A Transformer is a convenient way to encapsulate common operations
+ in a reusable way.
+This encapsulated logic can be tested in isolation, which is easier,
+ and further simplifies the tests of all chains that use it.
+For example if you find yourself
+ repeating a sequence of operators multiple times in your code
+ (e.g. .map(user -> user.age).filter(age -> age > 18)),
+ this logic can be factored out in a UserLegalAgeTransformer.
+It can be reused in the chains like this .compose
+(new UserLegalAgeTransformer()).
+</ending>"
+"<starting>Non-Blocking</heading>
+An algorithm is considered to be non-blocking
+ if threads competing for resources do not have execution postponed
+ due to mutual exclusion of protecting the resource.
+</ending>"
+"<starting>Elasticity in RxJava</heading>
+It means that the throughput of the system scales up or down automatically
+ to meet demand as a resource is proportionally added/ removed.
+Elasticity, therefore, builds up Scalability
+ and expands by adding the notion of automatic resource management.
+</ending>"
+"<starting>Operators RxJava</heading>
+An operator is a function
+ that takes one Observable (the source) as its first argument
+ and returns another Observable (the destination).
+Then for every item that the source observable emits,
+ it will apply a function to that item,
+ and then emit the result on the destination Observable.
+Operators can be chained together
+ to create complex data flows that filter event based on certain criteria. Multiple operators can be applied to the same observable.
+It is not difficult to get into a situation
+ in which an Observable is emitting items faster than an operator
+ or observer can consume them.
+You can read more about back-pressure here.
+</ending>"
+"<starting>Map RxJava</heading>
+The map operator transforms items emitted by an Observable by applying a function to each item.
+</ending>"
+"<starting>Scan RxJava</heading>
+The scan operator applies a function to each item emitted by an Observable sequentially and emits each successive value.
+</ending>"
+"<starting>GroupBy RxJava</heading>
+GroupBy operator allows us to classify the events in the input Observable into output categories.
+</ending>"
+"<starting>Filter RxJava</heading>
+The operator filter emits only those items from an observable that pass a predicate test.
+</ending>"
+"<starting>Conditional Operators RxJava</heading>
+1. DefaultIfEmpty emits item from the source Observable, or a default item if the source Observable is empty.
+2. TakeWhile operator discards items emitted by an Observable after a specified condition becomes false.
+3. Of course, there more others operators that could cover our needs like Contain, SkipWhile, SkipUntil, TakeUntil, etc.
+</ending>"
+"<starting>Connectable Observables RxJava</heading>
+A ConnectableObservable resembles an ordinary Observable, except that it doesn't begin emitting items when it is subscribed to, but only when the connect operator is applied to it.
+In this way, we can wait for all intended observers to subscribe to the Observable before the Observable begins emitting items.
+</ending>"
+"<starting>Single RxJava</heading>
+Single is like an Observable who, instead of emitting a series of values,
+ emits one value or an error notification.
+With this source of data, we can only use two methods to subscribe:
+OnSuccess returns a Single that also calls a method we specify.
+OnError also returns a Single that immediately notifies subscribers of an error.
+</ending>"
+"<starting>transform COLD observable to a HOT</heading>
+1. COLD to HOT
+One way to make a Cold observable Hot is by using publish().connect(). publish() converts the Cold observable to a ConnectableObservable, which pretty much behaves like a Hot one. Once triggered with the .connect() operator, it’ll publish events regardless if there are any subscribers.
+Another way to transform a Cold observable to a Hot one is by wrapping it with a Subject. The Subject subscribes to the Cold observable immediately and exposes itself as an Observable to future subscribers. Again, the work is performed regardless whether there are any subscribers … and on the other hand multiple subscribers to the Subject won’t trigger the initial work multiple times.
+2. HOT to COLD
+The first way of transforming (or rather “masking”) a Hot observable to Cold is by using the defer() operator. It defers the creation of the Hot observable altogether, so each new subscriber will trigger the work again (feature of a Cold observable).
+Depending on the use-case the pattern mentioned above might be quite wasteful, so another strategy is using the replay().autoConnect(0) paradigm. The replay() operator will cache the values emitted by the Hot observable and re-emit them to future subscribers. autoConnect(0) returns an observable that can be triggered even when there are no subscribers to the underlaying Hot observable. The combination of both just replays cached values from the Hot observable as a Cold one.
+</ending>"
+"<starting>HOT vs COLD</heading>
+Cold observables are created multiple times and each instance
+ can be triggered on it’s own.
+Hot observables are like a “stream” of ongoing events
+ – observers can come and go, but the stream is created ones and just goes on.
+</ending>"
+"<starting>observeOn() vs subscribeOn()</heading>
+1. subscribeOn() denotes the Scheduler
+ on which the source work will be performed on.
+Since there’s only one initial source of an Observable chain,
+ it makes sense to only have one subscribeOn() operator.
+2. observeOn() denotes the Scheduler
+ on which all downstream operations will be performed.
+In other words it changes the Scheduler for all operators after it.
+Since there can be many such operators,
+ having multiple observeOn() operators in a single chain
+ makes sense and works as expected.
+</ending>"
+"<starting>multiple subscribeOn()</heading>
+Only the very first subscribeOn() in the chain has the desired effect,
+ all subsequent ones would not have any effect,
+ apart from potentially wasting system resources.
+ (depending on the Scheduler specified)
+</ending>"
+"<starting>multiple observeOn()</heading>
+Each observeOn() switches the Scheduler (thread)
+ on which all subsequent operators will be executed on.
+Complex RxJava streams can absolutely benefit
+ from multiple observeOn() operators.
+</ending>"
+"<starting>map() vs flatMap() RxJava</heading>
+1. The map() operator maps from a concrete ValueA to a concrete ValueB
+ (e.g. from an Int -> String, or User -> String).
+2. flatMap() maps from a concrete ValueA to a Stream<ValueB>.
+If Stream<ValueB> emits multiple items,
+ all of these will be eventually served to the original observer
+ (e.g. they are being “flattened” to a single Observer). 
+Since there’s no restrictions on the Stream<ValueB>, flatMap() is useful
+ to introduce parallelism in executing tasks.
+</ending>"
+"<starting>test observable chains RxJava</heading>
+TestObserver and TestSubscriber are common classes
+ used to test Observable / Flowable operations.
+With these you can wait for,
+ and inspect all received events and their exact values.
+The TestScheduler class is very useful when testing time-based operators
+ (e.g. timeout(), buffer(), window(), etc)
+ – it allows to manually control the “time”
+ to you can test all possible code paths in your chain.
+</ending>"
+"<starting>multiple errors RxJava</heading>
+All unhandled errors (via any of the error handling operators)
+ are propagated downstream.
+A chain can have only one terminal error event
+ (e.g. one call to onError(throwable)),
+ so the first unhandled error will terminate the stream.
+In case there’s other undelivered exceptions.
+</ending>"
+"<starting>RxJava1 vs RxJava2</heading>
+1. Null not supported anymore
+ – previously Observable.just(user) would work even if user == null.
+In RxJava2 the same will throw a NullPointerException.
+Not supporting null values makes streams a bit easier to work with
+ (as there’s no null checks everywhere),
+ but one must be more cautious what data flows through them.
+Wrapping emissions with classes like Java Optional is handy for places
+ where you’re not sure if the data is null-safe.
+2. RxJava2 Observable type doesn’t support backpressure anymore,
+ so places where that might be an issue had to be changed
+ to use Flowable instead.
+It’s a great change as it makes pretty clear where Backpressure care is needed. On the other hand – it requires careful inspection of the flows
+ that were using RxJava1 Observable.
+Common places where Backpressure might occur is
+ when fetching data from a database or mapping user-actions to events.
+On a related note – in RxJava2 Subjects no longer support Backpressure.
+The new Processors classes do.
+3. Global error handling – in RxJava2 no error can be swallowed
+ (as it could in RxJava1).
+All such undelivered errors are passed to a global error handler,
+ which can be set using the RxJavaPlugins.setErrorHandler().
+Such exceptions usually occur on streams that have parallel execution.
+When updating, one must always set such handler and at least log the errors. Ideally this global error handler will never receives anything.
+</ending>"
+"<starting>Completable RxJava</heading>
+maps an operation that either completes without returning a value
+ (onComplete()) or errors out (onError(throwable)).
+</ending>"
+"<starting>Maybe RxJava</heading>
+Maybe – has 3 options – returns a value successfully (onSuccess(value)), completes successfully without any value (onComplete()) or errors out (onError(throwable)).
+</ending>"
+"<starting>Observable(keyword) RxJava</heading>
+Observable – represents a stream of events that emits zero
+ to many events (onNext(value)), then either completes (onComplete())
+ or errors out (onError(throwable)).
+It does NOT support backpressure
+</ending>"
+"<starting>Flowable RxJava</heading>
+Flowable –  represents a stream of events that emits zero
+ to many events (onNext(value)), then either completes (onComplete())
+ or errors out (onError(throwable)).
+However it DOES support backpressure.
+</ending>"
+"<starting>RxJava constructs</heading>
+1. Completable – maps an operation that either completes
+ without returning a value (onComplete()) or errors out (onError(throwable)).
+Single – either returns a value (onSuccess(value)) or errors out
+ (onError(throwable)).
+2. Maybe – has 3 options – returns a value successfully (onSuccess(value)),
+ completes successfully without any value (onComplete()) or errors out
+ (onError(throwable)).
+3. Observable – represents a stream of events that emits zero to many events
+ (onNext(value)), then either completes (onComplete()) or errors out (onError(throwable)).
+It does NOT support backpressure.
+4. Flowable – like an Observable, however it DOES support backpressure.
+</ending>"
+"<starting>Subject vs RxRelay</heading>
+A Relay is a Subject that cannot be terminated
+ (cannot call onError() or onComplete() on it).
+That’s sometimes useful,
+ as terminating a regular Subject makes it unusable in the future.
+</ending>"
+"<starting>pure function RxJava</heading>
+A pure function is one that doesn’t have any side effects and has stable output
+ – e.g. the same input will always produce the same output.
+Working with pure functions makes code easier to reason,
+ as there’s no hidden side effects and implicit dependencies between functions.
+Given the composable nature of RxJava operators,
+ a very good combination is keeping each operation
+ a highly isolated pure function – this way alterations of the stream are easier.
+</ending>"
+"<starting>memory leak RxJava</heading>
+As a general good practice in programming,
+ one must clean-up the used resources after they’re no longer needed.
+In the case of RxJava this means disposing your Disposables correctly.
+A common pattern is to keep adding all long-running operations
+ from a screen in a CompositeDisposable
+ and ensuring that’s clean-up when the screen is gone.
+</ending>"

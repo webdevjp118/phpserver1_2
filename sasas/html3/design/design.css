@@ -1,0 +1,40 @@
+.the_img {
+
+}
+.the_img img {
+    width: 100%;
+}
+
+.header_imga {
+    padding: 0 6px;
+}
+.header_imga img {
+    height: 70px;
+}
+
+.two_img {
+    display: flex;
+}
+.twoimg_left {
+    width: 50%;
+}
+.twoimg_right {
+    width: 50%;
+}
+.twoimg_left img {
+    width: 100%;
+}
+.twoimg_right img {
+    width: 100%;
+}
+@media (max-width: 767px) {
+    .two_img {
+        display: block;
+    }
+    .twoimg_left {
+        width: 100%;
+    }
+    .twoimg_right {
+        width: 100%;
+    }
+}

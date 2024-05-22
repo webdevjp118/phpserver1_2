@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Noto Serif JP', serif;
+*/
+@font-face {
+    font-family: HiraginoKakuGothicStdW8;
+    src: url(fonts/HiraginoKakuGothicStdW8.otf);
+}

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techwell</title>
+
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/theme.min.css">
+
+    <link rel="stylesheet" href="./theme/hs-mega-menu/hs-mega-menu.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header id="header" class="navbar navbar-expand-lg navbar-end navbar-sticky-top navbar-light navbar-show-hide navbar-toggle" data-hs-header-options='{
+            "fixMoment": 1000,
+            "fixEffect": "slide"
+        }'>
+        <div class="container">
+            <nav class="js-mega-menu navbar-nav-wrap">
+                <a class="navbar-brand" href="./top.html" aria-label="Front">
+                    <img src="./images/logo.svg" alt="">
+                </a>
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-default">
+                        <i class="bi-list"></i>
+                    </span>
+                    <span class="navbar-toggler-toggled">
+                        <i class="bi-x"></i>
+                    </span>
+                </button>
+                <!-- End Toggler -->
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="./case-search.html" class="nav-link">案件検索</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./service.html" class="nav-link">サービスについて</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">お問合せ</a>
+                        </li>
+                        <li class="hs-has-sub-menu nav-item">
+                            <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">マイページ</a>
+                            <div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu" style="min-width: 14rem;">
+                                <a class="dropdown-item" href="#">気になるリスト</a>
+                                <a class="dropdown-item" href="#">エントリー中の案件</a>
+                                <a class="dropdown-item" href="#">成立した案件</a>
+                                <a class="dropdown-item" href="#">勤怠入力</a>
+                                <a class="dropdown-item" href="./invoice-management.html">請求書管理</a>
+                                <a class="dropdown-item" href="./withdraw.html">会員情報変更</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-primary btn-transition" data-bs-toggle="modal" data-bs-target=".bd-example-modal-sm">ログアウト</button>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="btn btn-primary btn-transition">電話番号</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content" role="main">
+        <div class="bg-img-start banner-normal">
+            <div class="container content-space-t-3 content-space-b-1">
+                <div class="row align-items-lg-center mb-4">
+                    <div class="col-lg mb-2 mb-lg-0">
+                        <!-- Breadcrumb -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="./top.html">TOP</a></li>
+                                <li class="breadcrumb-item"><a href="./invoice-management.html">請求書管理</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">請求書内容詳細</li>
+                            </ol>
+                        </nav>
+                        <!-- End Breadcrumb -->
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="invoice-reason mb-10">
+                            <div class="row justify-content-sm-between align-items-sm-center mb-4">
+                                <div class="col-sm mb-3 mb-sm-0">
+                                    <p class="card-text">ステータス <span class="no-publish">差し戻し</span></p>
+                                </div>
+
+                                <div class="col-sm-auto text-right">
+                                    <a href="./case-registration.html" class="btn btn-primary btn-transition">承認</a>
+                                    <a href="./case-registration.html" class="btn btn-primary btn-transition" data-bs-toggle="modal" data-bs-target=".bd-invoice-reason-modal-sm">差し戻し</a>
+                                    <a href="./case-registration.html" class="btn btn-primary btn-transition">請求</a>
+                                    <a href="./case-registration.html" class="btn btn-primary btn-transition">請求書出力</a>
+                                </div>
+                            </div>
+                            <div class="border invoice-detail-boder px-3 py-2 mb-4">
+                                請求書が指し戻されました。内容を確認し、再度請求手続きを行ってください。<br>
+                                <p class="pt-2 small-p mb-0 mt-2">差し戻し理由</p>
+                                請求明細の単価を修正ください。
+                            </div>
+                            <ol class="list-group colored-list w-100 w-lg-75">
+                                <li class="list-group-item p-0">
+                                    <div class="d-flex flex-md-row flex-column">
+                                        <label for="" class="w-100 w-md-35">氏名</label>
+                                        <div class="w-100 w-md-65 list-group-item-body">
+                                            <p class="input-p mb-0 ps-3">
+                                                MICS太郎
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item p-0">
+                                    <div class="d-flex flex-md-row flex-column">
+                                        <label for="" class="w-100 w-md-35">住所</label>
+                                        <div class="w-100 w-md-65 list-group-item-body">
+                                            <p class="input-p mb-0 ps-3">
+                                                〒999-9999 福岡県福岡市XXXXXXXXXXXX
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item p-0">
+                                    <div class="d-flex flex-md-row flex-column">
+                                        <label for="" class="w-100 w-md-35">電話番号</label>
+                                        <div class="w-100 w-md-65 list-group-item-body">
+                                            <p class="input-p mb-0 ps-3">
+                                                9999999999
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item p-0">
+                                    <div class="d-flex flex-md-row flex-column">
+                                        <label for="" class="w-100 w-md-35">振込先</label>
+                                        <div class="w-100 w-md-65 list-group-item-body">
+                                            <p class="input-p mb-0 ps-3">
+                                                ××銀行 ××支店 普通 9999999 ﾐｯｸｽﾀﾛｳ
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="invoice-user-info w-100 w-lg-75 mb-5">
+                            <div class="row justify-content-sm-between align-items-sm-center mb-2">
+                                <div class="col-sm mb-3 mb-sm-0">
+                                    <h1 class="card-title h2">請求者情報</h1>
+                                </div>
+                            </div>
+                            <ol class="list-group colored-list">
+                                <li class="list-group-item p-0">
+                                    <div class="d-flex flex-md-row flex-column">
+                                        <label for="" class="w-100 w-md-35">氏名</label>
+                                        <div class="w-100 w-md-65 list-group-item-body">
+                                            <p class="input-p mb-0 ps-3">
+                                                MICS太郎
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item p-0">
+                                    <div class="d-flex flex-md-row flex-column">
+                                        <label for="" class="w-100 w-md-35">住所</label>
+                                        <div class="w-100 w-md-65 list-group-item-body">
+                                            <p class="input-p mb-0 ps-3">
+                                                〒999-9999 福岡県福岡市XXXXXXXXXXXX
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item p-0">
+                                    <div class="d-flex flex-md-row flex-column">
+                                        <label for="" class="w-100 w-md-35">電話番号</label>
+                                        <div class="w-100 w-md-65 list-group-item-body">
+                                            <p class="input-p mb-0 ps-3">
+                                                9999999999
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item p-0">
+                                    <div class="d-flex flex-md-row flex-column">
+                                        <label for="" class="w-100 w-md-35">振込先</label>
+                                        <div class="w-100 w-md-65 list-group-item-body">
+                                            <p class="input-p mb-0 ps-3">
+                                                ××銀行 ××支店 普通 9999999 ﾐｯｸｽﾀﾛｳ
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="invoice-info mb-10 w-100 w-lg-75">
+                            <div class="row justify-content-sm-between align-items-sm-center mb-2">
+                                <div class="col-sm mb-3 mb-sm-0">
+                                    <h1 class="card-title h2">請求情報</h1>
+                                </div>
+                            </div>
+                            <ol class="list-group colored-list">
+                                <li class="list-group-item p-0">
+                                    <div class="d-flex flex-md-row flex-column">
+                                        <label for="" class="w-100 w-md-35">請求書番号</label>
+                                        <div class="w-100 w-md-65 list-group-item-body">
+                                            <p class="input-p mb-0 ps-3">
+                                                XXXXXXX
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item p-0">
+                                    <div class="d-flex flex-md-row flex-column">
+                                        <label for="" class="w-100 w-md-35">請求月</label>
+                                        <div class="w-100 w-md-65 list-group-item-body">
+                                            <p class="input-p mb-0 ps-3">
+                                                2022/07
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item p-0">
+                                    <div class="d-flex flex-md-row flex-column">
+                                        <label for="" class="w-100 w-md-35">請求日</label>
+                                        <div class="w-100 w-md-65 list-group-item-body">
+                                            <p class="input-p mb-0 ps-3">
+                                                2022/07/31
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item p-0">
+                                    <div class="d-flex flex-md-row flex-column">
+                                        <label for="" class="w-100 w-md-35">支払い期限日</label>
+                                        <div class="w-100 w-md-65 list-group-item-body">
+                                            <p class="input-p mb-0 ps-3">
+                                                2022/08/30
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div class="invoice-detail">
+                            <div class="table-header text-center w-100">請求明細</div>
+                            <div class="table-responsive">
+                                <table class="table table-borderless table-thead-bordered table-nowrap table-align-middle card-table">
+                                    <thead class="bg-soft-primary">
+                                        <tr>
+                                            <th scope="col" class="">内容</th>
+                                            <th scope="col" class="">詳細</th>
+                                            <th scope="col" class="">単価</th>
+                                            <th scope="col" class="">数量</th>
+                                            <th scope="col" class="">単位</th>
+                                            <th scope="col" class="">金額</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="">
+                                            <th class="">2022年07月 作業分</th>
+                                            <td class="">135.5時間</td>
+                                            <td class="">¥4,000</td>
+                                            <td class="">1</td>
+                                            <td class="">式</td>
+                                            <td class="">¥542,000</td>
+                                        </tr>
+                                        <tr class="">
+                                            <th class="">2022年07月 作業分</th>
+                                            <td class="">10時間</td>
+                                            <td class="">¥4500</td>
+                                            <td class="">1</td>
+                                            <td class="">式</td>
+                                            <td class="">¥45000</td>
+                                        </tr>
+                                        <tr class="">
+                                            <th class="">2022年07月 作業分</th>
+                                            <td class="">50時間</td>
+                                            <td class="">¥4000</td>
+                                            <td class="">1</td>
+                                            <td class="">式</td>
+                                            <td class="">¥200,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12 col-md-8 col-lg-4 ms-auto">
+                                    <div class="border d-flex">
+                                        <div class="w-35 text-center bg-soft-primary p-2">小計</div>
+                                        <div class="w-65 text-center p-2">¥287,000</div>
+                                    </div>
+
+                                    <div class="border border-top-0 d-flex">
+                                        <div class="w-35 text-center bg-soft-primary p-2">消費税</div>
+                                        <div class="w-65 text-center p-2">¥28,700</div>
+                                    </div>
+
+                                    <div class="border border-top-0 d-flex">
+                                        <div class="w-35 text-center bg-soft-primary p-2">合計（税込）</div>
+                                        <div class="w-65 text-center p-2">¥315,700</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="my-5 mx-0 row border">
+                                <label class="col-form-label col-lg-3 col-12 bg-soft-primary" for="invoice-area">備考</label>
+                                <p class="col-md-9 col-12 invoice-area border-0 mb-0" name="invoice-area" id="invoice-area">
+                                    XXXXXXX
+                                </p>
+                            </div>
+
+                            <div class="mx-auto mt-6 d-flex justify-content-around justify-content-md-center gap-md-4 flex-wrap sp-gap">
+                                <a class="btn btn-primary btn-transition w-45 w-lg-auto px-4 px-md-6" href="#">内容を変更</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark">
+        <section class="footer-top">
+            <div class="container">
+                <div class="pt-md-5 pt-3 pb-3 pb-md-5 d-flex align-items-center">
+                    <div class="w-50">
+                        <a class="btn btn-white footer-btn" href="./signup.html">無料で会員登録</a>
+                    </div>
+                    <div class="w-50">
+                        <a class="btn btn-white footer-btn" href="#">エンジニアを<br>お探しの企業様</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container pb-1 pb-lg-5 pt-5">
+            <div class="row">
+                <div class="col-lg-3">
+                    <!-- Logo -->
+                    <div class="mb-4">
+                        <a class="navbar-brand" href="./" aria-label="Space">
+                            <img src="./images/logo-white.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- End Logo -->
+
+                </div>
+
+                <div class="col-sm">
+
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-0">
+                        <li><a class="link-sm link-light" href="./case-search.html">案件検索</a></li>
+                        <li><a class="link-sm link-light" href="./service.html">サービスについて</a></li>
+                        <li><a class="link-sm link-light" href="./concers-list.html">気になるリスト</a></li>
+                        <li><a class="link-sm link-light" href="./guide.html">フリーランスを検討中の方へ</a></li>
+                        <li><a class="link-sm link-light" href="">エンジニアをお探しの企業様</a></li>
+                    </ul>
+                    <!-- End List -->
+                </div>
+
+                <div class="col-sm">
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-0">
+                        <li><a class="link-sm link-light" href="#">フリーランス様向けのお問い合わせ</a></li>
+                        <li><a class="link-sm link-light" href="./client/index.html">法人様向けのお問い合わせ</a></li>
+                    </ul>
+                    <!-- End List -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm">
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-5">
+                        <li><a class="link-sm link-light" href="#">アクセス</a></li>
+                        <li><a class="link-sm link-light" href="./company.html">運営会社</a></li>
+                        <li><a class="link-sm link-light" href="./privacy.html">プライバシーポリシー</a></li>
+                    </ul>
+                    <!-- End List -->
+                </div>
+
+                <div class="col-sm">
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-5">
+                        <li class="d-flex justify-content-center">
+                            <a class="btn btn-white w-50 w-sm-100" href="#">お問い合わせ</a>
+                        </li>
+                        <li class="d-flex justify-content-center">
+                            <a class="btn btn-white w-50 w-sm-100" href="#">電話番号</a>
+                        </li>
+                    </ul>
+                    <!-- End List -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Row -->
+
+            <div class="border-top border-white-10 my-5"></div>
+
+            <!-- Copyright -->
+            <div class="w-md-85 text-lg-center mx-lg-auto">
+                <p class="text-white-50 small">© Techwell,Inc. All Rights Reserved</p>
+            </div>
+            <!-- End Copyright -->
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    ログアウトしますか？
+                </div>
+                <div class="modal-footer">
+                    <a href="" class="btn btn-white w-35 px-2 text-center" data-bs-dismiss="modal">閉じる</a>
+                    <a href="./" class="btn btn-primary w-35 px-2 text-center">ログアウト</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Modal -->
+    <div class="modal fade bd-invoice-reason-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">請求書を差し戻しますか？</p>
+                    <p class="text-small">差し戻し理由 <span>必須</span></p>
+                    <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <a href="" class="btn btn-primary w-35 px-2 text-center" data-bs-dismiss="modal">差し戻す</a>
+                    <a href="#" class="btn btn-white w-35 px-2 text-center" class="btn-close" data-bs-dismiss="modal" aria-label="Close">キャンセル</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Go to -->
+    <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
+        "offsetTop": 700,
+        "position": {
+            "init": {
+            "right": "2rem"
+            },
+            "show": {
+            "bottom": "2rem"
+            },
+            "hide": {
+            "bottom": "-2rem"
+            }
+        }
+        }'>
+        <i class="bi-chevron-up"></i>
+    </a>
+    <!-- End Go to -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/theme.min.js"></script>
+
+    <script src="./theme/hs-header.min.js"></script>
+    <script src="./theme/hs-mega-menu/hs-mega-menu.min.js"></script>
+    <script src="./theme/hs-toggle-password.js"></script>
+    <script src="./theme/hs-add-field.min.js"></script>
+    <script src="./theme/hs-go-to.min.js"></script>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techwell</title>
+
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/theme.min.css">
+
+    <link rel="stylesheet" href="./theme/hs-mega-menu/hs-mega-menu.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header id="header" class="navbar navbar-expand-lg navbar-end navbar-sticky-top navbar-light navbar-show-hide navbar-toggle" data-hs-header-options='{
+            "fixMoment": 1000,
+            "fixEffect": "slide"
+        }'>
+        <div class="container">
+            <nav class="js-mega-menu navbar-nav-wrap">
+                <a class="navbar-brand" href="./" aria-label="Front">
+                    <img src="./images/logo.svg" alt="">
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content" role="main">
+        <div class="position-relative bg-img-start banner-top login-content">
+            <div class="container content-space-t-3 content-space-t-lg-5 content-space-b-2 content-space-b-lg-3 position-relative zi-2">
+                <div class="flex-grow-1 mx-auto" style="max-width: 28rem;">
+                    <h1 class="text-center mb-md-10 mb-7">
+                        ログイン
+                    </h1>
+                    <form class="js-validate needs-validation" novalidate>
+                        <div class="mb-4">
+                            <label class="form-label" for="leLoginEmail">メールアドレス</label>
+                            <input type="email" class="form-control form-control-lg" name="email" id="LoginEmail" placeholder="email@site.com" aria-label="email@site.com" required>
+                            <span class="invalid-feedback">正しいEメールアドレスを入力してください。</span>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <label class="form-label" for="LoginPassword">パスワード</label>
+                            </div>
+
+                            <div class="input-group input-group-merge" data-hs-validation-validate-class>
+                                <input type="password" class="js-toggle-password form-control form-control-lg" name="password" id="LoginPassword" aria-label="8+ characters required" required minlength="8" data-hs-toggle-password-options='{
+                                        "target": "#changePassTarget",
+                                        "defaultClass": "bi-eye-slash",
+                                        "showClass": "bi-eye",
+                                        "classChangeTarget": "#changePassIcon"
+                                        }'>
+                                <a id="changePassTarget" class="input-group-append input-group-text" href="javascript:;">
+                                    <i id="changePassIcon" class="bi-eye"></i>
+                                </a>
+                            </div>
+
+                            <span class="invalid-feedback">正しいパスワードを入力してください。</span>
+                        </div>
+
+                        <div class="d-grid mb-5">
+                            <button type="submit" class="btn btn-primary btn-lg">ログイン</button>
+                        </div>
+
+                        <div class="d-flex flex-column flex-sm-row flex-gap justify-content-sm-between align-items-center gap-3 gap-sm-0">
+                            <div class="w-100 w-sm-auto">
+                                <a class="btn btn-white px-8 w-100" href="./signup.html">新規会員登録</a>
+                            </div>
+                            <div class="w-100 w-sm-auto">
+                                <a class="btn btn-white w-100" href="./reset-password.html">パスワードを忘れた場合</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="shape shape-bottom zi-1">
+                <svg width="3000" height="500" viewBox="0 0 3000 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 500H3000V0L0 500Z" fill="#fff"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- End Hero -->
+    </main>
+
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="w-md-85 text-lg-center mx-lg-auto py-5">
+                <p class="text-white-50 small">© Techwell,Inc. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    ログアウトしますか？
+                </div>
+                <div class="modal-footer">
+                    <a href="" class="btn btn-white w-35 px-2 text-center" data-bs-dismiss="modal">閉じる</a>
+                    <a href="./" class="btn btn-primary w-35 px-2 text-center">ログアウト</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+
+    <!-- Go to -->
+    <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
+        "offsetTop": 700,
+        "position": {
+            "init": {
+            "right": "2rem"
+            },
+            "show": {
+            "bottom": "2rem"
+            },
+            "hide": {
+            "bottom": "-2rem"
+            }
+        }
+        }'>
+        <i class="bi-chevron-up"></i>
+    </a>
+    <!-- End Go to -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/theme.min.js"></script>
+
+    <script src="./theme/hs-header.min.js"></script>
+    <script src="./theme/hs-mega-menu/hs-mega-menu.min.js"></script>
+    <script src="./theme/hs-toggle-password.js"></script>
+    <script src="./theme/hs-add-field.min.js"></script>
+    <script src="./theme/hs-go-to.min.js"></script>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,491 @@
+@charset "UTF-8";
+
+form#mailform {
+	margin:0px;
+	padding:0px;
+	width:700px;
+}
+
+form#mailform label {
+	display:block;
+	margin-bottom:1px;
+	padding:5px;
+	border-radius:6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	cursor:pointer;
+}
+
+label.label_true {
+	border:solid 1px #CCC;
+	background:#FFE;
+	text-decoration:none;
+}
+
+label.label_false {
+	background:none;
+	border:none;
+}
+
+div#mailfrom_hidden_object {
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+div#mailfrom_hidden_object input {
+	margin:10px;
+}
+
+div#mfp_closed {
+	display:none;
+}
+
+div.mfp_disp {
+	display:none;
+}
+
+div#input_time_disp {
+	padding:10px;
+}
+
+div#expires_time_disp {
+	padding:10px;
+	text-align:center;
+}
+
+div#expires_time_disp strong {
+	color:#C00;
+	font-size:18px;
+}
+
+div#limit_disp {
+	padding:10px;
+	text-align:center;
+}
+
+div#limit_disp strong {
+	color:#C00;
+	font-size:24px;
+}
+
+img.must {
+	float:left;
+	margin:3px 0 0 5px;
+	width:25px;
+	height:16px;
+}
+
+div.mfp_err {
+	display:none;
+	margin:5px 0 0 0;
+	padding:3px 0 5px 17px;
+	background:url(../images/mfp_error.gif) 0 5px no-repeat;
+	color:#F00;
+	font-size:12px;
+	text-align:left;
+	line-height:normal;
+}
+
+input.mfp {
+	margin:3px 0;
+	padding:2px;
+}
+
+select.mfp {
+	margin:3px 0;
+}
+
+textarea.mfp {
+	padding:5px;
+}
+
+div#mfp_buttons {
+	width:750px;
+}
+
+div#mfp_buttons ul {
+	margin:20px 0 0 145px;
+	height:60px;
+	overflow:hidden;
+}
+
+div#mfp_buttons ul li {
+	float:left;
+	width:235px;
+	height:60px;
+	overflow:hidden;
+}
+
+div.mfp_phase_buttons {
+	margin-top:20px;
+	height:60px;
+}
+
+input.mfp_phase_next {
+	float:right;
+	background:url(../images/mfp_next.gif);
+}
+
+input.mfp_phase_prev {
+	float:left;
+	background:url(../images/mfp_prev.gif);
+}
+
+input.mfp_phase_next, input.mfp_phase_prev {
+	width:200px;
+	height:60px;
+	border:none;
+	border-style:none;
+	text-indent:-5000px;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+input#button_mfp_goconfirm {
+	width:235px!important;
+	height:60px;
+	border:none;
+	border-style:none;
+	background:#FFF url(../images/mfp_goconfirm.gif);
+	/*text-indent:-5000px;*/
+	overflow:hidden;
+	cursor:pointer;
+}
+
+input#button_mfp_reset {
+	width:235px!important;
+	height:60px;
+	border:none;
+	border-style:none;
+	background:#FFF url(../images/mfp_reset.gif);
+	overflow:hidden;
+	cursor:pointer;/*text-indent:-5000px;*/
+}
+
+.reset_over {
+	background-image:url(../images/mfp_reset_over.gif);
+}
+
+.reset_out {
+	background-image:url(../images/mfp_reset.gif);
+}
+
+.confirm_over {
+	background-image:url(..images/mfp_confirm_over.gif);
+}
+
+.confirm_out {
+	background-image:url(../images/mfp_confirm.gif);
+}
+
+table.mailform {
+	margin:0px;
+	padding:0;
+	width:700px;
+}
+
+table.mailform tr th {
+	width:160px;
+	padding:10px;
+	border-bottom:solid 1px #CCC;
+	font-weight:bold;
+	text-align:right;
+	line-height:1.4em;
+	vertical-align:top;
+}
+
+table.mailform tr th span {
+	display:block;
+	color:#999;
+	font-size:10px;
+	font-weight:normal;
+}
+
+table.mailform tr td {
+	padding:10px 20px;
+	border-bottom:solid 1px #CCC;
+	vertical-align:top;
+}
+
+table.mailform tr td ul li, table.mailform tr td ul, table.mailform tr td ol, table.mailform tr td ol li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+table.mailform tr td ul li {
+	padding:0 10px 0 0;
+}
+
+table.mailform tr td p, table.mailform tr td div, table.mailform tr td span {
+	clear:both;
+}
+
+ul.confirm_layer {
+	margin:0;
+	padding:0;
+	width:720px;
+}
+
+ul.confirm_layer li {
+	float:left;
+	margin:0;
+	padding:0;
+	width:720px;
+	text-align:center;
+	list-style:none;
+	overflow:hidden;
+}
+
+li.confirm_middle {
+	background-image:url(../images/mfp_table_background.png?wide);
+	_background:none;
+ _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/mfp_table_background.png', sizingMethod='scale');
+}
+
+li.confirm_top {
+	height:33px;
+	background-image:url(../images/mfp_table_top.png?wide);
+	_background:none;
+ _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/mfp_table_top.png', sizingMethod='scale');
+}
+
+li.confirm_bottom {
+	height:33px;
+	background-image:url(../images/mfp_table_bottom.png?wide);
+	_background:none;
+ _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/mfp_table_bottom.png', sizingMethod='scale');
+}
+
+div#disabled_submit {
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+div#disabled_submit input {
+	margin:10px;
+}
+
+table.infield {
+	margin:0 auto;
+	width:660px;
+}
+
+table.infield tr th {
+	margin:0;
+	padding:5px;
+	width:150px;
+	border-bottom:solid 1px #CCC;
+	color:#232323;
+	font-size:12px;
+	text-align:right;
+}
+
+table.infield tr td {
+	padding:5px;
+	border-bottom:solid 1px #CCC;
+}
+
+table.infield tr td p {
+	margin:0;
+	padding:5px 0 5px 10px;
+	border-left:solid 2px #CCC;
+	font-size:12px;
+	text-align:left;
+	line-height:1.5em;
+}
+
+.mfp_color {
+	background-color:#E8EEF9;
+}
+
+div#confirmWindow {
+	position:fixed!important;
+	position/**/:absolute;
+	top:0;
+	left:0;
+	margin:0;
+	width:100%;
+	height:100%;
+	visibility:hidden;
+	background-color:#000;
+	font-size:12px;
+	text-align:center;
+	_top:expression( document.documentElement && document.documentElement.scrollTop || document.body && body.scrollTop || 0 + 0 + 'px' );
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity:0.8;
+	opacity:0.8;
+	overflow:hidden;
+	z-index:910;
+}
+
+div#confirmBody {
+	position:absolute;
+	margin:0 auto;
+	width:1px;
+	text-align:center;
+	visibility:hidden;
+	z-index:920;
+}
+
+div#confirmBody div.mfp_title {
+	margin:0 auto;
+	padding-top:10px;
+	width:294px;
+	height:33px;
+	color:#FFF;
+}
+
+div.buttons {
+	margin:0 auto;
+}
+
+div#twex {
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	margin:0;
+	background-color:#000;
+	text-align:center;
+	filter:alpha(opacity=60);
+	-moz-opacity:0.60;
+	-khtml-opacity:0.60;
+	opacity:0.60;
+	overflow:hidden;
+	z-index:310;
+}
+
+img#loading_proccess_image {
+	position:absolute;
+	z-index:320;
+}
+
+dl.mailform {
+	margin:0;
+	padding:0 15px;
+}
+
+dl.mailform dt {
+	clear:both;
+	float:left;
+	display:block;
+	padding-top:6px;
+	width:170px;
+	font-size:0.9em;
+	font-weight:normal;
+	text-align:right;
+}
+
+dl.mailform dt span {
+	display:block;
+	margin-top:-10px;
+	color:#999;
+	font-size:10px;
+}
+
+dl.mailform dd {
+	margin:0;
+	padding:10px 10px 15px 190px;
+	border-bottom:solid 1px #CCC;
+	font-size:12px;
+}
+
+dl.mailform dd ul, dl.mailform dd ol {
+	margin:0;
+	padding:0;
+}
+
+dl.mailform dd ul li, dl.mailform dd ol li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+dl.mailform dd ul li {
+	/*float:left;*/
+	padding:0 10px 0 0;
+}
+
+/*// Phase Input Style //*/
+
+div.mfp_phase_section {
+	clear:both;
+	display:none;
+	margin:30px 5px;
+	padding:2px 2px 15px 2px;
+	border:solid 1px #EEE;
+	border-radius:6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-box-shadow:0 0 5px #999;
+	-moz-box-shadow:0 0 5px #999;
+	box-shadow:0 0 5px #999;
+}
+
+p.mfp_caption {
+	margin:10px;
+}
+
+input.mfp_phase_ui {
+	margin:5px auto;
+	padding:3px;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+}
+
+.inquiry h3.mfp_phase_title {
+	margin:0 0 10px 0px!important;
+	padding:5px 15px!important;
+	background-image:url(../images/mfp_h3.png)!important;
+	border-radius:4px!important;
+	-webkit-border-radius:4px!important;
+	-moz-border-radius:4px!important;
+	color:#FFF!important;
+	font-size:21px!important;
+	text-shadow:1px 1px 1px #000!important;
+}
+
+.inquiry h3.mfp_phase_title a, .inquiry h3.mfp_phase_title a:hover {
+	background:none!important;
+	color:#FFF!important;
+	text-decoration:none!important;
+}
+
+ol.mfp_phase_input_proccess {
+	margin:15px;
+	height:40px;
+}
+
+ol.mfp_phase_input_proccess li {
+	float:left;
+	margin:5px;
+	padding:5px 10px;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	font-size:0.8em;
+	font-weight:bold;
+}
+
+li.mfp_phase_disabled {
+	border:solid 1px #999;
+	background:#CCC;
+	-webkit-box-shadow:1px 1px 4px #999;
+	-moz-box-shadow:1px 1px 4px #999;
+	box-shadow:1px 1px 4px #999;
+}
+
+li.mfp_phase_current {
+	border:solid 1px #FFF;
+	background:#EEE url(../images/mfp_h32.png);
+	-webkit-box-shadow:1px 1px 4px #999;
+	-moz-box-shadow:1px 1px 4px #999;
+	box-shadow:1px 1px 4px #999;
+	color:#FFF;
+	text-shadow:1px 1px 1px #000;
+}

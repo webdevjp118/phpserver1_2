@@ -1,0 +1,175 @@
+@use '../global'as g;
+
+.service {
+  margin-top: 135px;
+  background-color: #1A1A1A;
+  background: url(../img/service_01.png) no-repeat center/cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include g.pc {
+    height: 315px;
+
+  }
+
+  @include g.sp {
+    height: 20vh;
+    margin-top: 3.75rem;
+  }
+
+  .serviceTitle {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+
+    @include g.sp {
+      font-size: 2.5rem;
+    }
+
+    span {
+      display: block;
+      font-family: g.$hello;
+      font-size: 68px;
+      display: block;
+      color: #BCF6FF;
+      margin-top: -30px;
+      position: relative;
+      z-index: -1;
+
+      @include g.sp {
+        font-size: 4.375rem;
+      }
+    }
+  }
+}
+
+.parttime {
+  width: 100%;
+  background: url(../img/attention_bg.png) no-repeat center/cover;
+  padding-top: 74px;
+
+  @include g.pc {
+    height: 720px;
+  }
+
+  @include g.sp {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  .parttimeTitle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    color: #BCE4FF;
+    margin-bottom: 82px;
+
+    @include g.sp {
+      margin-bottom: 2em;
+      font-size: 1.5rem;
+    }
+  }
+
+  .parttimeBox {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .parttime_text {
+      color: #fff;
+      font-size: 18px;
+      line-height: 2.3;
+      width: 92%;
+      margin: 0 auto;
+      margin-bottom: 61px;
+
+      @include g.sp {
+        margin-bottom: 2em;
+        font-size: 1.125rem;
+      }
+
+      .bold {
+        font-size: 24px;
+        font-weight: 900;
+
+        @include g.sp {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .flex {
+      margin-bottom: 61px;
+
+      @include g.pc {
+        display: flex;
+        justify-content: center;
+      }
+
+      @include g.sp {
+        margin-bottom: 3em;
+      }
+
+      span {
+        font-size: 28px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #271F46;
+        border: 1px solid #3674D2;
+        padding: 0.5em 1em;
+        margin-right: 12px;
+
+        @include g.sp {
+          font-size: 1.55rem;
+          display: block;
+          width: 90%;
+          margin: 0 auto;
+          text-align: center;
+          margin-bottom: 1em;
+        }
+
+        @include g.pc {
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .parttime_text02 {
+      font-size: 22px;
+      color: #fff;
+      line-height: 2;
+      width: 92%;
+      margin: 0 auto;
+
+      @include g.sp {
+        width: 90%;
+        font-size: 1.375rem;
+      }
+    }
+  }
+}
+
+.figure {
+  width: 100%;
+  padding-top: 100px;
+
+  @include g.pc {
+    height: 645px;
+  }
+
+  @include g.sp {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  .serviceFigure {
+    text-align: center;
+  }
+}

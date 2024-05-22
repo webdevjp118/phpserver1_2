@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Yu Gothic';
+    src: url('../fonts/YuGothic-Bold.eot');
+    src: url('../fonts/YuGothic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/YuGothic-Bold.woff2') format('woff2'),
+        url('../fonts/YuGothic-Bold.woff') format('woff'),
+        url('../fonts/YuGothic-Bold.ttf') format('truetype'),
+        url('../fonts/YuGothic-Bold.svg#YuGothic-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yu Gothic';
+    src: url('../fonts/YuGothic-Regular.eot');
+    src: url('../fonts/YuGothic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/YuGothic-Regular.woff2') format('woff2'),
+        url('../fonts/YuGothic-Regular.woff') format('woff'),
+        url('../fonts/YuGothic-Regular.ttf') format('truetype'),
+        url('../fonts/YuGothic-Regular.svg#YuGothic-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+

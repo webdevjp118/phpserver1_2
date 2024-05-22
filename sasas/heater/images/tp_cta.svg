@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="285" height="70" viewBox="0 0 285 70">
+  <g id="Group_217" data-name="Group 217" transform="translate(-1459 -38)">
+    <rect id="Rectangle_110" data-name="Rectangle 110" width="285" height="70" transform="translate(1459 38)" fill="#f9be00"/>
+    <g id="Group_216" data-name="Group 216">
+      <text id="通話無料" transform="translate(1501 101)" fill="#101010" font-size="14" font-family="NotoSansJP-Bold, Noto Sans JP" font-weight="700"><tspan x="0" y="0">通話無料</tspan></text>
+      <text id="_9:00_18:00_年中無休_" data-name="9:00〜18:00（年中無休）" transform="translate(1570 99)" fill="#101010" font-size="14" font-family="NotoSansJP-Bold, Noto Sans JP" font-weight="700"><tspan x="0" y="0">9:00〜18:00</tspan><tspan y="0" fill="#bb1c21">（年中無休）</tspan></text>
+      <g id="Group_215" data-name="Group 215">
+        <text id="_0120-316-606" data-name="0120-316-606" transform="translate(1492 77)" fill="#101010" font-size="36" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">0120-316-606</tspan></text>
+        <path id="Icon_awesome-phone-alt" data-name="Icon awesome-phone-alt" d="M18.5,13.453,14.33,11.669a.892.892,0,0,0-1.041.257l-1.844,2.253A13.783,13.783,0,0,1,4.856,7.59L7.11,5.746A.89.89,0,0,0,7.366,4.7L5.581.54A.9.9,0,0,0,4.559.023L.692.915A.892.892,0,0,0,0,1.785,17.252,17.252,0,0,0,17.253,19.039a.892.892,0,0,0,.87-.692l.892-3.867A.9.9,0,0,0,18.5,13.453Z" transform="translate(1467.962 54)" fill="#bb1c21"/>
+      </g>
+    </g>
+  </g>
+</svg>

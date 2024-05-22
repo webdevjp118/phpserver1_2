@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- reset -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- 共通CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="headerInner">
+      <div class="headerLogo">
+        <figure class="logo">
+          <img src="img/header_logo.png" alt="">
+        </figure>
+      </div>
+      <div class="navContainer">
+        <nav class="headerNav">
+          <ul class="navList">
+            <li class="navItem"><a href="index.html">HOME<span>トップ</span></a></li>
+            <li class="navItem"><a href="service.html">SERVISE<span>事業内容</span></a></li>
+            <li class="navItem"><a href="message.html">MESSAGE<span>メッセージ</span></a></li>
+            <li class="navItem"><a href="company.html">COMPANY<span>会社概要</span></a></li>
+            <li class="navItem"><a href="contact.html">CONTACT<span>お問い合わせ</span></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="sp">
+        <div class="overlay" id="js-overlay"></div>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="company_top">
+      <h1 class="companyTop_title">
+      会社概要<span>Company</span>
+      </h1>
+    </section>
+    <section class="company">
+      <h2 class="companyTitle">
+        企業理念
+      </h2>
+      <div class="companyBox">
+        <p class="companyText">
+        関わる全ての繋ぎ手となる会社をつくります
+      </p>
+        <h3 class="companyBox_title">
+        会社情報
+      </h3>
+        <dl>
+          <dt>社名</dt>
+          <dd>株式会社レベルスタッフ</dd>
+          <dt>設立日</dt>
+          <dd>平成31年 2月22日</dd>
+          <dt>代表者名</dt>
+          <dd>八伏 秀明</dd>
+          <dt>資本金</dt>
+          <dd>300万円</dd>
+          <dt>住所</dt>
+          <dd>〒101-0047 東京都千代田区内神田1丁目11-11</dd>
+          <dt>TEL</dt>
+          <dd>050-3625-1930</dd>
+          <dt>FAX</dt>
+          <dd>03-5366-8615</dd>
+        </dl>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.4220682340197!2d139.7640536154286!3d35.691229937030684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c042330471f%3A0x657934c7ffb2c78f!2z44CSMTAxLTAwNDcg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65YaF56We55Sw77yR5LiB55uu77yR77yR4oiS77yR77yR!5e0!3m2!1sja!2sjp!4v1667106228589!5m2!1sja!2sjp"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+    </section>
+    <section class="contactSection">
+      <h2 class="contactSection_title">
+        サービスのお問い合せ・申し込みはこちらから
+      </h2>
+      <div class="btnBox">
+        <a href="contact.html" class="btn -type1">お問合せ・申し込み</a>
+        <a href="tel:050-3625-1930" class="btn -type2">
+          <i class="fa-solid fa-phone fa-rotate-90"></i>
+          <div class="tel">
+            050-3625-1930
+            <span>平日：10時〜18時</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <a href="#" class="btn_top"><i class="fa-solid fa-angle-up"></i></a>
+    <div class="flex">
+      <figure class="footerFigure">
+        <img src="img/footer_logo.png" alt="">
+      </figure>
+      <nav class="footerNav">
+        <ul class="footerNav_list">
+          <li class="navItem"><a href="index.html">トップ</a></li>
+          <li class="navItem"><a href="service.html">事業内容</a></li>
+          <li class="navItem"><a href="message.html">メッセージ</a></li>
+          <li class="navItem"><a href="company.html ">会社概要</a></li>
+          <li class="navItem"><a href="#">採用情報</a></li>
+          <li class="navItem"><a href="privacypolicy.html">プライバシーポリシー</a></li>
+          <li class="navItem"><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footerText">
+      Copyright &copy;Level Staff Inc. All Rights Reserved.
+    </div>
+  </footer>
+  <!--JQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!--Scripts-->
+  <script src="js/script.js"></script>
+</body>
+</html>

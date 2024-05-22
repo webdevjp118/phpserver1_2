@@ -1,0 +1,8 @@
+<svg id="Component_22_1" data-name="Component 22 – 1" xmlns="http://www.w3.org/2000/svg" width="331.513" height="112" viewBox="0 0 331.513 112">
+  <text id="分以内" transform="translate(286.513 84.5)" fill="#fff" font-size="30" font-family="NotoSansJP-Bold, Noto Sans JP" font-weight="700"><tspan x="-45" y="0">分以内</tspan></text>
+  <g id="clock01" transform="translate(0 17)">
+    <path id="Path_200" data-name="Path 200" d="M70.252,20.658a3.271,3.271,0,0,0-1.52,4.369A32.381,32.381,0,0,1,71.97,39.256,32.714,32.714,0,1,1,39.257,6.543,32.32,32.32,0,0,1,59.565,13.6a3.271,3.271,0,1,0,4.071-5.121A39.262,39.262,0,1,0,78.513,39.256,38.855,38.855,0,0,0,74.62,22.178a3.268,3.268,0,0,0-4.369-1.52Zm0,0" fill="#fff"/>
+    <path id="Path_201" data-name="Path 201" d="M179.271,64A3.273,3.273,0,0,0,176,67.271v22.9a3.273,3.273,0,0,0,3.271,3.271h16.357a3.271,3.271,0,0,0,0-6.543H182.543V67.271A3.273,3.273,0,0,0,179.271,64Zm0,0" transform="translate(-140.015 -50.915)" fill="#fff"/>
+  </g>
+  <text id="_16" data-name="16" transform="translate(164.013 89)" fill="#f2e724" font-size="92" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-47.334" y="0">16</tspan></text>
+</svg>

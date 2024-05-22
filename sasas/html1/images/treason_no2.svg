@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e50112"/>
+      <stop offset="0.5" stop-color="#d80313"/>
+      <stop offset="0.5" stop-color="#9a0d15"/>
+      <stop offset="1" stop-color="#8d1519"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_240" data-name="Group 240" transform="translate(11396 4708)">
+    <circle id="Ellipse_30" data-name="Ellipse 30" cx="60" cy="60" r="60" transform="translate(-11396 -4708)" fill="url(#linear-gradient)"/>
+    <g id="Ellipse_31" data-name="Ellipse 31" transform="translate(-11390 -4702)" fill="none" stroke="#fff" stroke-width="1">
+      <circle cx="54" cy="54" r="54" stroke="none"/>
+      <circle cx="54" cy="54" r="53.5" fill="none"/>
+    </g>
+    <text id="_2" data-name="2" transform="translate(-11336 -4615)" fill="#fff" font-size="66" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-18.353" y="0">2</tspan></text>
+    <text id="理由" transform="translate(-11336 -4674)" fill="#fff" font-size="20" font-family="NotoSansJP-Bold, Noto Sans JP" font-weight="700"><tspan x="-20" y="0">理由</tspan></text>
+  </g>
+</svg>

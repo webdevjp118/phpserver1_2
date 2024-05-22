@@ -1,0 +1,55 @@
+1:HL["/_next/static/css/39de2842fe414f84.css","style",{"crossOrigin":""}]
+0:["vo9eoHMA8LcsPkqAqcITG",[[["",{"children":["recruitment",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/39de2842fe414f84.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+4:HL["/_next/static/css/f905e3f5554554b8.css","style",{"crossOrigin":""}]
+5:I[26892,["594","static/chunks/594-801e7e869e7800da.js","691","static/chunks/691-77de7fd0aed35448.js","396","static/chunks/396-463bce15fd993cfa.js","185","static/chunks/app/layout-bf9433f4deb0f414.js"],""]
+6:I[56954,[],""]
+7:I[7264,[],""]
+2:[null,["$","$L5",null,{"children":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"childProp":{"current":["$","$L6",null,{"parallelRouterKey":"children","segmentPath":["children","recruitment","children"],"loading":"$undefined","loadingStyles":"$undefined","loadingScripts":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$L8","$L9",null],"segment":"__PAGE__"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f905e3f5554554b8.css","precedence":"next","crossOrigin":""}]]}],"segment":"recruitment"},"styles":null}],"params":{}}],null]
+3:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}]]
+8:null
+a:I[45199,["218","static/chunks/aaea2bcf-fb77b6d21c596c9b.js","594","static/chunks/594-801e7e869e7800da.js","691","static/chunks/691-77de7fd0aed35448.js","63","static/chunks/63-0642d3132b99a9d0.js","939","static/chunks/939-fec72ce82445e37f.js","536","static/chunks/536-99ce7723a42d46b8.js","47","static/chunks/47-3540efb08e794dde.js","280","static/chunks/280-fe27f20440f80057.js","199","static/chunks/199-9d8947db1ebccad8.js","596","static/chunks/app/recruitment/page-2ed424e2fef6a2f2.js"],"Typography"]
+b:I[95622,["218","static/chunks/aaea2bcf-fb77b6d21c596c9b.js","594","static/chunks/594-801e7e869e7800da.js","691","static/chunks/691-77de7fd0aed35448.js","63","static/chunks/63-0642d3132b99a9d0.js","939","static/chunks/939-fec72ce82445e37f.js","536","static/chunks/536-99ce7723a42d46b8.js","47","static/chunks/47-3540efb08e794dde.js","280","static/chunks/280-fe27f20440f80057.js","199","static/chunks/199-9d8947db1ebccad8.js","596","static/chunks/app/recruitment/page-2ed424e2fef6a2f2.js"],"Recruitment"]
+c:Td4f,# 募集要項
+
+| | |
+| - | - |
+| 職種 | テクニカルアーティスト・3DCGプログラマー |
+| 求人概要 | Pythonスクリプト開発<br>ウェブアプリケーション開発と運用<br>RIG構築/キャラクターセットアップの実装とテクニカルサポート<br>CGデザイナーの技術的支援（コンサルティング）<br>ゲーム開発/CG映像制作のテクニカルサポート全般<br>Python・Maya経験者優遇、業界未経験者歓迎、ポテンシャル採用有<br>詳細は下記「業務内容」以下をご確認ください。|
+| アピール | 有名タイトル開発案件多数、残業20h/月以内、年間休日120日以上、入社から3か月で有給休暇利用可、福利厚生団体加入 |
+| 給与 | 能力次第（21万円～60万円） |
+| 勤務地 | 横浜駅から徒歩10分 |
+| 選考方法 | オンラインミーティング（Zoom等）による会社説明と複数回の面接。採用まで3週間以内の見込み。 |
+| 連絡先 | info@stu-inc.com<br>タイトル：お名前_採用選考希望<br>添付ファイル：履歴書・職務経歴書<br>※GitHubアカウントや作品などがあれば本文に追記ください。|
+
+
+# 業務内容
+
+弊社の特徴としてアプリケーションのカスタマイズという業務にとらわれず、OS/プラットフォーム上での改善などもミッションとしているため、非常に幅広い業務を担当しています。実際には一人で全ての業務を行うことは不可能ですので、いずれかの業務に集中していただくことになります。
+
+- Pythonスクリプト開発
+  - Autodesk Maya等DCCツールのプラグイン開発
+  - モデリング支援、単調な作業のバッチ処理などから、UnrealEngine, Unityなどゲームエンジンへのデータの橋渡しなどが中心となります。
+- ワークフロー改善/コラボレーション促進のためのウェブアプリケーション開発と運用
+  - Djangoをベースにしたイントラ上のシンプルなウェブアプリの開発や、Mayaと連動したウェブアプリの開発など、アプリケーション開発とインフラ管理の両方を担当していただきます。
+- RIG構築/キャラクターセットアップに関するテクニカルサポートと実装業務
+- CGデザイナーの技術的支援（コンサルティング）
+  - 最新技術の資料作成および口頭説明、不足技術の研究・開発といった支援を行っていただきます。
+- ゲーム開発/CG映像制作に関するテクニカルサポート全般
+
+弊社ではテクニカルアーティストの育成・技術力の向上に力を入れています。業務に必要となる知識や技能を独自の学習ロードマップとしてまとめ、社内研修や評価の指針として活用しています。
+
+
+
+# 応募要項
+
+必須要件
+以下のいずれかの知識があること
+- Autodesk Maya等3DCGアプリケーション
+- プログラミング言語（PythonまたはC++）
+
+歓迎要件
+- Autodesk Maya等3DCGアプリケーションを少なくとも１つは使いこなせる。
+- ゲーム開発、コンピュータグラフィックス制作の実務経験2年以上
+- Pythonスクリプト開発の実務経験2年以上
+- C++での開発実務経験2年以上
+9:[["$","$La",null,{"variant":"h1","children":"採用情報"}],[["$","$Lb","1",{"recruitment":{"id":1,"attributes":{"title":"テクニカルアーティスト・3DCGプログラマー","createdAt":"2023-12-16T07:44:33.100Z","updatedAt":"2023-12-16T08:13:21.114Z","publishedAt":"2023-12-16T07:44:34.664Z","blocks":[{"id":18,"__component":"shared.rich-text","body":"$c"}]}}}]]]

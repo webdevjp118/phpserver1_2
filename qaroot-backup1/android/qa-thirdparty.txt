@@ -1,0 +1,366 @@
+<hitle>	Retrofit	<chare>	1	<pext>	<starting>Retrofit</heading>
+Retrofit is a type-safe REST client built by square for Android and Java
+ which intends to make it simpler to expand RESTful web services.
+Retrofit uses OkHttp as the system’s administration layer and is based on it. Retrofit naturally serializes the JSON reaction utilizing a POJO (PlainOldJavaObject) which must be characterized as cutting edge
+ for the JSON Structure.
+To serialize JSON we require a converter to change it into Gson first.
+Retrofit is much simpler than other libraries; we don’t have to parse our JSON. It directly returns objects but there is one disadvantage:
+ it doesn’t provide support to load images from the server,
+ but we can use Picasso for the same. 
+</ending>	</end>
+<hitle>	Volley	<chare>	1	<pext>	<starting>Volley</heading>
+Volley is an HTTP library that makes networking very easy and fast,
+ for Android apps.
+It was developed by Google and introduced during Google I/O 2013.
+It was developed because there is an absence in Android SDK,
+ of a networking class capable of working without interfering
+ with the user experience.
+Although Volley is a part of the Android Open Source Project(AOSP),
+ Google announced in January 2017 that Volley will move to a standalone library.
+It manages the processing and caching of network requests,
+ and it saves developers valuable time from writing
+ the same network call/cache code again and again.
+</ending>	</end>
+<hitle>	Koin	<chare>	1	<pext>	<starting>Koin</heading>
+Koin is a pragmatic and lightweight dependency injection framework
+ for Kotlin developers.
+Koin is a DSL, a light container and a pragmatic API.
+Koin provides a DSL to help your describe your app
+ instead of annotate it or generate code for it.
+With its Kotlin DSL, Koin offers a smart functional API
+ to achieve to prepare your dependency injection.
+
+startKoin: means run a KoinApplication instance into the GlobalContext.
+
+A Koin module will inject/combine for your application. 
+module  - create a Koin Module
+To describe your content in a module,
+ you can use the following functions:
+factory  - provide a factory bean definition
+single  - provide a singleton bean definition (also aliased as bean)
+get() - resolve a component dependency (also can use name, scope or parameters)
+bind() - add type to bind for given bean definition
+binds() - add types array for given bean definition
+scope  - define a logical group for scoped definition
+scoped - provide a bean definition that will exists only in a scope
+</ending>	</end>
+<hitle>	Moshi	<chare>	1	<pext>	<starting>Moshi</heading>
+Moshi is a modern JSON library for Android, Java and Kotlin.
+It makes it easy to parse JSON into Java and Kotlin classes
+</ending>	</end>
+<hitle>	OkHttp	<chare>	1	<pext>	<starting>OkHttp</heading>
+OkHttp is an efficient HTTP & HTTP/2 client for Android and Java applications. It comes with advanced features, such as connection pooling
+ (if HTTP/2 isn't available), transparent GZIP compression,
+ and response caching, to avoid the network completely for repeated requests.
+OkHTTP is an open source project designed to be an efficient HTTP client.
+It supports the SPDY protocol.
+SPDY is the basis for HTTP 2.0 and allows multiple HTTP requests
+ to be multiplexed over one socket connection.
+</ending>	</end>
+<hitle>	Glide	<chare>	1	<pext>	<starting>Glide</heading>
+Glide, like Picasso, can load and display images from many sources,
+ while also taking care of caching and keeping a low memory impact
+ when doing image manipulations. 
+It provides animated GIF support and handles image loading/caching. Animated GIF support is currently not implemented in Picasso.
+Yes, images play a major role in making the UI of an App more interactive
+ and user-friendly too.
+So, as an Android Developer, we should take care of using images in App.
+We should handle the different aspects of an image
+ like the slow unresponsive image, memory issues, loading errors,
+ and many more.
+If you are not handling these aspects in your application,
+ then your app will make a bad impression on your users.
+</ending>	</end>
+<hitle>	Guice	<chare>	1	<pext>	<starting>Guice</heading>
+Guice is an open-source software framework for the Java platform
+ released by Google under the Apache License.
+It provides support for dependency injection using annotations
+ to configure Java objects.
+Guice allows implementation classes
+ to be bound programmatically to an interface,
+ then injected into constructors, methods or fields
+ using an @Inject annotation.
+When more than one implementation of the same interface is needed,
+ the user can create custom annotations that identify an implementation,
+ then use that annotation when injecting it.
+</ending>	</end>
+<hitle>	Jenkins	<chare>	1	<pext>	<starting>Jenkins</heading>
+Jenkins is an open-source free automation tool
+ used to build and test software projects.
+The tool makes it painless for developers to integrate changes to the project. Jenkins' primary focus is to keep track of the version control system
+ and initiate and monitor a build system if there are any changes.
+It keeps an eye on the entire process
+ and provides reports and notifications to alert.
+</ending>	</end>
+<hitle>	DevOps	<chare>	1	<pext>	<starting>DevOps</heading>
+DevOps is a software engineering approach or culture
+ that unifies the Development and Operations team
+ under an umbrella of tools to automate every stage.
+The Development team is responsible for coding or scripting the software
+ and integrating all the components needed to run that software.
+Meanwhile, the Operations team is responsible
+ for managing the organization's diverse workforce
+ to ensure effective and efficient daily operations.
+</ending>	</end>
+<hitle>	Continuous Integration (CI)	<chare>	1	<pext>	<starting>Continuous Integration (CI)</heading>
+Continuous Integration is a practice
+ that integrates code into a shared repository.
+It uses automated verifications for the early detection of problems.
+Continuous Integration doesn't eliminate bugs
+ but helps in finding and removing them quickly.
+</ending>	</end>
+<hitle>	Continuous Delivery (CD)	<chare>	1	<pext>	<starting>Continuous Delivery (CD)</heading>
+Continuous Delivery is the phase
+ where the changes are made in the code before deploying.
+The team in this phase decides
+ what is to be deployed to the customers and when.
+The final goal of the pipeline is to make deployments.
+</ending>	</end>
+<hitle>	Groovy Jenkins	<chare>	1	<pext>	<starting>Groovy Jenkins</heading>
+1. Apache Groovy is a dynamic object-oriented programming language
+ used as a scripting language for Java platforms. 
+2. Groovy is used to orchestrate the Jenkins pipeline
+ and enables different teams to contribute to the work in different languages. 
+3. Groovy's syntax is very similar to that of Java,
+ making it more seamless with the Java interface. 
+4. The language has several features
+ like Java compatibility and Development support.
+</ending>	</end>
+<hitle>	CI/CD pipeline	<chare>	1	<pext>	<starting>CI/CD pipeline</heading>
+CI/CD Pipeline or Continuous Integration/ Continuous Delivery
+ is considered the DevOps approach's backbone.
+The pipeline is responsible
+ for building codes, running tests, and deploying new software versions.
+</ending>	</end>
+<hitle>	Continuous Deployment (CD)	<chare>	1	<pext>	<starting>Continuous Deployment (CD)</heading>
+Continuous Deployment (CD) is the ultimate stage in the DevOps pipeline.
+It  refers to automatic release of any developer changes from the repository
+ to the production stage. 
+</ending>	</end>
+<hitle>	Jenkins pipeline	<chare>	1	<pext>	<starting>Jenkins pipeline</heading>
+1. The pipeline represents the continuous delivery and continuous integration
+ of all the jobs in the SDLC and DevOps life cycle. 
+2. The Jenkins pipeline is a set of plugins
+ that support implementation and integration
+ of continuous delivery pipelines into Jenkins.
+It connects this pipeline in a particular format by Jenkins.
+3. The Jenkins pipeline solves several problems
+ like the maintenance of thousands of jobs and maintaining deployment
+ with needing to resort to other powerful methods.
+</ending>	</end>
+<hitle>	Jenkins plugins	<chare>	1	<pext>	<starting>Jenkins plugins</heading>
+1. Maven 2 project
+2. Amazon EC2
+3. Copy artifact
+4. Join
+5. HTML publisher
+6. Green Balls
+</ending>	</end>
+<hitle>	Jenkins process	<chare>	1	<pext>	<starting>Jenkins process</heading>
+1. Jenkins checks changes in repositories regularly,
+ and developers must secure their code regularly. 
+2. Once the changes are defined,
+ Jenkins detects them and uses them to prepare a new build.
+3. After that,
+ Jenkins will transverse through various stages in its usual pipeline.
+As one stage completes, the process will move further on to the next stage.
+4. If a stage fails, the Jenkins build will stop there,
+ and the software will email the team using it.
+When completed successfully,
+ the code implements itself in the proper server so that testing begins.
+5. After the successful testing phase,
+ Jenkins shares the results with the team using it.
+</ending>	</end>
+<hitle>	Jenkins file	<chare>	1	<pext>	<starting>Jenkins file</heading>
+Jenkins file is a text file that has a definition of a Jenkins pipeline
+ and is checked into the source control repository.
+It enables code review and iteration on the pipeline.
+It also permits an audit trail for the pipeline.
+</ending>	</end>
+<hitle>	Jenkins DSL	<chare>	1	<pext>	<starting>Jenkins DSL</heading>
+DSL stands for Domain Specific Language.
+Jenkins job DSL is a plugin that allows us 
+to define jobs in the programmatic form with minimal effort.
+You can describe your jobs in Jenkins using a Groovy Based Language.
+They designed Jenkins job DSL plugin to create versions of the job,
+ manage the records.
+</ending>	</end>
+<hitle>	Jenkins environmental variables	<chare>	1	<pext>	<starting>Jenkins environmental variables</heading>
+$JOB_NAME - The name that you give your job when it is first set up.
+$NODE_NAME - This is the name of the node
+ on which the current build is running.
+$WORKSPACE - Refers to the path of the workspace
+$BUILD_URL - Indicates the URL where the results of the builds can be found.
+$JENKINS_URL - This is set to the URL of the Jenkins master
+ that is responsible for running the build.  
+</ending>	</end>
+<hitle>	OkHttp	<chare>	1	<pext>	<starting>OkHttp</heading>
+OkHttp is an efficient HTTP & HTTP/2 client for Android and Java applications.
+It comes with advanced features,
+ such as connection pooling (if HTTP/2 isn’t available),
+ transparent GZIP compression, and response caching,
+ to avoid the network completely for repeated requests.
+It's also able to recover from common connection problems;
+ on a connection failure, if a service has multiple IP addresses,
+ it can retry the request to alternate addresses.
+</ending>	</end>
+<hitle>	Mockito	<chare>	1	<pext>	<starting>Mockito</heading>
+Mockito is an open source testing framework for Java
+ released under the MIT License.
+The framework allows the creation of test double objects
+ in automated unit tests for the purpose of test-driven development
+ or behavior-driven development.
+Mockito allows developers to verify
+ the behavior of the system under test (SUT)
+ without establishing expectations beforehand.
+One of the criticisms of mock objects is that
+ there is a tight coupling of the test code to the system under test,
+ mockito attempts to eliminate the expect-run-verify pattern
+ by removing the specification of expectations.
+Mockito also provides some annotations for reducing boilerplate code.
+</ending>	</end>
+<hitle>	Mockito pros/cons	<chare>	1	<pext>	<starting>Mockito pros/cons</heading>
+pros:
+1. It has support for return values.
+2. It supports exceptions.
+3. It has support for the creation of mock using annotation.
+4. There is no need to write mock objects on your own with Mockito.
+5. The test code is not broken when renaming interface method names
+ or reordering parameters.
+cons:
+1. It cannot mock constructors or static methods.
+2. It requires Java version 6 plus to run.
+3. It also cannot mock equals(), hashCode() methods.
+4. VM mocking is only possible on VMs that are supported by Objenesis.
+</ending>	</end>
+<hitle>	Hamcrest	<chare>	1	<pext>	<starting>Hamcrest</heading>
+Hamcrest is a framework used for writing customized assertion matchers
+ in the Java programming language.
+It allows the match rules to be defined declaratively.
+This makes the hamcrest valuable in UI validation, data filtering,
+ writing flexible tests, etc.
+It can also be used with mock objects by using adaptors.
+Hamcrest can also e used with JUnit and TestNG.
+</ending>	</end>
+<hitle>	Mockito Assert vs Verify	<chare>	1	<pext>	<starting>Mockito Assert vs Verify</heading>
+The Assert command is used to validate critical functionality.
+If this validation fails, then the execution of that test method is stopped
+ and marked as failed.
+In the case of Verify command, the test method continues the execution
+ even after the failure of an assertion statement.
+The test method will be marked as failed
+ but the execution of remaining statements of the test method
+ is executed normally.
+</ending>	</end>
+<hitle>	ArgumentCaptor	<chare>	1	<pext>	<starting>ArgumentCaptor</heading>
+ArgumentCaptor is a class that is used to capture the argument values
+ for future assertions.
+This class is defined in the org.mockito package and can be imported from it.
+Some of the methods present in this class are
+capture(),
+getValue(),
+getAllValues(), and ArgumentCaptor <U> forClass.
+</ending>	</end>
+<hitle>	Mockito annotations	<chare>	1	<pext>	<starting>Mockito annotations</heading>
+@Mock - It is used to create and inject mocked instances.
+@Spy - It is used to create a real object and spy on the real object.
+@Captor - It is used to create an ArgumentCaptor.
+@InjectMocks - It is used to create an object of a class
+ and insert its dependencies.
+</ending>	</end>
+<hitle>	PowerMock	<chare>	1	<pext>	<starting>PowerMock</heading>
+PowerMock is a Java framework for unit testing purposes.
+This framework extends from other mock libraries
+ with more powerful capabilities.
+It uses custom classloader and bytecode manipulation
+ for mocking the static methods, constructors, final classes, private methods, and more.
+It normally lets you test the code that is regarded as untestable.
+</ending>	</end>
+<hitle>	EasyMock	<chare>	1	<pext>	<starting>EasyMock</heading>
+EasyMock is a framework for creating mock objects as it uses Java reflection
+ to create it for a given interface.
+It relieves the user of hand-writing mock objects
+ as it uses a dynamic mock object generator.
+EsayMock pros:
+1. exception support,
+2. return value support,
+3. refactoring scale,
+4. annotation support and order check support.
+</ending>	</end>
+<hitle>	Junit	<chare>	1	<pext>	<starting>JUnit</heading>
+JUnit is a unit testing framework for Java that helps developers
+ test individual pieces of code to ensure that they are functioning as intended.
+In Android development, JUnit is used to test the functionality
+ of Android applications before they are released to the public.
+By using JUnit, developers can catch bugs and errors early on,
+ which makes for a better overall user experience.
+</ending>	</end>
+<hitle>	Unit testing	<chare>	1	<pext>	<starting>Unit testing</heading>
+Unit testing is a software testing strategy that tests single entities
+ like methods or classes at a time.
+This helps to ensure that the product quality is met
+ as per the business requirements.
+It also helps in reducing the technical debt of the application
+ by helping developers discover issues in the code logic due to any changes.
+It also gives insights into
+ how the code logic implemented could impact future changes. 
+</ending>	</end>
+<hitle>	Junit features	<chare>	1	<pext>	<starting>Junit features</heading>
+1. JUnit is an open-source framework.
+2. Supports automated testing of test suites.
+3. Provides annotations for identifying the test methods.
+4. Provides assertions to test expected results or exceptions of the methods
+ under test.
+5. Provides a platform for running test cases automatically
+ and checking their results and giving feedback.
+</ending>	</end>
+<hitle>	JUnit annotations	<chare>	1	<pext>	<starting>JUnit annotations</heading>
+@Test: This annotation over a public method of void return type
+ can be run as a test case.
+This is a replacement of the org.junit.TestCase annotation.
+@Before: This is used when we want to execute the preconditions
+ or any initialisation based statements before running every test case.
+@BeforeClass: This is used when we want to execute statements
+ before all test cases.
+The statements may include test connections, common setup initialisation etc.
+@After: This is used when we want to execute statements after each test case. The statements can be resetting the variables, deleting extra memory used etc.
+@AfterClass: This is used when certain statements are required to be executed
+ after all the test cases of the class are run.
+Releasing resource connections post-execution of test cases is one such example.
+@Ignores: This is used when some statements are required to be ignored
+ during the execution of test cases.
+@Test(timeout=x): This is used when some timeout
+ during the execution of test cases is to be set.
+The value of x is an integer that represents the time
+ within which the tests have to be completed.
+@Test(expected=NullPointerException.class): This is used 
+when some exception thrown by the target method needs to be asserted.
+</ending>	</end>
+<hitle>	JUnit fixture	<chare>	1	<pext>	<starting>JUnit fixture</heading>
+Fixture represents a fixed state of object sets
+ used as a baseline for running test methods.
+This is to ensure there is a fixed and well-known environment
+ where the results of the test methods are repeatable when run multiple times. The fixture has the following 2 methods:
+1. setUp()This runs before every test case is run.
+2. tearDown() This method is run after every test is run.
+</ending>	</end>
+<hitle>	mocking vs stubbing	<chare>	1	<pext>	<starting>mocking vs stubbing</heading>
+Mocking is a phenomenon where an object mimics a real object. Whereas, stubbing are the codes responsible for taking place of another component. Mockito, EasyMock are some of the mocking frameworks in Java
+</ending>	</end>
+<hitle>	stubbing vs mocking	<chare>	1	<pext>	<starting>stubbing vs mocking</heading>
+Mocking is a phenomenon where an object mimics a real object.
+ Whereas, stubbing are the codes responsible
+ for taking place of another component.
+Mockito, EasyMock are some of the mocking frameworks in Java.
+</ending>	</end>
+<hitle>	JUnit Assert	<chare>	1	<pext>	<starting>JUnit Assert</heading>
+Assert methods are utility methods that support assert conditions in test cases. They belong to the Assert class in JUnit 4 and the Assertions class in JUnit 5.
+It is recommended to import the assert methods statically to the test class
+ for avoiding using the class as a prefix to the method.
+</ending>	</end>
+<hitle>	Espresso	<chare>	1	<pext>	<starting>Espresso</heading>
+Espresso is a testing tool for Android that allows you
+ to test the functionality of your app from within the Android Studio IDE.
+With Espresso, you can write tests that simulate user interactions
+ and verify that the results are as expected.
+</ending>	</end>

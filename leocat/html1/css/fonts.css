@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Meiryo' , sans-serif;
+    src: url('../fonts/MeiryoUIW53-Bold.eot');
+    src: url('../fonts/MeiryoUIW53-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MeiryoUIW53-Bold.woff2') format('woff2'),
+        url('../fonts/MeiryoUIW53-Bold.woff') format('woff'),
+        url('../fonts/MeiryoUIW53-Bold.ttf') format('truetype'),
+        url('../fonts/MeiryoUIW53-Bold.svg#MeiryoUIW53-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,388 @@
+@font-face {
+    font-family: 'YuGothic';
+    src: url('././fonts/yugothim.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'YuGothic', sans-serif;
+}
+
+p {
+    line-height: 1.8;
+}
+
+header.navbar {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 0px;
+    line-height: 0;
+}
+
+.navbar-brand img {
+    width: 140px;
+}
+
+.banner-normal,
+.banner-top {
+    background-image: url(../images/card-11.svg);
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.btn-list .btn {
+    flex: 0 0 48%;
+    padding: .6125rem 0.25rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-btn {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 170px;
+    line-height: 1.3;
+    height: 55px;
+    margin: 0 auto;
+}
+
+footer .logo-text {
+    color: #fff;
+}
+
+.login-content {
+    min-height: calc(100vh - 101px);
+}
+
+.section-bg {
+    background: #f9f9f9;
+}
+
+.no-publish {
+    border: solid 1px #EAEAEA;
+    border-radius: 5px;
+    padding: 3px 20px;
+    display: inline-block;
+    background: #FF9900;
+    color: #fff;
+}
+
+.colored-list label.w-100,
+.colored-list .list-group-item-body {
+    padding: 1rem 1rem;
+}
+
+.colored-list label.w-100 {
+    background: #F7F7F7;
+}
+
+.form-check-label,
+.list-group-item-body {
+    color: #677788;
+}
+
+.accordion-item {
+    border: solid 1px rgba(33, 50, 91, .1) !important;
+    border-radius: 5px !important;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    background: rgba(113, 134, 157, .1);
+}
+
+.accordion-flush .accordion-collapse {
+    padding: 0 10px;
+}
+
+.accordion-body {
+    padding: 10px 0 !important;
+}
+
+.accordion-flush .accordion-item .accordion-button {
+    padding: 10px;
+    font-size: 1rem !important;
+    background: transparent;
+}
+
+.card .card-table>tbody>tr:last-child>td,
+.card .card-table>tbody>tr:first-child>td {
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+}
+
+table {
+    border: solid 1px #e7eaf3 !important;
+}
+
+.card .card-table>tbody>tr:nth-of-type(even) {
+    background: #f4f7fd;
+}
+
+.table thead tr th {
+    color: #fff;
+    background: #516C8D;
+}
+
+.table-header {
+    background: #516C8D;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 20px;
+    border: solid 1px #f4f7fd;
+    border-bottom: none;
+}
+
+.table-header.table-header-small {
+    font-size: var(--bs-body-font-size);
+}
+
+.invoice-detail .bg-soft-primary {
+    background: #516C8D !important;
+    color: #fff !important;
+}
+
+.table-responsive-inner {
+    min-width: 940px;
+}
+
+.invoice-area {
+    min-height: 100px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 0;
+}
+
+.invoice-detail-boder {
+    border-radius: 10px !important;
+}
+
+.invoice-detail-boder .small-p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.height-50>div {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.invoice-content-01 {
+    width: 25%;
+}
+
+.invoice-content-02 {
+    width: 15%;
+}
+
+.invoice-content-03 {
+    width: 7.5%;
+}
+
+.modal-footer {
+    border-top: none;
+    justify-content: space-around;
+}
+
+.text-right {
+    text-align: right;
+}
+
+img {
+    max-width: 100%;
+}
+
+.banner-img img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.flow-item img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.top-banner {
+    height: 100%;
+}
+
+.top-banner .top-banner-inner {
+    width: 100%;
+    position: relative;
+}
+
+.top-banner .top-banner-inner h2 {
+    top: 50px;
+    left: 30px;
+    position: absolute;
+    color: #1C2C6F;
+}
+
+.footer-top {
+    background: #6A91C1;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+a.card:hover p {
+    color: #6A91C1 !important;
+}
+
+.btn-primary:hover {
+    opacity: 0.7;
+}
+
+.btn-white:hover {
+    background: #1C2C6F;
+    color: #fff;
+}
+
+.go-to:focus:hover,
+.go-to:hover {
+    background: #6A91C1;
+}
+
+footer .text-white-50 {
+    text-align: center;
+    margin: 0;
+}
+
+.form-check .form-check-label a,
+.form-label-link,
+.accordion-button:hover,
+.accordion-button:not(.collapsed),
+.breadcrumb .breadcrumb-item a {
+    color: #6A91C1;
+}
+
+.list-group-item-body .btn-white:hover,
+.page-link:hover {
+    color: #fff;
+    background: #1C2C6F;
+}
+
+.list-group-item-body .btn-white {
+    color: #fff;
+    background-color: #6A91C1;
+}
+
+.modal-body textarea {
+    width: 100%;
+    height: 150px;
+}
+
+.modal-body .text-small {
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
+
+.modal-body .text-small span {
+    color: red;
+    margin-left: 15px;
+}
+
+.space_p {
+    height: 1px;
+}
+
+.company-main-pic {
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.company-text-color {
+    color: #6A91C1;
+}
+
+.common-text-title {
+    background-color: #1c2c6F;
+    margin: 0;
+    padding: 30px 0;
+    color: #fff;
+}
+
+.privacy-text span {
+    margin-left: 20px;
+}
+
+.lh-18 {
+    line-height: 1.8;
+}
+
+.top-section {
+    padding-top: 150px;
+}
+
+.arrow {
+    height: 0;
+    width: 0;
+    border-top: 30px solid #1C2C6F;
+    border-right: 80px solid transparent;
+    border-left: 80px solid transparent;
+}
+
+@media (max-width: 992px) {
+    .nav-item .btn {
+        margin-top: 15px;
+    }
+    .section {
+        padding: 50px 0;
+    }
+
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .top-section {
+        padding-top: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* .top-banner {
+        height: 400px;
+    } */
+    .banner-top .col-lg-4 {
+        margin-top: 50px;
+    }
+    .card-body {
+        padding: 1rem !important;
+    }
+    .navbar-brand img {
+        width: 140px;
+    }
+    .navbar {
+        padding: 10px 0;
+    }
+    footer .row .col-sm:nth-of-type(3) {
+        padding-top: 0.45rem;
+        padding-bottom: 0.45rem;
+    }
+
+    .card-lg>.card-header {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .arrow {
+        border-top: 20px solid #1C2C6F;
+        border-right: 50px solid transparent;
+        border-left: 50px solid transparent;
+    }
+}

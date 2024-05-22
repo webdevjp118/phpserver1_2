@@ -1,0 +1,1838 @@
+@media(min-width:0px) and (max-width:767px){
+.container{max-width:100%;}
+
+
+.common_title_hp h2{font-size:30px; line-height:50px;}
+.common_title_hp p{font-size:15px; line-height:21px;}
+
+
+.common_btn_hp{font-size:15px;}
+.common_btn_hp img{margin-left:10px;}
+
+
+
+/*--------------- HEADER_START --------------*/
+#header{ padding:0;}
+.header-left-hp{ width:90px; }
+.header-in-hp { height:60px; padding: 0 15px; }
+.header-left-hp{width:214px;}
+.header-left-mobile-hp{display:block;}
+.mobile-menu-hp{display: flex; align-items: center; justify-content: end;}
+.header-right-hp{width:calc(100% - 214px);}
+
+.navigation-hp{ min-height:inherit;}
+.navigation-main-hp{ display:none; background:#ffffff; position:fixed; top:60px; left:0px; height:calc(100vh - 60px); width:100%; padding:0 0px 0 0; overflow-y:scroll;}
+.navigation-main-hp > ul{ text-align:center; width:100%; text-align:left; padding:0px;} 
+.navigation-main-hp > ul > li{ width:100%; padding:0px;  }
+.navigation-main-hp > ul > li > a{ padding:20px 40px 20px 15px; line-height:inherit; color: #000; border-bottom:1px solid #E9F2EE; background:none; background-size:20px; }
+.navigation-main-hp > ul > li > a:before{ display:none;}
+.navigation-main-hp > ul > li > a.contact-btn-hp{ margin:20px auto; background:#3E9B4C url(../images/white_arrow.png) no-repeat right 20px center; background-size:20px; border:1px solid #3E9B4C; text-align:left; padding:0 25px; max-width:280px;}
+.navigation-main-hp > ul > li.dropdown.show > a{ background:#348441 url(../images/up_arrow_menu.png) no-repeat right 15px center; background-size:16px; color:#fff; border-bottom:1px solid #348441; }
+.dropdown-menu-in{ padding:30px 0; }
+.product-info-left-hp{ width:100%;}
+.product-info-right-hp{ width:100%; padding-left:0px; padding-top:20px; }
+.search-box-hp{ width:100%; margin-bottom:10px;}
+.search-box-main-hp{ padding-bottom:0px;}
+.navigation-main-hp > ul > li > a.header_btn_hp{ min-width:100%; margin:0; }
+
+
+/*--------------- HEADER_END --------------*/
+
+
+
+/*--------------- CONTAIN_START --------------*/
+#contain{ margin:60px 0 0 0; padding:0px; }
+
+
+.banner_block_hp{padding:0 0 50px 0;}
+.banner_top_hp a{display:block;}
+.banner_left_info_hp{width:100%; font-size:25px; line-height:50px; padding-left:0px; text-align:center; }
+.banner_right_img_hp{width:100%;     padding-top: 15px; }
+.banner_right_img_hp img{width:100%; border-radius:100px 0 0 100px;}
+
+
+
+.topics_block_hp{padding:0 0 50px 0;}
+.topics_top_hp{display:block; text-align:center;}
+.topics_btn_hp{padding-top:20px;}
+.topics_grid_hp{justify-content:center; padding-top:20px;}
+.topics_bottom_hp{padding-top:30px;}
+.topics_box_hp{margin-right:0px; width: 300px; }
+.topics_bottom_hp .topics_slider{ margin:0 0 0 15px; } 
+.topics_info_hp{padding-top:10px;}
+.topics_date_hp{padding-top:10px;}
+
+.cover_block_hp { padding: 30px 0; }
+	
+
+.sightseeing_block_hp{padding:50px 0 0 0;}
+.sightseeing_block_hp:after{display:none;}
+.sightseeing_middle_hp:after{top:30px; left:0; width:100%; height:calc(100% - 0px); border-radius:0 300px 300px 0;}
+.sightseeing_boxes_hp{display:block;}
+.sightseeing_box_hp{width:100%; margin:0 0px 40px 0;}
+.sightseeing_box_hp:last-child(2n){margin-bottom:0;}
+.sightseeing_title_hp{padding-top:20px; font-size:24px; line-height:35px;}
+
+
+
+.about_block_hp{padding:50px 0 100px 0;}
+.about_top_hp{display:block;}
+.about_left_hp{width:100%; position:relative; padding-right:0px; margin-top:0; text-align: center; }
+.about_left_box_hp{ right: 20px; bottom: -30px;}
+.about_left_box_img_hp{width:167px;}
+.about_left_box_info_hp{font-size:12px; line-height:20px; padding-top:15px;}
+.about_right_hp{width:100%; padding-top:40px; text-align:center;}
+.about_title_hp{ padding-bottom:20px;}
+.about_title_hp h3{font-size:15px; line-height:20px;}
+.about_title_hp h2{font-size:22px; line-height:30px;}
+.about_info_hp{font-size:14px; line-height:30px;}
+.about_btn_hp{padding-top:25px;}
+
+
+
+.taxi_block_hp{padding:0 0 50px 0;}
+.taxi_top_hp{display:block;}
+.taxi_img_hp{width:100%; margin-top:-50px;}
+.taxi_right_hp{width:100%; padding-left:0px; padding:30px 20px 0 20px;}
+.taxi_info_hp{max-width:100%;}
+.taxi_subinfo_hp{font-size:16px; line-height:19px;}
+.taxi_btn_hp{padding-top:20px;}
+
+.taxi_change_hp{margin:80px 0 0 0;}
+.taxi_change_hp .taxi_right_hp{padding-left:0; padding-right:0px;}
+.taxi_change_hp .taxi_info_hp{max-width:360px; margin-left: auto; margin-right: 0;}
+
+
+
+.news_block_hp{padding:60px 0;}
+.news_top_hp{display:block;}
+.news_left_hp{width:100%;}
+.news_btn_hp{padding-top:0px;}
+.news_right_hp{width:100%; padding-top:30px;}
+.news_box_hp a{display:block; padding:23px 0 21px;}
+.news_box_title_hp{width:100%; font-size:15px; line-height:21px;}
+.news_box_info_hp{width:100%; padding-left:0px; font-size:16px; padding-top:20px;}
+
+
+
+.contact_block_hp{min-height:150px; padding:50px; margin:0 20px -130px 0;}
+.contact_top_hp{display:block;}
+.contact_subinfo_hp{font-size:15px; line-height:18px; padding-top:30px;}	
+.contact_num_hp{font-size:30px; line-height:40px;}
+.contact_btn_hp{padding-top:30px;}
+
+
+/*--------------- CONTAIN_END --------------*/
+
+
+
+/*--------------- FOOTER_START --------------*/
+
+
+.back-to-top{position:fixed; right:21px; bottom:27px; z-index:99; display:none; width:17px; height:76px; line-height:60px; text-align:center;}
+
+.footer_middle_hp{padding:160px 15px 40px 15px;}
+.footer_top_hp{display:block;}
+.footer_logo_hp{width:300px; margin:auto;}
+.footer_info_hp{padding-top:30px; text-align:center;}	
+.footer_subinfo_hp{padding-top:20px; text-align:center;}
+.footer_links_hp{padding-top:30px;}
+.footer_links_hp ul{flex-wrap:wrap;     justify-content: center; }
+.footer_links_hp ul li{padding:0 49px 20px 0;}
+.footer_links_hp ul li:nth-child(4n){padding-right:0;}
+
+
+.footer_pd_hp{padding:40px 15px;}
+
+
+
+/*--------------- FOOTER_END --------------*/
+
+
+/*--------------- 02_about_START --------------*/
+
+
+.company_block_ap{padding-top:40px;}
+
+
+.breadcrumb_block_sp{padding:40px 0 0 0;} 
+
+
+.banner_block_ap{padding-top:40px;}
+
+
+.about_pd_ap{padding:40px 0 0 0;}
+
+
+.service_block_ap{padding-top:40px;}
+.service_middle_ap{padding-top:30px;}
+.service_title_ap{font-size:20px; line-height:28px;}
+.service_grid_ap{display:block;}
+.service_grid_ap{border-top:none; margin-bottom:20px; border:1px solid #ccc;}
+.service_subtitle_ap{width:100%; padding:20px 10px; text-align:center; border-right:none;}
+.service_subtitle_ap:last-child{border-top:none;}
+.service_info_ap{width:100%; padding:20px 10px; text-align:center;}
+
+
+.service_middle_box_ap{padding-top:40px;}
+.service_box_ap{display:block;}
+.service_left_ap{width:100%; margin-right:0;}
+.service_align_ap .service_info_ap{padding:20px; text-align:center;}
+.service_pd_ap{padding-left:0;}
+.service_right_ap{width:100%; padding-top:40px;}
+
+
+
+.service_middle_row_ap{padding-top:40px;}
+.service_scroll_1_ap{overflow:scroll;}
+.service_table_ap{margin-top:22px; width:1171px;}
+.service_table_left_ap{width:230px;}
+.service_table_right_ap{width:calc(100% - 230px);}
+.service_right_price_ap{border-left:1px solid #CCCCCC; border-right:none;}
+
+
+
+
+.service_bottom_left_title_ap{font-size:14px; line-height:20px; padding:15px;}
+.service_bottom_left_digit_ap{width:30px; font-size:14px; line-height:20px; padding:15px;}
+.service_bottom_left_info_ap{width:calc(100% - 30px); font-size:12px; line-height:26px; padding:15px 7px;}
+.service_bottom_left_date_ap{font-size:11px; line-height:20px; padding:15px 5px;}
+.service_bottom_right_title_ap{font-size:9px; line-height:14px; padding:10px;}
+.service_bottom_right_info_ap{font-size:9px; line-height:18px; padding:10px;}
+.service_bottom_right_numbers_ap{font-size:14px; padding:10px;}
+
+
+
+.equipment_block_ap{padding-top:40px;}
+.equipment_middle_ap{padding-top:40px;}
+.equipment_table1_ap{overflow:scroll;}
+.equipment_top_ap{width:1171px;}
+.equipment_width_ap{display:block;}
+.equipment_padding_ap{margin-top:40px; width:1171px;}
+
+
+
+
+.message_block_ap{padding-top:40px;}
+.message_middle_ap{padding:30px 15px; min-height:410px;}
+.message_info_ap{font-size:14px; line-height:28px; padding-top:15px; text-align:center;}
+.message_name_ap{padding-top:30px; text-align:center;}
+
+
+
+.history_block_ap{padding-top:40px;}
+.history_top_ap{padding-top:40px;}
+.history_date_ap{width:120px; font-size:16px; line-height:21px;}
+.history_info_ap{width:calc(100% - 120px); font-size:12px; line-height:20px;}
+
+
+
+.companyinfo_block_ap{padding:60px 0;}
+.companyinfo_top_ap{padding-top:30px;}
+
+
+/*--------------- 02_about_END --------------*/
+
+
+
+/*-----------------------03_taki_start----------------------*/
+
+
+.comfortable_change_tp.inquiries_block_cp{padding:30px 0 0 0;}
+.comfortable_title_tp{font-size:18px; line-height:35px;} 
+.comfortable_btn_tp{padding-top:40px;}
+.comfortable_btn_tp a{font-size:10px; line-height:30px; min-width:100%; padding:18px 10px;}
+.comfortable_btn_tp img{right:10px;}
+.comfortable_top_tp{padding:40px 0; display:block;}
+.comfortable_tab_tp{width:100%; margin:0 0 20px 0; text-align:center;}
+.comfortable_tab_tp:last-child{margin-bottom:0;}
+
+.inquiries_box_info_cp a{ padding-top:5px; } 
+
+.list_block_tp{padding-top:40px;}
+.list_top_tp{padding-top:40px; display:block;}
+.list_box_tp{width:100%; margin:0 0 40px 0;}
+.list_info_tp{padding-top:15px; text-align:center;}
+.list_info_tp h4{font-size:20px; line-height:30px; padding-bottom:15px;}
+.list_info_tp p{font-size:14px; line-height:28px; padding-top:15px;}
+
+
+
+.fare_change_tp{padding-top:40px;}
+.fare_change_tp .equipment_bottom_ap{width:1170px;}
+.fare_padding_tp{padding-top:40px;}
+.fare_top_tp{width:1170px;}
+
+
+
+.payment_block_tp{padding-top:40px;}
+.payment_top_tp{display:block;}
+.payment_box_tp{padding:20px 15px; width:100%; margin:0 0 40px 0;}
+.payment_title_tp{font-size:18px; line-height:28px;}
+.payment_info_tp{font-size:14px; line-height:28px; padding-top:20px;}
+
+
+
+
+.ticket_block_tp{padding-top:40px;}
+.ticket_top_tp{margin-top:40px;}
+.ticket_title_tp{width:100px; font-size:12px; line-height:20px; padding:30px 8px;} 
+.ticket_info_tp{width:calc(100% - 100px);}
+.ticket_info_tp p{font-size:10px; line-height:20px; padding:10px 5px;}
+
+
+
+.about_block_tp{padding-top:40px;}
+.about_top_tp{width:1170px;}
+.about_left_tp{width:215px; font-size:12px; line-height:20px; padding:15px;}
+.about_right_tp{width:calc(100% - 215px);}
+.about_info_tp{font-size:14px; line-height:28px; padding:15px 10px;}
+.about_width2_tp{padding:15px 20px;}
+.about_pd3_tp{padding-top:40px;}
+
+
+
+.stand_block_tp{padding:40px 0;}
+.stand_map1_tp iframe{max-height:270px;}
+.stand_box_tp{display:block; border-radius:20px;}
+.stand_left_tp{width:100%;}
+.stand_map2_tp iframe{max-height:270px; border-radius:20px;}
+.stand_right_tp{width:100%;}
+.stand_title_tp{font-size:20px; line-height:34px;}
+
+
+
+
+/*-----------------------03_taki_end----------------------*/
+
+
+
+/*-----------------------04_HIRE_START----------------------*/
+
+
+
+.hire_block_hip{padding-top:40px;}
+.hire_top_hip{display:block;}
+.hire_box_hip{width:100%; margin:0 0 20px 0;}
+.hire_info_hip{top:15px; left:15px; max-width:260px;}
+.hire_info_hip h4{font-size:22px; line-height:32px;}
+.hire_info_hip p{font-size:14px; line-height:22px; padding-top:15px;}
+.hire_arrow_hip{width:57px; height:37px;}
+.hire_arrow_hip img{left:9%;}
+
+
+
+
+.luxury_change_hip{padding-top:40px;}
+.luxury_change_hip .list_box_tp{width:100%; margin:0 0 40px 0;}
+.luxury_change_hip .list_info_tp h4{width:100%;}
+
+
+
+.luxurytaxi_link_hip ul li{font-size:12px; padding:0 0 20px 26px; background:url(../images/luxurytaxi_icon.svg) no-repeat top 5px left;}
+
+
+.luxurytaxi_top_hip{padding:30px 15px;}
+.luxurytaxi_title_hip{font-size:18px; line-height:34px;}
+.luxurytaxi_row_hip{display:block; padding-top:20px;}
+.luxurytaxi_grid_hip{width:100%;}
+.luxurytaxi_number_hip{font-size:28px; line-height:60px;}
+.luxurytaxi_info_hip{padding-top:30px;}
+.luxurytaxi_box_hip{padding:20px 15px;}
+.luxurytaxi_box_info_hip ul li{font-size:12px; line-height:28px; padding-left:15px;}
+
+
+
+.car_change_hp{padding-top:40px;}
+
+
+.please_change_hip.inquiry_block_cp{padding:40px 0;}
+.please_change_hip .inquiry_middle_cp{padding:40px 15px;}
+.please_change_hip .contact-form-cop{padding-top:40px; max-width:100%;}
+.please_change_hip .form-field-radio-main-alone-cp{display:block;}
+
+
+/*-----------------------04_HIRE_END----------------------*/
+
+
+
+/*--------------- 05-Sightseeing Taxi_START --------------*/
+
+.by_block_in_sgp {
+    padding: 0 10px;
+}
+.by_block_sgp{padding-top:40px;}
+.by_top_sgp{display:block;}
+.by_left_sgp{width:100%;}
+.by_right_sgp{width:100%;}
+
+
+
+.taxis_block_sgp{padding-top:40px;}
+.taxis_title_sgp{font-size:16px; line-height:21px; padding-top:30px;}
+.taxis_change_sgp.inquiries_boxes_cp{padding-top:40px;}
+.taxis_change_sgp .inquiries_box_cp{width:100%; padding:20px;}
+.taxis_change_sgp .inquiries_box_in_cp{font-size:34px; line-height:50px;}
+.taxis_btn_sgp a{padding:15px; min-width:240px;}
+
+
+
+.advantages_block_sgp{padding-top:40px;}
+.advantages_top_sgp{display:block;}
+.advantages_box_sgp{width:100%; margin:0 0 22px 0;}
+.advantages_info_sgp{margin-top:-15px; padding:15px 3px 15px 0;}
+.advantages_info_sgp h5{font-size:17px; line-height:24px;}
+.advantages_info_sgp p{font-size:10px; line-height:20px; padding-top:12px;}
+
+
+
+.vehicle_change_sgp{padding-top:40px;}
+.vehicle_change_sgp .list_box_tp{width:100%; margin:0 0 0 0;}
+.vehicle_change_sgp .list_info_tp{padding-top:30px;}
+
+
+
+.orders_block_sgp{padding:40px 0;}
+.orders_top_sgp{display:block;}
+.orders_box_sgp{width:100%; margin:0 0 40px 0;}
+.orders_box_sgp:last-child{margin-bottom:0;}
+.orders_info_sgp h4{font-size:20px; line-height:30px;}
+.orders_info_sgp p{font-size:13px; line-height:30px; padding-top:15px;}
+
+
+/*-----------------------05-Sightseeing Taxi_END----------------------*/
+
+
+
+/*--------------- 06_Sightseeing_Taxi_2_START --------------*/
+
+
+.taxi_grid_main_stp{display:block;}
+.taxi_grid_width_stp{width:100%;}
+.taxi_info_stp{font-size:13px; line-height:28px;}
+
+
+
+.how_block_stp{padding:40px 0 0 0;}
+.how_info_stp{font-size:14px; line-height:28px; padding-top:20px;}
+
+
+
+
+.tour_block_stp{padding:40px 0 0 0;}
+.tour_box_stp{width:100%;}
+.tour_box_stp:after{display:none;}
+.tour_box_right_stp{margin-top:-10px;}
+.tour_box_margin_stp{margin-top:-10px;}
+.tour_box_right_stp.tour_box_stp:after{display:none}
+.tour_box_right_stp .tour_box_in_stp{padding-left:0; padding-right:0;}
+
+.tour_box_title_stp{justify-content:start;}
+.tour_box_subtitle_stp{font-size:18px; line-height:30px; text-align:left; padding-top:20px;}
+.tour_box_in_stp{padding-right:0; min-height:265px;}
+.tour_box_img_stp{display:none;}
+.tour_img_stp{padding-top:20px;}
+.tour_box_info_stp{font-size:16px; line-height:25px; padding-top:20px;}
+
+
+
+
+.ordinary_change_stp .ordinary_bottom_box_sp{margin-right:0px;}
+.ordinary_bottom_line_stp{font-size:12px; line-height:26px; padding:0 8px 0 20px;}
+
+
+.other_width_stp .other_info_sp{width:100%;}
+
+
+
+
+.form_change_stp .form-field-lable-cop{width:100%;}
+.form_change_stp .form-field-input-cop{width:100%;}
+.form_change_stp .form-field-radio-cp{width:100%;}
+.form-field-input-cop input{margin-bottom:4px;}
+
+
+/*--------------- 06_Sightseeing_Taxi_2_END --------------*/
+
+
+
+
+/*--------------- 07_Sightseeing_START --------------*/
+
+
+.taxi_block_sp{padding:40px 0 0 0;}
+.taxi_top_sp{padding:20px 15px;}
+.taxi_title_sp{font-size:15px; line-height:30px;}
+.taxi_img_sp{padding-top:30px;}
+.taxi_price_sp{padding-left:20px;}
+.taxi_info_sp{font-size:40px; line-height:60px;}
+.taxi_bottom_grid_sp{display:block; width:100%;}
+.taxi_btn_left_sp{width:100%;}
+.taxi_btn_left_sp a{width:100%; font-size:14px; line-height:20px; padding:15px;}
+.taxi_btn_right_sp{width:100%; padding-left:0; padding-top:20px;}
+.taxi_btn_right_sp a{width:100%; font-size:14px; padding:15px;}
+
+
+
+
+.faq_block_sp{padding:40px 0 0 0;}
+.faq_box_qus_sp{padding:15px 10px;}
+.faq_qus_title_sp{width:20px; height:20px; font-size:12px; line-height:18px;}
+.faq_qus_info_sp{width:calc(100% - 20px); padding-left:10px; font-size:16px; line-height:22px;}
+.faq_box_ans_sp{padding:15px 10px;}
+.faq_ans_title_sp{width:20px; font-size:14px;} 
+.faq_ans_info_sp{width:calc(100% - 20px); padding-left:10px; font-size:14px; line-height:20px;}
+
+
+
+
+.hours_block_sp{padding:40px 0 0 0;}
+.hours_top_sp{display:block;}
+.hours_left_sp{width:100%; padding-right:0;}
+.hours_left_title_sp{font-size:14px; line-height:20px;}
+.hours_left_icon_sp{width:15px;}
+.hours_left_info_sp{font-size:10px; line-height:18px; padding-left:9px;}
+.hours_left_info_sp span{font-size:12px;}
+.hours_left_boxes_sp{padding-top:30px;}
+.hours_left_box_sp{margin-bottom:30px;}
+.hours_left_box_in_sp{font-size:9px;}
+.hours_box_grid_left_sp{width:90px;}
+.hours_box_grid_right_sp{width:calc(100% - 90px); padding-left:20px;}
+.hours_box_grid_info_sp{font-size:11px; line-height:20px; padding-top:15px;}
+.hours_right_sp{width:100%; padding-top:40px;}
+.hours_right_in_sp{padding-bottom:40px;}
+.hours_right_title_sp{font-size:20px; line-height:30px;}
+.hours_right_info_sp{font-size:14px; line-height:24px;}
+
+
+
+
+.ordinary_block_sp{padding:40px 0 0 0;}
+.ordinary_title_sp{font-size:16px; line-height:25px; padding:15px;}
+.ordinary_boxes_sp{padding:20px 15px;}
+.ordinary_box_sp{display:block; padding-bottom:30px;}
+.ordinary_left_sp{width:100%;}
+.ordinary_right_sp{width:100%; padding-left:0;}
+.ordinary_right_title_sp{font-size:20px; line-height:34px;}
+.ordinary_right_info_sp{padding-top:15px; font-size:10px; line-height:20px;}
+.ordinary_boxes_pd_sp{padding:20px 15p;}
+.ordinary_grid_sp{display:block; padding-bottom:40px;}
+.ordinary_grid_left_sp{width:100%;}
+.ordinary_grid_right_sp{width:100%;}
+.ordinary_grid_title_sp{font-size:20px; line-height:36px;}
+.ordinary_grid_info_sp{padding-top:15px; font-size:12px; line-height:20px;}
+.ordinary_grid_boxes_sp{display:block;}
+.ordinary_grid_box_sp{width:100%; margin:0 0 20px 0;}
+.ordinary_grid_box_sp:last-child{margin-bottom:0;}
+.ordinary_grid_box_info_sp{font-size:14px; line-height:20px; padding-top:15px;}
+.ordinary_grid_bottom_info_sp{font-size:14px; padding-top:15px;}
+
+.ordinary_bottom_sp{padding:15px;}
+.ordinary_bottom_title_sp{font-size:16px; line-height:34px;}
+.ordinary_bottom_info_sp{padding-top:10px; font-size:10px; line-height:16px;}
+.ordinary_bottom_boxes_sp{display:block;}
+.ordinary_bottom_box_sp{width:100%;}
+.ordinary_bottom_grid_sp{font-size:10px; line-height:20px; width:40px;}
+.ordinary_bottom_arrow_sp{font-size:18px; line-height:22px; padding-left:10px;}
+.ordinary_bottom_price_sp{font-size:30px; line-height:45px; padding-left:10px;}
+.ordinary_bottom_price_in_sp{font-size:20px; line-height:36px;}
+
+
+
+.other_block_sp{padding:40px 0;}
+.other_top_sp{padding:20px;}
+.other_info_sp{font-size:12px; line-height:26px; padding-top:15px;}
+
+
+
+.form_block_sp{padding:40px 0 0 0;}
+.form_middle_sp{padding:40px 15px;}
+.form_change_sp .form-field-lable-cop{width:100%;}
+.form_change_sp .form-field-input-cop{width:100%}
+.form_info_sp{font-size:16px; line-height:21px; padding-bottom:14px;}
+.form-field-flex-cop{display:block; width:100%;}
+
+
+.form_field_name_main_dp{display:block;}
+.form_change_sp .form-field-input-cop{padding-bottom:5px;}
+.form-field-radio-main-alone-cp{display:block;}
+.form-field-radio-main-cp .radio-container-cp{font-size:13px;}
+.form-field-radio-main-cp{display:block;}
+
+
+
+/*--------------- 07_Sightseeing_page_END --------------*/
+
+
+
+/*--------------- 08_recruit_page_START --------------*/
+
+
+
+.movie_block_rp{padding:40px 0 0 0;}
+.movie_info_rp ul{display:block;}
+.movie_info_rp ul li{width:100%; margin:0 0 30px 0;}
+.movie_info_rp ul li:last-child{margin-bottom:0;}
+
+
+
+.driver_block_rp{padding:40px 0 0 0;}
+.driver_img_rp{padding-top:40px;}
+.driver_img_in_rp{width:58px; top:59%; transform:translate(-50%, -41%);}
+
+
+
+.earn_boxes_rp{padding-top:40px;}
+.earn_box_rp{display:block; margin-bottom:40px;}
+.earn_left_rp{width:100%;}
+.earn_right_rp{width:100%; padding:30px 0 0 0; text-align:center;}
+.earn_title_rp p{font-size:18px; line-height:32px;}
+.earn_info_rp{font-size:12px; line-height:24px; padding-top:15px;}
+.earn_reverse_rp .earn_right_rp{padding-left:0px; padding-right:0;}
+
+
+
+.kintetsu_block_rp{padding:40px 0 0 0;}
+.kintetsu_info_rp{padding-top:20px; font-size:12px; line-height:21px;}
+
+
+
+.faq_block_rp{padding:40px 0 0 0;}
+.faq_box_qus_rp{padding:20px 20px 20px 0;}
+.faq_qus_info_rp{font-size:14px; line-height:20px;}
+.faq_ans_rp{font-size:10px; line-height:20px; padding:10px;}
+ 
+
+.session_block_rp{padding:40px 0 0 0;}
+.session_info_rp{padding-top:20px;}
+.session_info_rp p{font-size:13px; padding-bottom:20px;}
+
+
+.application_box_rp{padding:15px 0;}
+.application_left_rp{width:60px; font-size:14px; line-height:20px;}
+.application_right_rp{width:calc(100% - 60px); font-size:10px;}
+.application_right_in_rp p{font-size:11px; line-height:20px; padding-bottom:20px;}
+
+
+
+.company_block_rp{padding:40px 0 0 0;}
+.company_boxes_hp{display:block;}
+.company_box_hp{width:100%; margin:0 0 30px 0;}
+.company_box_hp:last-child{margin-bottom:0;}
+.company_box_title_hp{padding-top:15px;}
+.company_box_title_hp h2{font-size:20px; line-height:30px;}
+.company_box_title_hp p{font-size:12px; line-height:20px; padding-top:15px;}
+
+
+
+.location_block_rp{padding:40px 0;}
+.location_boxes_hp{display:block;}
+.location_box_hp{width:100%; margin:0 0 30px 0;}
+.location_box_title_hp{font-size:22px; line-height:30px;}
+.location_box_in_hp{padding:15px 0;}
+.location_subtitle_hp{font-size:14px; line-height:20px; width:140px;}
+.location_info_hp{font-size:12px; line-height:20px; width:calc(100% - 140px); padding-left:10px;}
+
+.earn_block_rp {
+    padding-top: 20px;
+}
+
+/*--------------- 08_recruit_page_END --------------*/
+
+
+
+/*--------------- 09_contact_page_START --------------*/
+
+
+.inquiries_block_cp{padding:0px 0 20px 0;}
+.inquiries_middle_cp{padding-top:40px;}
+.inquiries_title_cp h2{font-size:22px; line-height:40px;}
+.inquiries_boxes_cp{display:block; padding-top:0px;}
+.inquiries_box_cp{width:100%; margin:0 0 30px 0; padding:30px;}
+.inquiries_box_title_cp{font-size:21px; line-height:40px;}
+.inquiries_box_width2_cp.inquiries_box_title_cp {
+    font-size: 20px;
+    line-height: 33px;
+}
+.inquiries_box_icon_cp{width:30px;}
+.inquiries_box_in_cp{font-size:28px; line-height:60px;}
+.inquiries_bottom_title_cp{font-size:14px; line-height:20px; padding-top: 10px; }
+.inquiries_info_cp p{font-size:12px; line-height:28px; padding-bottom:30px;}
+.inquiries_change_cp .inquiries_box_title_cp{font-size:17px; line-height:30px;}
+
+
+
+.inquiry_block_cp{padding:0 0 40px 0;}
+.inquiry_middle_cp{padding:40px 15px;}
+.inquiry_info_cp h3{font-size:20px; line-height:32px;}
+.inquiry_info_cp h2{font-size:22px; line-height:30px;}
+.inquiry_info_cp p{font-size:14px; line-height:25px; padding-top:30px; max-width:335px;}
+.inquiry_subinfo_cp{font-size:12px; line-height:24px;}
+.inquiry_link_cp a{font-size:14px; line-height:24px;}
+.inquiry_btn_cp button{font-size:14px; line-height:20px; padding:15px 20px; min-width:200px;}
+
+
+
+.contact-form-cop{padding-top:40px;}
+.form-field-cop{display: block;}
+.form-field-lable-cop{width:100%; padding-bottom:15px;}
+.form-field-input-cop{width:100%;}
+.radio-container-cp{font-size:13px; line-height:20px;}
+	
+	
+	
+/*--------------- 09_contact_page_END --------------*/
+
+
+
+/*--------------- 10-confirm_page_START --------------*/
+
+
+.confirm_block_cip{padding:40px 0;}
+.confirm_boxes_cip{padding-top:40px;}
+.confirm_box_cip{padding:15px 0;}
+.confirm_box_left_cip{width:115px; font-size:14px; line-height:20px;}
+.confirm_box_right_cip{width:calc(100% - 115px); font-size:14px;}
+.confirm_btns_cip{display:block; padding-top:30px;}
+.confirm_btn_change_cip{margin-left:0;}
+
+
+
+/*--------------- 10-confirm_page_END --------------*/
+
+
+
+/*--------------- 11_confirm2_page_START --------------*/
+
+
+.completed_block_cop{padding:40px 0;}
+.completed_info_cip{padding-top:30px; font-size:14px; line-height:30px; max-width:400px;}
+
+/*--------------- 11_confirm2_page_END --------------*/
+
+
+
+/*--------------- 12_404_page_START --------------*/
+
+
+.found_block_fp{padding:40px 0;}
+.found_title_fp h2{font-size:75px; line-height:80px;}
+.found_title_fp h3{font-size:30px; line-height:50px;}
+.found_info_fp{font-size:12px; line-height:30px; padding-top:20px;}
+.found_btn_fp{padding-top:40px;}
+.found_btn_fp a{padding:15px; min-width:200px;}
+
+
+/*--------------- 12_404_page_END --------------*/
+
+
+}
+
+@media(min-width:768px) and (max-width:991px){
+.container{max-width:768px;}
+
+.common_title_hp h2{font-size:35px; line-height:50px;}
+
+
+/*--------------- HEADER_START --------------*/
+
+
+#header{ padding:0;}
+.header-left-hp{ width:90px; }
+.header-in-hp { height: 60px; padding: 0 15px; }
+.header-left-hp{width:214px;}
+.header-left-mobile-hp{display:block;}
+.mobile-menu-hp{display: flex; align-items: center; justify-content: end;}
+.header-right-hp{width:calc(100% - 214px);}
+
+.navigation-hp{min-height:inherit;}
+.navigation-main-hp{display:none; background:#ffffff; position:fixed; top:60px; left:0px; height:calc(100vh - 60px); width:100%; padding:0 0px 0 0; overflow-y:scroll;}
+.navigation-main-hp > ul{ text-align:center; width:100%; text-align:left; padding:0px;} 
+.navigation-main-hp > ul > li{ width:100%; padding:0px;  }
+.navigation-main-hp > ul > li > a{padding:20px 40px 20px 15px; line-height:inherit; color: #000; border-bottom:1px solid #E9F2EE; background:none; background-size:20px; }
+.navigation-main-hp > ul > li > a:before{ display:none;}
+.navigation-main-hp > ul > li > a.contact-btn-hp{ margin:20px auto; background:#3E9B4C url(../images/white_arrow.png) no-repeat right 20px center; background-size:20px; border:1px solid #3E9B4C; text-align:left; padding:0 25px; max-width:280px;}
+.navigation-main-hp > ul > li.dropdown.show > a{ background:#348441 url(../images/up_arrow_menu.png) no-repeat right 15px center; background-size:16px; color:#fff; border-bottom:1px solid #348441; }
+.dropdown-menu-in{ padding:30px 0; }
+.product-info-left-hp{ width:100%;}
+.product-info-right-hp{ width:100%; padding-left:0px; padding-top:20px; }
+.search-box-hp{ width:100%; margin-bottom:10px;}
+.search-box-main-hp{ padding-bottom:0px;}
+.navigation-main-hp > ul > li > a.header_btn_hp{ min-width:100%; margin:0; }
+
+
+/*--------------- HEADER_END --------------*/
+
+
+
+/*--------------- CONTAIN_START --------------*/
+#contain{ margin:60px 0 0 0; padding:0px; }
+
+
+
+.banner_block_hp{padding:0 0 80px 0;}
+.banner_left_info_hp{width:250px; font-size:40px; line-height:80px; padding-left:10px;}
+.banner_right_img_hp{width:calc(100% - 250px);}
+.banner_right_img_hp img{width:100%; border-radius:200px 0 0 200px;}
+
+
+
+.topics_block_hp {padding: 0 0 80px 0;}
+.topics_bottom_hp .topics_slider {
+    margin: 0 0px 0 calc(50% - 369px);
+}
+
+
+
+.cover_block_hp{padding:50px 0;}
+
+
+
+.sightseeing_block_hp{padding:80px 0 0 0; }
+.sightseeing_block_hp:after{display:none;}
+.sightseeing_box_hp{width:calc(50% - 15px); margin:0 30px 30px 0;}
+.sightseeing_title_hp{padding-top:20px; font-size:25px; line-height:40px;}
+
+
+
+.about_block_hp{padding:90px 0 80px 0;}
+.about_left_hp{padding-right:52px;}
+.about_left_box_img_hp{width:127px;}
+.about_left_box_info_hp{font-size:12px; line-height:20px; padding-top:15px;}
+.about_title_hp{padding-bottom:20px;}
+.about_title_hp h3{font-size:16px; line-height:23px;}
+.about_title_hp h2{font-size:20px; line-height:42px;}
+.about_info_hp{font-size:15px; line-height:30px;}
+.about_btn_hp{padding-top:30px;}
+
+
+.taxi_block_hp{padding:0 0 30px 0;}
+.taxi_img_hp{width:500px; margin-top:-80px;}
+.taxi_img_hp img{border-radius:0 200px 200px 0;}
+.taxi_right_hp{width:calc(100% - 500px); padding:20px;}
+.taxi_info_hp { max-width: 360px; }
+.taxi_subinfo_hp{font-size:17px;}
+.taxi_btn_hp{padding-top:10px;}
+.taxi_change_hp{margin:100px 0 0 0;}
+.taxi_change_hp .taxi_right_hp{padding:20px;}
+.taxi_change_hp .taxi_img_hp img{border-radius:200px 0 0 200px;}
+.taxi_change_hp .taxi_info_hp{max-width:360px; margin-left: auto; margin-right: 0;}
+
+
+
+.news_block_hp{padding:80px 0;}
+.news_left_hp{width:200px;}
+.news_btn_hp{padding-top:20px;}
+.news_right_hp{width:calc(100% - 200px);}
+.news_box_hp a{padding:15px 0;}
+.news_box_title_hp{width:106px;}
+.news_box_info_hp{width:calc(100% - 106px); padding-left:10px;}
+
+
+
+.contact_block_hp{min-height:300px; margin:0 20px -90px 0;}
+.contact_subinfo_hp{font-size:15px;}	
+.contact_num_hp{font-size:30px; line-height:50px;}
+
+/*--------------- CONTAIN_END --------------*/
+
+
+
+/*--------------- FOOTER_START --------------*/
+
+.footer_middle_hp{padding:150px 15px 50px 15px;}
+.footer_logo_hp{width:280px;}
+.footer_info_hp{padding-top:30px;}
+.footer_subinfo_hp{padding-top:20px;}
+.footer_links_hp ul li{font-size:10px; line-height:14px; padding-right:20px;}
+.footer_copyright_hp{font-size:12px;}
+
+.footer_pd_hp{padding:60px 15px;}
+
+
+/*--------------- FOOTER_END --------------*/
+
+
+
+/*--------------- 02_about_START --------------*/
+
+
+.company_block_ap{padding-top:60px;}
+
+
+.banner_block_ap{padding-top:60px;}
+
+
+.about_pd_ap{padding:60px 0 0 0;}
+
+
+.service_block_ap{padding-top:60px;}
+.service_middle_ap{padding-top:60px;}
+.service_title_ap{font-size:20px; line-height:30px;}
+.service_subtitle_ap{font-size:14px; line-height:20px; width:200px; padding:21px;}
+.service_info_ap{font-size:14px; line-height:20px; width: calc(100% - 200px);}
+
+
+.service_middle_box_ap{padding-top:60px;}
+.service_align_ap .service_info_ap{padding:20px 55px 20px 20px;}
+.service_pd_ap{padding-left:29px;}
+
+
+.service_middle_row_ap{padding-top:60px;}
+
+
+
+.service_table_left_ap{width:200px;}
+.service_table_right_ap{width:calc(100% - 200px);}
+.service_table_right_name_ap{font-size:11px; line-height:20px; padding:10px;}
+.service_right_price_ap{font-size:14px; line-height:20px; padding:20px 10px;}
+
+
+
+.service_bottom_left_title_ap{font-size:14px; line-height:20px; padding:20px 10px;}
+
+.service_bottom_left_digit_ap{width:50px; font-size:15px; line-height:20px; padding:15px 10px;}
+.service_bottom_left_info_ap{width:calc(100% - 50px); font-size:12px; line-height:19px; padding:15px 7px;}
+.service_bottom_left_date_ap{font-size:11px; line-height:18px; padding:15px 5px;}
+
+.service_bottom_right_title_ap{font-size:11px; line-height:20px; padding:15px 5px;}
+.service_bottom_right_info_ap{font-size:10px; line-height:20px; padding:15px 5px;}
+.service_bottom_right_numbers_ap{font-size:14px; line-height:20px; padding:15px 10px;}
+
+
+
+.equipment_block_ap{padding-top:60px;}
+.equipment_middle_ap{padding-top:60px;}
+.equipment_title_ap{padding:15px 10px; font-size:11px;}
+.equipment_subtitle_ap{font-size:14px; line-height:20px; padding:15px 17px;}
+.equipment_date_ap{font-size:12px; line-height:20px; padding:15px 8px;}
+.equipment_padding_ap{margin-top:60px;}
+.equipment_bottom_left_ap{width:180px;}
+.equipment_bottom_right_ap{width:calc(100% - 180px);}
+.equipment_bottom_width1_ap{padding:15px;}
+.equipment_bottom_middle_table_ap{width:280px;}
+.equipment_bottom_grid_name_ap{font-size:12px; line-height:18px; width:76px; padding:15px 8px;}
+.equipment_bottom_grid_align_ap{width:calc(100% - 76px);}
+.equipment_bottom_grid_info_ap{font-size:12px; line-height:18px; width:120px; padding:15px 8px;}
+.equipment_bottom_grid_digit_ap{font-size:12px; line-height:18px; width:76px; padding:15px 8px;}
+.equipment_bottom_pd_ap{padding:0;}
+.equipment_bottom_detail_table_ap{width:calc(100% - 280px); padding:0 10px 0 12px;}
+.equipment_bottom_detail_table_ap p{font-size:12px; line-height:20px; padding-top:15px;}
+
+
+
+
+.message_block_ap{padding-top:60px;}
+.message_middle_ap{min-height:370px; padding:25px;}
+.message_info_ap{font-size:12px; line-height:26px; padding-top:25px; max-width:420px;}
+.message_name_ap{padding-top:40px;}
+.message_name_ap h5{font-size:24px; line-height:32px; padding-top:10px;} 
+
+
+
+.history_block_ap{padding-top:60px;}
+
+
+
+.companyinfo_block_ap{padding:60px 0;}
+
+
+/*--------------- 02_about_END --------------*/
+
+
+
+/*-----------------------03_taki_start----------------------*/
+
+
+.comfortable_change_tp.inquiries_block_cp{padding:60px 0 0 0;}
+.comfortable_title_tp{font-size:22px; line-height:42px;} 
+.comfortable_btn_tp{padding-top:60px;}
+.comfortable_btn_tp a{font-size:16px; line-height:30px; min-width:650px; padding:15px;}
+.comfortable_top_tp{padding:40px 5px 0 5px;}
+.comfortable_tab_tp{width:calc(25% - 11px); margin-right:15px;}
+.comfortable_tab_tp a{font-size:10px; line-height:16px; min-width:170px; padding:12px 10px;}
+
+
+
+.list_block_tp{padding-top:60px;}
+.list_box_tp{width:calc(50% - 8px); margin:0 15px 40px 0;}
+.list_info_tp h4{font-size:20px; line-height:28px; padding-bottom:15px;}
+.list_info_tp p{font-size:13px; line-height:25px; padding-top:15px;}
+
+
+
+.fare_change_tp{padding-top:60px;}
+.fare_change_tp .equipment_subtitle_ap{padding:15px 19px;}
+.fare_change_tp .equipment_bottom_width1_ap{padding:15px 10px;}
+
+
+
+.fare_padding_tp{padding-top:60px;}
+.fare_left_tp{width:calc(100% - 280px);}
+.fare_right_tp{width:280px;}
+.fare_title_tp{font-size:10px; line-height:18px; padding:15px 4px;}
+.fare_subtitle_tp{font-size:14px; line-height:20px; padding:15px 10px;}
+.fare_subtitle_bg_tp{padding:15px;}
+.fare_info_tp{font-size:12px; line-height:18px; padding:10px 10px 15px 15px;}
+
+
+
+.payment_block_tp{padding-top:60px;}
+.payment_box_tp{padding:25px 15px; width:calc(50% - 8px); margin:0 15px 40px 0;}
+.payment_title_tp{font-size:18px; line-height:28px;}
+.payment_info_tp{font-size:14px; line-height:28px; padding-top:20px;}
+
+
+
+
+.ticket_block_tp{padding-top:30px;}
+.ticket_title_tp{width:200px; font-size:14px; line-height:20px; padding:20px 10px;} 
+.ticket_info_tp{width:calc(100% - 200px);}
+.ticket_info_tp p{font-size:13px; line-height:22px; padding:15px;}
+
+
+
+.about_block_tp{padding-top:60px;}
+.about_left_tp{width:200px; font-size:13px; line-height:20px; padding:15px 10px;}
+.about_right_tp{width:calc(100% - 200px);}
+.about_info_tp{font-size:14px; line-height:20px; padding:15px 10px;}
+.about_width2_tp{padding:15px 10px;}
+
+
+
+.stand_block_tp{padding:60px 0;}
+.stand_top_tp{padding-top:40px;}
+.stand_box_tp{border-radius:20px;}
+.stand_left_tp{width:520px;}
+.stand_right_tp{width:calc(100% - 520px); padding:20px;}
+.stand_title_tp{font-size:20px; line-height:30px;}
+.stand_info_tp ul li{font-size:13px; line-height:24px;}
+
+
+
+/*-----------------------03_taki_end----------------------*/
+
+
+
+/*-----------------------04_HIRE_START----------------------*/
+
+
+
+.hire_block_hip{padding-top:60px;}
+.hire_box_hip{width:calc(50% - 8px); margin:0 15px 20px 0;}
+.hire_info_hip{top:15px; left:15px; max-width:280px;}
+.hire_info_hip h4{font-size:24px; line-height:35px;}
+.hire_info_hip p{font-size:14px; line-height:24px; padding-top:15px;}
+.hire_arrow_hip{width:57px; height:37px;}
+.hire_arrow_hip img{left:7%;}
+
+
+
+
+.luxury_change_hip{padding-top:60px;}
+.luxury_change_hip .list_box_tp{width:calc(50% - 8px); margin:0 15px 45px 0;}
+.luxury_change_hip .list_info_tp h4{width:300px;}
+
+
+.luxurytaxi_link_hip ul li{font-size:12px; padding:0 0 20px 26px;}
+
+
+.luxurytaxi_top_hip{padding:30px 20px}
+.luxurytaxi_title_hip{font-size:24px; line-height:30px;}
+.luxurytaxi_number_hip{font-size:34px; line-height:40px;}
+.luxurytaxi_box_info_hip ul li{font-size:14px; line-height:28px; padding-left:18px;}
+
+
+
+.car_change_hp{padding-top:60px;}
+
+
+.please_change_hip.inquiry_block_cp{padding:60px 0;}
+.please_change_hip .inquiry_middle_cp{padding:40px 30px;}
+
+
+/*-----------------------04_HIRE_END----------------------*/
+
+
+
+/*--------------- 05-Sightseeing Taxi_START --------------*/
+
+
+.by_block_in_sgp {
+    padding: 0 10px;
+}
+.by_block_sgp{padding-top:60px;}
+
+
+.taxis_block_sgp{padding-top:60px;}
+.taxis_change_sgp.inquiries_boxes_cp{padding-top:60px;}
+
+
+
+.advantages_block_sgp{padding-top:60px;}
+.advantages_box_sgp{width:calc(50% - 8px); margin:0 15px 22px 0;}
+.advantages_info_sgp{padding:15px 3px 15px 0; margin-top:-20px;}
+.advantages_info_sgp h5{font-size:17px; line-height:24px;}
+.advantages_info_sgp p{font-size:10px; line-height:22px; padding-top:10px;}
+
+
+
+.vehicle_change_sgp{padding-top:40px;}
+.vehicle_change_sgp .list_box_tp{width:calc(33.33% - 7px); margin:0 10px 0 0;}
+.vehicle_change_sgp .list_info_tp{padding-top:30px;}
+.vehicle_change_sgp .list_info_tp h4{font-size:14px; line-height:20px; width:220px;}
+.vehicle_change_sgp .list_info_tp p{font-size:10px; line-height:20px;}
+
+
+
+.orders_block_sgp{padding:60px 0;}
+.orders_info_sgp h4{font-size:18px; line-height:24px;}
+.orders_info_sgp p{font-size:11px; line-height:24px; padding-top:15px;}
+
+
+/*-----------------------05-Sightseeing Taxi_END----------------------*/
+
+
+
+
+/*--------------- 06_Sightseeing_Taxi_2_START --------------*/
+
+
+
+.taxi_info_stp{font-size:14px;}
+
+
+
+.how_block_stp{padding:60px 0 0 0;}
+.how_info_stp{font-size:14px;}
+
+
+
+
+.tour_block_stp{padding:60px 0 0 0;}
+.tour_box_subtitle_stp{font-size:15px; line-height:30px;}	
+.tour_box_in_stp{min-height:280px;}
+.tour_box_info_stp{font-size:8px; line-height:12px; padding-top:10px;}
+
+
+
+.ordinary_bottom_line_stp{font-size:16px; line-height:29px; padding:0 10px 0 20px;}
+
+.inquiries_box_width3_cp.inquiries_box_cp{width:100%; margin:auto;}
+
+
+.form_change_stp .form-field-lable-cop{width:200px;}
+.form_change_stp .form-field-input-cop{width:calc(100% - 200px);}
+.form_change_stp .form-field-radio-cp{width:calc(100% - 200px);}
+
+
+
+/*--------------- 06_Sightseeing_Taxi_2_END --------------*/
+
+
+
+/*--------------- 07_Sightseeing_START --------------*/
+
+
+.taxi_block_sp{padding:60px 0 0 0;}
+.taxi_top_sp{padding:40px 20px;}
+.taxi_title_sp{font-size:20px; line-height:32px;}
+.taxi_img_sp{padding-top:30px;}
+.taxi_grid_sp{padding-top:30px;}
+.taxi_btn_left_sp{width:200px;}
+.taxi_btn_left_sp a{font-size:14px; line-height:20px; padding:20px;}
+.taxi_btn_right_sp{width:calc(100% - 200px);}
+.taxi_btn_right_sp a{font-size:13px; line-height:20px; padding:20px;}
+
+
+
+
+.faq_block_sp{padding:60px 0 0 0;}
+.hours_block_sp{padding:60px 0 0 0;}
+.hours_left_sp{width:calc(100% - 300px); padding-right:30px;}
+.hours_left_box_in_sp{font-size:13px; line-height:30px;}
+.hours_box_grid_info_sp{font-size:14px; line-height:23px; padding-top:18px;}
+.hours_right_sp{width:300px;}
+.hours_right_in_sp{padding-bottom:60px;}
+.hours_right_title_sp{font-size:22px; line-height:30px;}
+.hours_right_info_sp{font-size:14px; line-height:24px;}
+
+
+
+
+.ordinary_block_sp{padding:60px 0 0 0;}
+.ordinary_title_sp{font-size:23px; line-height:34px; padding:16px;}
+.ordinary_boxes_sp{padding:40px 20px;}
+.ordinary_left_sp{width:300px;}
+.ordinary_right_sp{width:calc(100% - 300px); padding-left:20px;}
+.ordinary_right_title_sp{font-size:20px; line-height:34px;}
+.ordinary_right_info_sp{padding-top:15px; font-size:12px; line-height:22px;}
+.ordinary_boxes_pd_sp{padding:40px 20px;}
+.ordinary_grid_left_sp{width:300px;}
+.ordinary_grid_right_sp{width:calc(100% - 300px);}
+.ordinary_grid_title_sp{font-size:22px; line-height:36px;}
+.ordinary_grid_info_sp{padding-top:15px; font-size:14px; line-height:20px;}
+.ordinary_grid_box_sp{margin-right:10px;}
+.ordinary_grid_box_info_sp{font-size:12px; line-height:20px; padding-top:15px;}
+.ordinary_grid_bottom_info_sp{font-size:14px; line-height:20px;}
+.ordinary_bottom_title_sp{font-size:20px; line-height:34px;}
+.ordinary_bottom_info_sp{padding-top:15px; font-size:11px; line-height:16px;}
+.ordinary_bottom_grid_sp{font-size:12px; line-height:22px; width:50px;}
+.ordinary_bottom_arrow_sp{font-size:20px; line-height:30px; padding-left:10px;}
+.ordinary_bottom_price_sp{font-size:30px; line-height:50px; padding-left:10px;}
+.ordinary_bottom_price_in_sp{font-size:20px; line-height:35px;}
+
+
+
+.other_block_sp{padding:40px 0;}
+.other_top_sp{padding:20px;}
+.other_info_sp{font-size:13px; line-height:28px;}
+
+
+
+.form_block_sp{padding:60px 0 0 0;}
+.form_middle_sp{padding:58px 15px;}
+.form_change_sp .form-field-lable-cop{width:280px;}
+.form_change_sp .form-field-input-cop{width:calc(100% - 280px);}
+.form_info_sp{font-size:14px; line-height:20px;}
+.form_pd_sp{padding:0 0 0 0;}
+.form-field-radio-main-cp .radio-container-cp{font-size:14px;}
+
+
+
+/*--------------- 07_Sightseeing_page_END --------------*/
+
+
+
+/*--------------- 08_recruit_page_START --------------*/
+
+.movie_block_rp{padding:60px 0 0 0;}
+.movie_info_rp ul li{margin-right:8px;}
+.movie_info_rp ul li a{font-size:9px; line-height:20px; padding:8px 2px;}
+
+
+.driver_block_rp{padding:60px 0 0 0;}
+.driver_img_in_rp{width:70px;}
+
+
+
+.earn_left_rp{width:400px;}
+.earn_right_rp{width:calc(100% - 400px); padding-left:20px;}
+.earn_title_rp p{font-size:18px; line-height:30px;}
+.earn_info_rp{font-size:12px; line-height:20px; padding-top:15px;}
+.earn_reverse_rp .earn_right_rp{padding-left:0px; padding-right:20px;}
+
+
+
+.kintetsu_block_rp{padding:60px 0 0 0;}
+.kintetsu_info_rp{font-size:14px;}
+
+
+
+.faq_block_rp{padding:60px 0 0 0;}
+.faq_box_qus_rp{padding:20px 40px 20px 0;}
+.faq_qus_in_rp{font-size:18px; line-height:20px;}
+.faq_qus_info_rp{font-size:18px; line-height:20px;}
+.faq_ans_rp{font-size:12px;}
+ 
+
+.session_block_rp{padding:60px 0 0 0;}
+.session_boxes_rp{padding-top:40px;}
+.session_info_rp p{font-size:14px; line-height:20px; padding-bottom:20px;}
+
+
+
+
+.application_box_rp{padding:15px 0;}
+.application_left_rp{width:180px; font-size:14px; line-height:20px;}
+.application_right_rp{width:calc(100% - 180px); font-size:14px; line-height:20px;}
+.application_right_in_rp p{font-size:14px; line-height:20px; padding-bottom:15px;}
+
+
+
+.company_block_rp{padding:80px 0 0 0;}
+.company_box_hp{margin-right:10px;}
+.company_box_title_hp{padding-top:15px;}
+.company_box_title_hp h2{font-size:20px; line-height:30px;}
+.company_box_title_hp p{font-size:12px; line-height:20px; padding-top:15px;}
+
+
+
+.location_block_rp{padding:60px 0 80px 0;}
+.location_title_hp{font-size:16px; line-height:21px;}
+.location_box_hp{margin-right:20px;}
+.location_box_title_hp{padding-bottom:15px; font-size:22px; line-height:30px;}
+.location_box_in_hp{padding:15px 0;}
+.location_subtitle_hp{font-size:13px; line-height:20px; width:150px;}
+.location_info_hp{font-size:12px; line-height:20px; width:calc(100% - 150px); padding-left:10px;}
+
+.earn_block_rp {
+    padding-top: 20px;
+}
+
+/*--------------- 08_recruit_page_END --------------*/
+
+
+
+/*--------------- 09_contact_page_START --------------*/
+
+
+.inquiries_block_cp{padding:0px 0 40px 0;}
+.inquiries_middle_cp{padding-top:40px;}
+.inquiries_boxes_cp{ padding-top:0; }
+.inquiries_title_cp h2{font-size:24px; line-height:40px;}
+.inquiries_box_cp{width:calc(50% - 8px); margin:0 8px 30px 0; padding:30px 20px;}
+.inquiries_box_title_cp{font-size:24px; line-height:40px;}
+.inquiries_box_icon_cp{width:35px;}
+.inquiries_box_in_cp{font-size:30px; line-height:50px;}
+.inquiries_info_cp p{font-size:12px; line-height:20px; padding-bottom:20px;}
+
+
+
+.inquiry_block_cp{padding:0 0 60px 0;}
+.inquiry_middle_cp{padding:50px 20px;}
+.inquiry_info_cp h3{font-size:20px; line-height:32px;}
+.inquiry_info_cp h2{font-size:30px; line-height:50px;}
+.inquiry_info_cp p{font-size:12px; line-height:25px; padding-top:30px; max-width:700px;}
+.inquiry_subinfo_cp{font-size:12px;}
+.inquiry_btn_cp button{padding:18px 20px; min-width:200px;}
+.contact-form-cop{padding-top:60px;}
+.form-field-lable-cop{width:250px; font-size:14px;}
+.form-field-input-cop{width:calc(100% - 250px);}
+
+
+
+/*--------------- 09_contact_page_END --------------*/
+
+
+
+/*--------------- 10-confirm_page_START --------------*/
+
+
+
+.confirm_block_cip{padding:60px 0;}
+.confirm_boxes_cip{padding-top:60px;}
+.confirm_box_cip{padding:20px 0;}
+.confirm_box_left_cip{width:180px; font-size:14px; line-height:20px;}
+.confirm_box_right_cip{width:calc(100% - 180px); font-size:13px;}
+.confirm_btns_cip{padding-top:30px;}
+
+
+
+/*--------------- 10-confirm_page_END --------------*/
+
+
+
+
+/*--------------- 11_confirm2_page_START --------------*/
+
+
+.completed_block_cop{padding:60px 0;}
+.completed_info_cip{padding-top:30px; font-size:18px; line-height:26px; max-width:650px;}
+
+/*--------------- 11_confirm2_page_END --------------*/
+
+
+
+/*--------------- 12_404_page_START --------------*/
+
+
+.found_block_fp{padding:60px 0;}
+.found_title_fp h2{font-size:85px; line-height:100px;}
+.found_title_fp h3{font-size:35px; line-height:50px;}
+.found_info_fp{font-size:16px; line-height:30px; padding-top:30px;}
+.found_btn_fp{padding-top:40px;}
+.found_btn_fp a{padding:18px 20px; min-width:230px;}
+
+
+/*--------------- 12_404_page_END --------------*/
+
+
+
+
+
+}
+
+@media(min-width:992px) and (max-width:1500px){
+.container{ max-width:992px; }
+
+.common_title_hp h2{font-size:45px;}
+
+
+/*--------------- HEADER_START --------------*/
+
+
+#header{padding:0 15px;}
+.header-in-hp{height:80px;}
+.header-left-hp{width:300px;}
+.navigation-main-hp > ul > li > a {font-size:12px; line-height:16px;}
+.navigation-main-hp > ul > li {padding-left:18px;}
+.navigation-main-hp > ul > li > a.header_btn_hp{font-size:12px; line-height:16px; min-width:100px; min-height:100px; padding:26px 8px 10px 8px;}
+.header-right-hp{width:calc(100% - 300px);}
+
+
+/*--------------- HEADER_END --------------*/
+
+
+
+/*--------------- CONTAIN_START --------------*/
+#contain{ margin:80px 0 0 0; padding:0px; }
+
+
+
+.banner_block_hp{padding:0 0 80px 0;}
+.banner_left_info_hp{width:300px; font-size:45px; line-height:60px; padding-left:20px;}
+.banner_right_img_hp{width:calc(100% - 300px);}
+
+
+
+.topics_block_hp{padding:0 0 80px 0;}
+
+
+
+.sightseeing_block_hp{padding:80px 0 0 0;}
+.sightseeing_block_hp:after{display:none;}
+.sightseeing_box_hp{margin:0 30px 30px 0;}
+.sightseeing_title_hp{padding-top:20px; font-size:25px; line-height:30px;}
+
+
+
+.about_block_hp{padding:100px 0;}
+.about_left_hp{padding-right:80px;     margin-top: 0; }
+.about_left_box_img_hp{width:215px;}
+.about_title_hp{padding-bottom:30px;}
+.about_info_hp{font-size:18px; line-height:30px;}
+.about_btn_hp{padding-top:20px;}
+
+
+
+
+.taxi_block_hp{padding:0 0 40px 0;}
+.taxi_img_hp{width:520px; margin-top:-80px;}
+.taxi_right_hp{width:calc(100% - 520px); padding:20px;}
+.taxi_info_hp { max-width: 360px; }
+.taxi_subinfo_hp{font-size:22px;}
+.taxi_btn_hp{padding-top:20px;}
+.taxi_change_hp{margin:150px 0 0 0;}
+.taxi_change_hp .taxi_right_hp{padding:20px;}
+.taxi_change_hp .taxi_info_hp{max-width:360px; margin-left: auto; margin-right: 0;}
+
+
+
+.news_block_hp{padding:80px 0;}
+.news_left_hp{width:250px;}
+.news_btn_hp{padding-top:20px;}
+.news_right_hp{width:calc(100% - 250px);}
+
+
+
+.contact_block_hp{min-height:320px; margin:0 60px -100px 0;}
+.contact_num_hp{font-size:40px; line-height:50px;}
+
+/*--------------- CONTAIN_END --------------*/
+
+
+
+/*--------------- FOOTER_START --------------*/
+
+
+.back-to-top{position:fixed; right:21px; bottom:27px; z-index:99; display:none; width:17px; height:76px; line-height:60px; text-align:center;}
+
+
+.footer_middle_hp{padding:240px 15px 60px 15px;}
+.footer_logo_hp{width:320px;}
+.footer_links_hp ul li{font-size:13px; line-height:18px; padding-right:25px;}
+.footer_pd_hp{padding:80px 15px;}
+
+
+
+/*--------------- FOOTER_END --------------*/
+
+
+
+/*--------------- 02_about_START --------------*/
+
+
+
+
+.company_block_ap{padding-top:80px;}
+
+
+.banner_block_ap{padding-top:80px;}
+
+
+.about_pd_ap{padding:80px 0 0 0;}
+
+
+.service_block_ap{padding-top:80px;}
+.service_align_ap .service_info_ap{padding:20px 50px;}
+.service_bottom_left_digit_ap{width:60px; padding:18px;}
+.service_bottom_left_info_ap{width:calc(100% - 60px); font-size:13px; line-height:24px; padding:18px 7px;}
+.service_bottom_left_date_ap{font-size:14px; line-height:20px; padding:18px 5px;}
+.service_bottom_right_title_ap{font-size:13px; line-height:20px; padding:18px 8px;}
+.service_bottom_right_info_ap{font-size:14px; padding:18px 12px;}
+.service_bottom_right_numbers_ap{padding:18px 8px;}
+
+
+
+.equipment_block_ap{padding-top:80px;}
+
+.equipment_bottom_middle_table_ap{width:365px;}
+.equipment_bottom_grid_name_ap{padding:18px 10px;}
+.equipment_bottom_grid_info_ap{padding:18px 10px;}
+.equipment_bottom_grid_digit_ap{padding:18px 10px;}
+.equipment_bottom_pd_ap{padding:0;}
+.equipment_bottom_detail_table_ap{width:calc(100% - 365px);}
+
+
+
+.message_block_ap{padding-top:80px;}
+.message_middle_ap{min-height:470px; padding:35px;}
+.message_info_ap{font-size:14px; line-height:28px; padding-top:20px; max-width:460px;}
+
+
+
+.history_block_ap{padding-top:80px;}
+
+
+.companyinfo_block_ap{padding:80px 0;}
+
+
+
+/*--------------- 02_about_END --------------*/
+
+
+
+/*-----------------------03_taki_start----------------------*/
+
+
+.comfortable_title_tp{font-size:25px; line-height:45px;} 
+.comfortable_btn_tp{padding-top:80px;}
+.comfortable_btn_tp a{font-size:22px; line-height:40px; min-width:900px; padding:16px;}
+.comfortable_top_tp{padding:80px 15px 0 15px;}
+.comfortable_tab_tp{width:calc(25% - 15px); margin-right:20px;}
+.comfortable_tab_tp a{font-size:14px; line-height:20px; min-width:218px; padding:12px 15px;}
+
+
+
+.list_block_tp{padding-top:80px;}
+.list_box_tp{width:calc(50% - 14px); margin:0 20px 40px 0;}
+.list_info_tp{padding-top:20px;}
+.list_info_tp h4{font-size:20px; line-height:30px; padding-bottom:18px;}
+.list_info_tp p{font-size:13px; line-height:28px; padding-top:18px;}
+
+
+
+.fare_change_tp{padding-top:80px;}
+.fare_padding_tp{padding-top:80px;}
+.fare_left_tp{width:calc(100% - 400px);}
+.fare_right_tp{width:400px;}
+.fare_title_tp{font-size:13px; line-height:21px; padding:20px 4px;}
+
+
+
+.payment_block_tp{padding-top:80px;}
+.payment_box_tp{padding:25px; width:calc(50% - 8px); margin:0 15px 40px 0;}
+.payment_title_tp{font-size:23px; line-height:35px;}
+.payment_info_tp{font-size:14px; line-height:28px; padding-top:20px;}
+
+
+
+
+.ticket_block_tp{padding-top:40px;}
+.ticket_title_tp{width:190px; font-size:14px;} 
+.ticket_info_tp{width:calc(100% - 190px);}
+.ticket_info_tp p{font-size:14px;}
+
+
+
+.about_block_tp{padding-top:80px;}
+.about_left_tp{width:256px; font-size:14px;}
+.about_right_tp{width:calc(100% - 256px);}
+.about_info_tp{font-size:14px;}
+.about_width2_tp{padding:20px 25px;}
+.about_pd3_tp{padding-top:60px;}
+
+
+
+.stand_block_tp{padding:80px 0;}
+.stand_box_tp{border-radius:20px;}
+
+.stand_left_tp{width:700px;}
+.stand_right_tp{width:calc(100% - 700px); padding:20px;}
+
+
+
+/*-----------------------03_taki_end----------------------*/
+
+
+
+/*-----------------------04_HIRE_START----------------------*/
+
+
+
+.hire_box_hip{width:calc(50% - 15px); margin:0 30px 20px 0;}
+.hire_info_hip{top:30px; left:30px;}
+
+
+
+
+.luxury_change_hip{padding-top:80px;}
+.luxury_change_hip .list_box_tp{margin:0 30px 50px 0;}
+
+
+
+.luxurytaxi_link_hip ul li{font-size:13px; padding:0 0 20px 26px;}
+
+
+.luxurytaxi_top_hip{padding:35px;}
+.luxurytaxi_title_hip{font-size:27px; line-height:36px;}
+.luxurytaxi_number_hip{font-size:45px; line-height:60px;}
+.luxurytaxi_box_hip{padding:20px 20px 29px 20px; margin-top:20px;}
+.luxurytaxi_box_info_hip ul li{font-size:14px;}
+
+
+
+.car_change_hp{padding-top:80px;}
+
+
+.please_change_hip.inquiry_block_cp{padding:80px 0;}
+
+
+/*-----------------------04_HIRE_END----------------------*/
+
+
+/*--------------- 05-Sightseeing Taxi_START --------------*/
+
+
+.by_block_sgp{padding-top:80px;}
+
+
+
+.taxis_block_sgp{padding-top:80px;}
+.taxis_change_sgp.inquiries_boxes_cp{padding-top:80px;}
+
+
+
+.advantages_block_sgp{padding-top:80px;}
+.advantages_info_sgp{padding:20px 3px 20px 0;}
+.advantages_info_sgp h5{font-size:20px; line-height:30px;}
+.advantages_info_sgp p{font-size:14px; line-height:28px; padding-top:15px;}
+
+
+
+.vehicle_change_sgp{padding-top:70px;}
+.vehicle_change_sgp .list_info_tp p{font-size:12px;}
+
+
+
+.orders_block_sgp{padding:80px 0;}
+.orders_info_sgp h4{font-size:20px; line-height:30px;}
+.orders_info_sgp p{font-size:12px; line-height:24px; padding-top:15px;}
+
+
+/*-----------------------05-Sightseeing Taxi_END----------------------*/
+
+
+
+/*--------------- 06_Sightseeing_Taxi_2_START --------------*/
+
+
+
+.how_block_stp{padding:80px 0 0 0;}
+
+
+
+.tour_block_stp{padding:60px 0 0 0;}
+
+
+.ordinary_bottom_line_stp{font-size:14px; line-height:29px; padding:0 10px 0 12px;}
+
+
+
+
+.form_change_stp .form-field-lable-cop{width:300px;}
+.form_change_stp .form-field-input-cop{width:calc(100% - 300px);}
+.form_change_stp .form-field-radio-cp{width:calc(100% - 300px);}
+
+
+
+/*--------------- 06_Sightseeing_Taxi_2_END --------------*/
+
+
+
+/*--------------- 07_Sightseeing_START --------------*/
+
+
+
+.taxi_title_sp{font-size:30px; line-height:48px;}
+
+
+.faq_block_sp{padding:80px 0 0 0;}
+
+.hours_block_sp{padding:80px 0 0 0;}
+
+
+.ordinary_block_sp{padding:60px 0 0 0;}
+.ordinary_left_sp{width:450px;}
+.ordinary_right_sp{width:calc(100% - 450px); padding-left:30px;}
+
+
+.other_block_sp{padding:60px 0;}
+
+.form_block_sp{padding:80px 0 0 0;}
+
+
+/*--------------- 07_Sightseeing_page_END --------------*/
+
+
+
+/*--------------- 08_recruit_page_START --------------*/
+
+
+.movie_info_rp ul li{margin-right:15px;}
+.movie_info_rp ul li a{font-size:12px; line-height:20px;}
+
+
+
+.driver_block_rp{padding: 60px 0 0 0;}
+.driver_img_in_rp{width:100px;}
+
+
+
+.earn_left_rp{width:580px;}
+.earn_right_rp{width:calc(100% - 580px); padding-left:20px;}
+.earn_title_rp p{font-size:19px; line-height:30px;}
+.earn_info_rp{font-size:14px; padding-top:30px;}
+.earn_reverse_rp .earn_right_rp{padding-right:20px;}
+
+
+
+.kintetsu_block_rp{padding:80px 0 0 0;}
+
+
+
+.faq_block_rp{padding:80px 0 0 0;}
+.faq_box_qus_rp{padding:30px 30px 30px 0;}
+.faq_qus_info_rp{font-size:18px; line-height:24px;}
+.faq_ans_rp{font-size:14px; padding:15px;}
+ 
+ 
+
+.session_block_rp{padding:80px 0 0 0;}
+.session_info_rp p{font-size:14px;}
+
+
+
+.application_box_rp{padding:20px 0;}
+.application_left_rp{width:280px;}
+.application_right_rp{width:calc(100% - 280px); font-size:14px;}
+.application_right_in_rp p{font-size:14px; line-height:20px; padding-bottom:20px;}
+
+
+
+.company_block_rp{padding:80px 0 0 0;}
+.company_box_title_hp h2{font-size:22px; line-height:30px;}
+.company_box_title_hp p{font-size:14px; line-height:20px;}
+
+
+
+.location_block_rp{padding:60px 0 80px 0;}
+.location_box_hp{margin-right:20px;}
+.location_box_title_hp{font-size:22px; line-height:30px;}
+.location_box_in_hp{padding:20px 0;}
+.location_subtitle_hp{width:200px;}
+.location_info_hp{font-size:14px; line-height:20px; width:calc(100% - 200px);}
+
+.earn_block_rp {
+    padding-top: 20px;
+}
+
+/*--------------- 08_recruit_page_END --------------*/
+
+
+
+/*--------------- 09_contact_page_START --------------*/
+
+
+
+.inquiries_block_cp{padding:0px 0 60px 0;}
+.inquiries_middle_cp{padding-top:60px;}
+.inquiries_title_cp h2{font-size:30px; line-height:50px;}
+.inquiries_box_cp{padding:40px 20px}
+.inquiries_box_title_cp{font-size:26px; line-height:40px;}
+.inquiries_box_icon_cp{width:40px;}
+.inquiries_box_in_cp{font-size:40px; line-height:70px;}
+.inquiries_info_cp p{font-size:14px; padding-bottom:25px;}
+.inquiry_block_cp{padding:0 0 80px 0;}
+.inquiry_info_cp h3{font-size:20px; line-height:32px;}
+.inquiry_info_cp p{font-size:14px; padding-top:40px;}
+.inquiry_subinfo_cp{font-size:13px;}
+.inquiry_btn_cp button{padding:20px; min-width:200px;}
+.form-field-lable-cop{width:280px;}
+.form-field-input-cop{width:calc(100% - 280px);}
+
+
+
+/*--------------- 09_contact_page_END --------------*/
+
+
+
+/*--------------- 10-confirm_page_START --------------*/
+
+
+
+.confirm_block_cip{padding:80px 0;}
+.confirm_boxes_cip{padding-top:80px;}
+.confirm_box_left_cip{width:280px;}
+.confirm_box_right_cip{width:calc(100% - 280px);}
+
+
+
+/*--------------- 10-confirm_page_END --------------*/
+
+
+
+/*--------------- 11_confirm2_page_START --------------*/
+
+
+.completed_block_cop{padding:80px 0;}
+.completed_info_cip{font-size:20px; line-height:30px; max-width:700px;}
+
+/*--------------- 11_confirm2_page_END --------------*/
+
+
+
+
+/*--------------- 12_404_page_START --------------*/
+
+
+.found_block_fp{padding:80px 0;}
+.found_title_fp h2{font-size:90px; line-height:110px;}
+.found_title_fp h3{font-size:35px; line-height:50px;}
+.found_info_fp{font-size:20px; line-height:30px; padding-top:30px;}
+.found_btn_fp{padding-top:40px;}
+.found_btn_fp a{padding:20px; min-width:250px;}
+
+
+/*--------------- 12_404_page_END --------------*/
+
+
+
+}
+@media(min-width:1501px) and (max-width:1850px){
+	.banner_right_hp img{     min-width: 100%; }
+	.header-left-hp {  width: 350px; }
+	.header-right-hp { width: calc(100% - 350px); }
+	.navigation-main-hp > ul > li { padding-left: 50px; }
+	.taxi_right_hp{ padding-right:30px; } 
+	.taxi_change_hp .taxi_right_hp { padding-left: 30px; padding-right: 30px; }
+	.footer_middle_hp { padding: 426px 80px 93px 80px; }
+    .footer_pd_hp { padding: 133px 160px 95px 170px; }
+	
+}
+
+@media(min-width:992px) and (max-width:9999px){
+.navbar-nav .dropdown:hover .dropdown-menu{display:block; opacity:1; height:auto; transform: translate(0px, 0px); }
+.navbar-nav .nav-link:after{ display:none; }
+}

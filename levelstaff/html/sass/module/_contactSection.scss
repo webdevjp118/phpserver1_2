@@ -1,0 +1,55 @@
+@use '../global'as g;
+
+.contactSection {
+  width: 100%;
+  background: linear-gradient(to bottom, #3674D2, #04236C);
+  padding-top: 85px;
+
+  @include g.pc {
+    height: 305px;
+  }
+
+  @include g.sp {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  .contactSection_title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 28px;
+
+    @include g.sp {
+      width: 80%;
+      margin: 0 auto;
+      font-size: 7vw;
+      line-height: 1.5;
+      margin-bottom: 2em;
+    }
+  }
+
+  .btnBox {
+
+    @include g.pc {
+      display: flex;
+      justify-content: center;
+    }
+
+    @include g.sp {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .-type2 {
+      margin-left: 45px;
+
+      @include g.sp {
+        margin: 0 auto;
+        margin-top: 1em;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<date>2024/02/05
+<jptext>
+Ballerina lyrics
+</jptext>
+<kotext>
+https://www.stlyrics.com/l/leap.htm
+</kotext>
+<date>2024/02/05
+<jptext>
+이메일에 이미지첨부, form image file submit
+</jptext>
+<kotext>
+montage project
+</kotext>

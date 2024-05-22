@@ -1,0 +1,754 @@
+<hitle>	Introduce	<chare>	1	<pext>	1. I am an android developer having more than 7 years of experience
+ in enterprise android app development using Java and Kotlin.
+2. I am very familiar with application architecture design patterns
+ like MVP and MVVM with repository pattern
+ along with Jetpack components
+ like ViewModel, LiveData, and Data Binding
+3. I have good hands-on experience in Dependency Injection
+ using Dagger 2 and Hilt, 
+and have pretty much experience in Restful APIs
+ using Volley, Retrofit, Gson and Moshi,
+Also very good experience in Reactive or Asynchronous programming
+ by RxJava and Coroutine,
+and worked a lot using RoomDB and SQLite.
+4. I have good understanding of cloud services
+ and have much experienced in Firebase integration,
+ like  Firebase authentication, Firebase cloud messaging(FCM),
+ Firebase realtime database, Firebase crashlytics.
+5. Unit testing is one of major development part in my past experiences,
+ so I followed Test Driven Development with Mockito, MockK and JUnit. 
+Some times I have been involved in UI testing using Espresso.
+6. Working for several companies, I have well trained
+ to follow Agile methodology with JIRA tool
+ and I am mastered version control tools like Git and Github.	</end>
+<hitle>	➊Chase Mobile (JPMorgan Chase)	<chare>	1	<pext>	It’s a traditional banking app like, managing user accounts,
+ sending and receiving money with deposit checks,
+ monitoring credit score, budget and track monthly spending.
+******Client Location/Duration******
+JP Morgan Chase
+Jersey city – NJ (New Jersey) 
+Octover 2021 – Present
+******My responsibility******
+1. I was responsible for implementing the Trading module. 
+In this module, I fetch data from the server and display trade information
+ and used various charts to show various analyses of trades
+ using different charts like line graph, pie chart, bar chart etc. 
+I implemented this using the MPChart Library.
+2. I also worked on the Credit Journey module
+ where user can see his or her Credit score,
+ alerts about credit card spending and offers on credit card usage
+ in three different tabs. 
+To show credit score, I created custom view
+ which is half circle progress bar showing score. 
+TabView and ViewPager2 was used to show three tabs. 
+All the data for this module is fetched using Retrofit and Coroutines
+ and displayed in Tabs.
+3. I was responsible for writing Unit test cases for ViewModels
+ using JUnit and Mockk.
+*******Additionally************
+4. The application was implemented using Kotlin as language
+ and we followed MVVM as design architecture. 
+During this project Implementation we have used various frameworks
+ such like Dagger-Hilts, Retrofit, Coroutines, RoomDB,
+ and we followed TDD and used JUnit and Mockito  framework
+ for Local Unit testing and used Espresso Framework
+ for UI testing of the screens to achieve 80% code coverage.
+5. We used  GitHub as a project version controller
+ and followed the Agile methodology with JIRA tool
+ for project tracking and bug reporting.
+******Team Size******
+3 Android, 3 iOS, 3 Backend, 4 QA, 2 Designer, 1 Team Lead, 1 Product Owner
+---------------Challenge-----------------------
+Creating custom view to show credit score was difficult. 
+Exactly there’s half circle bar like progress bar to show credit score.
+I had never worked on custom views before this. 
+It took lots of learning curve.
+If none of the prebuilt widgets or layouts meet our needs,
+ we can create our own View subclass. 
+If we only need to make small adjustments to an existing widget or layout,
+ we can subclass the widget or layout and override its methods.
+
+*****Howto custom view primary control/modify*****
+1. Drawing – 
+Control the rendering of the view on screen visually
+ by overriding the onDraw method.
+2. Interaction – 
+Control the ways the user can interact with the view
+ with the onTouchEvent and gestures.
+3. Measurement – 
+Control the content dimensions of the view on screen
+ by overriding the onMeasure method.
+4. Attributes - Defining custom XML attributes for your view
+ and using them to control behavior with TypedArray
+5. Persistence - Storing and restoring state on configuration changes
+ to avoid losing the state with onSaveInstanceState and onRestoreInstanceState
+
+*****Let me go through one by one*****
+*****1. Define Custom View Class*****
+To create our own custom view, we start by defining a class
+ which extends from View and implements the required constructor.
+
+public class ShapeSelectorView extends View {
+  // We must provide a constructor that takes a Context and an AttributeSet.
+  // This constructor allows the UI to create and edit an instance of your view.
+  public ShapeSelectorView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+    }
+}
+
+*****2. Add View to Layout*****
+We add the custom view to activity layout 
+
+    <com.codepath.example.customviewdemo.ShapeSelectorView/>
+
+*****3. Define Custom Attributes*****
+Well-written custom views can be configured and styled via XML attributes. 
+We might want to let the user select the properties of the view.
+We might want the view to be configurable in XML.
+
+<com.codepath.example.customviewdemo.ShapeSelectorView
+    app:shapeColor="#7f0000"
+    app:displayShapeName="true"
+    ... />
+
+In order to be able to define shapeColor and displayShapeName,
+ we need to define these as attributes within res/values/attrs.xml:
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <declare-styleable name="ShapeSelectorView">
+       <attr name="shapeColor" format="color" />
+       <attr name="displayShapeName" format="boolean" />
+   </declare-styleable>
+</resources>
+
+*****3. Apply Custom Attributes*****
+To extract the custom attributes,
+ we can use a TypedArray and the obtainStyledAttributes on the AttributeSet.
+
+public class ShapeSelectorView extends View {
+  private int shapeColor;
+  private boolean displayShapeName;
+
+  public ShapeSelectorView(Context context, AttributeSet attrs) {
+    super(context, attrs);
+    setupAttributes(attrs);
+  }
+
+  private void setupAttributes(AttributeSet attrs) {
+    // Obtain a typed array of attributes
+    TypedArray a = getContext().getTheme().obtainStyledAttributes(attrs, R.styleable.ShapeSelectorView, 0, 0);
+    // Extract custom attributes into member variables
+    try {
+      shapeColor = a.getColor(R.styleable.ShapeSelectorView_shapeColor, Color.BLACK);
+      displayShapeName = a.getBoolean(R.styleable.ShapeSelectorView_displayShapeName, false);
+    } finally {
+      // TypedArray objects are shared and must be recycled.
+      a.recycle();
+    }
+  }
+}
+
+*****4. Add Property Methods*****
+We need to expose property methods to allow us
+ to get and set the important properties after a view has been created.
+When the view properties are changed and might require a redraw,
+ We need to be sure to call invalidate() and requestLayout()
+ to update the appearance.
+
+public class ShapeSelectorView extends View {
+  // ...
+  public boolean isDisplayingShapeName() {
+    return displayShapeName;
+  }
+
+  public void setDisplayingShapeName(boolean state) {
+    this.displayShapeName = state;
+    invalidate();
+    requestLayout();
+  }
+
+  public int getShapeColor() {
+    return shapeColor;
+  }
+
+  public void setShapeColor(int color) {
+    this.shapeColor = color;
+    invalidate();
+    requestLayout();
+  }
+}
+*****5. Drawing Custom View*****
+We draw something that we want using the properties defined already.
+All view drawing happens within the onDraw method
+ using the Canvas object to paint onto the view.
+
+public class ShapeSelectorView extends View {
+
+  @Override
+  protected void onDraw(Canvas canvas) {
+    super.onDraw(canvas);
+    canvas.drawRect(0, 0, shapeWidth, shapeHeight, paintShape);
+    if (displayShapeName) {
+      canvas.drawText("Square", 0 + textXOffset, shapeHeight + textXOffset, paintShape);
+    }
+  }
+}
+
+*****6. Calculating the Dimensions*****
+In order to understand the width and height of a view
+ that is being custom drawn, we need to define the onMeasure method
+ which determines the width and height of the view based on it's contents. 
+onMeasure method must call the setMeasuredDimension. 
+Widths and heights are discussed using the MeasureSpec
+ which encapsulates all the different types of constraints
+ imposed by the parent layout for a view. 
+The helper method resolveSizeAndState() returns an appropriate value
+ by comparing the view's desired size to the spec passed into the method.
+
+public class ShapeSelectorView extends View {
+  @Override
+  protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+    // Defines the extra padding for the shape name text
+    int textPadding = 10;
+    int contentWidth = shapeWidth;
+    
+    // Resolve the width based on our minimum and the measure spec
+    int minw = contentWidth + getPaddingLeft() + getPaddingRight();
+    int w = resolveSizeAndState(minw, widthMeasureSpec, 0);
+    
+    // Ask for a height that would let the view get as big as it can
+    int minh = shapeHeight + getPaddingBottom() + getPaddingTop();
+    if (displayShapeName) { 
+        minh += textYOffset + textPadding;
+    }
+    int h = resolveSizeAndState(minh, heightMeasureSpec, 0);
+    
+    // Calling this method determines the measured width and height
+    // Retrieve with getMeasuredWidth or getMeasuredHeight methods later
+    setMeasuredDimension(w, h);
+  }
+}
+
+*****7. Handle Events in custom view*****
+We want to do something when the view is clicked. 
+Then we can setup a touch handler using the onTouchEvent method.
+
+public class ShapeSelectorView extends View {
+
+  // Change the currentShapeIndex whenever the shape is clicked
+  @Override
+  public boolean onTouchEvent(MotionEvent event) {
+    boolean result = super.onTouchEvent(event);
+    if (event.getAction() == MotionEvent.ACTION_DOWN) {
+      currentShapeIndex =  (currentShapeIndex ++) % shapeValues.length;
+      postInvalidate();
+      return true;
+    }
+    return result;
+  }
+}
+
+*****8. Use custom view*****
+We can now use our custom view as normal view in activities or anywhere.
+
+public class MainActivity extends Activity {
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    shapeSelector = (ShapeSelectorView) findViewById(R.id.shapeSelector);
+    btnSelect = (Button) findViewById(R.id.btnSelect);
+    btnSelect.setOnClickListener(new OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        Toast.makeText(MainActivity.this, "You selected: " +
+             shapeSelector.getSelectedShape(), Toast.LENGTH_LONG).show();
+      }
+    });
+  }
+}	</end>
+<hitle>	➋Cider (Cider Global)	<chare>	1	<pext>	It’s an online shopping app which has features of purchasing online,
+ discovering the latest new arrivals and trends, managing user accounts, etc.
+******Client Location/Duration******
+Cider Global
+Los Angeles – CA (Califonia) 
+January 2020 – August 2021
+************My responsibility************
+1. I was responsible for designing and developing Product Listing module
+ where products are listed in Grids. 
+I used Retrofit to fetch data from server
+ and RecyclerView with GridLayoutManager to show products in Grids.
+2. I also worked on showing Cider stores on Google Maps. 
+I used custom markers to show stores nearby to the users. 
+Also I used Fused Location Provider to get users current location.
+3. I also integrated Firebase FCM service to send notifications
+ about new offers, discounts, delivery status etc to registered users.
+******Additionally***********
+1. For this app, we followed MVVM architecture. 
+Initially few modules were developed using Java
+ and later on few modules developed using Kotlin. 
+We also used various other libraries such as RxJava, Dagger 2, Retrofit,
+ DataBinding, Firebase Services, JUnit and Mockito for Unit Testing.
+2. We followed Agile methodology
+ and used Jira for project management and bug reporting. 
+For code versioning we used Git and Github.
+******Team Size******
+2 Android, 2 iOS, 1 Backend, 2 QA, 1 Designer, 1 Team Lead, 1 Product Owner
+---------------Challenge-----------------------
+Integration of FCM was completely new to me. 
+After following some tutorials and videos about FCM integration,
+ I was able to successfully integrate FCM to receive push notifications
+ for offers, order delivery updates, etc.
+*****Firebase implementation****
+To integrate FCM, first we have to create our project on FCM console
+ and integrate that project with our Android studio
+ using Android Studio Assistant for Firebase.
+1. Whenever our app runs for first time on users device,
+ FCM SDK integrated in the app registers itself with FCM server.
+2. In response, I received FCM token from the server.
+3. I have sent this FCM token received to our backend server. 
+Backend server maintained FCM token of each user.
+4. Backend developers written their logic
+ to send push message target device. 
+For this, backend server sent request to FCM server
+ to deliver push message. 
+In this request, backend server sent fcm token of user
+ to whom message to be sent, data, API key.
+5. In the app, I also created a service
+ which extends from FirebaseMessagingService. 
+In this service, we have overridden onMessageRecieved()
+ where message is delivered. 
+In this method, based on the message type, I displayed notification.	</end>
+<hitle>	➌ AvantStay Vacation Rentals (AvantStay)	<chare>	1	<pext>	AvantStay is  a travel & hospitality company creating unforgettable experiences
+ for traveling users providing stunning vacation homes.
+Main features of the application are:
+-Search, browse, and book the best vacation home.
+-Manage your reservation, get check-in details, and share with your group
+ to let them reserve their bedrooms.
+-Connect with the concierge team to request add-on services
+ like mid-stay cleans, fridge stocking, or even a private chef.
+-Chatting feature base on question and answer
+ between user and AvantStay guest service.
+*****Client Location/Duration*****
+AvantStay
+West Holleywood – CA (Califonia) 
+May 2018 – December 2019
+*****My responsibility*****
+1. For this app, I was responsible for working
+ on the Authentication module which enables users to sign-in, sign-up,
+ forget password and reset password. 
+I used Firebase authorization service for this implementation.
+2. I also worked on the Dashboard module with bottom app bar navigations
+ using navigational components for switching between explore, bookings,
+ Profile and Get help features fragment.
+Fetched property analysis data from server using Retrofit and RxJava.
+3. I was also responsible for writing unit test cases for various test cases
+ using JUnit and Mockito
+******Additionally***********
+1. We used MVVM architecture for this app and used Kotlin language. 
+We used RxJava for asynchronous programming,
+ Retrofit for network calls, Room DB, Firebase Authorization,
+ Firebase Cloud Messaging, JUnit, Mockito, AChartEngine library
+ for line graphs.
+2. We followed Agile methodology and used Jira
+ for project management and bug reporting. 
+For code versioning we used Git and Github.
+*****Team Size*****
+2 Android, 2 iOS, 2 Backend, 2 QA, 1 Designer, 1 Team Lead, 1 Owner
+---------------Challenge-----------------------
+As it was my first attempt to integrate Firebase Authorization service
+ to login using email id or to login with Google account was challenging. 
+I followed Firebase Authorization documentation to understand
+ how various authorization works. 
+I watched some videos on Youtube, also read some articles to learn
+ how to integrate that. 
+After couple of days of learning curve,
+ I was able to implement it successfully.	</end>
+<hitle>	➍Roomer Travel (Roomer Travel Ltd.)	<chare>	1	<pext>	Users can book their favorite hotels using Roomer Travel app. 
+Users can search hotels, filter search results,
+ add hotels to their favorite list, and make payments online. 
+App also suggest top destinations for users based on their recent tours.
+*****Client Location/Duration*****
+Roomer Travel Limited
+NewYork city – NY(NewYork) 
+Octover 2016 – Apirl 2018
+*****My responsibility*****
+1. I was responsible for Implementing the search hotel module
+ using Volley for API call and used RecyclerView
+ to show list of search result items.
+2. I also worked on the Hotel Details module
+ by fetching data from the server using Volley
+ and showed detailed information of the hotel
+ including hotel images, booking charges, rating, hotel amenities,
+ showing hotel location on Google Map etc.
+3. I integrated Google Map to show nearby hotels
+ with customized markers to show hotel room pricing
+ and used Google Fused api to get users current location.
+******Additionally***********
+1. I used Java language and followed MVP architecture. 
+I used Volley for network call, Firebase crashlytics,
+ Facebook sdk for login with Facebook, Google Maps, Material design.
+2. I followed Agile methodology with Jira tool
+ for project management and bug tracking. 
+I used git and github for source code versioning.
+*****Team Size*****
+2 Android, 2 iOS, 2 Backend, 3 QA, 1 Designer, 1 Team Lead, 1 Owner
+---------------Challenge-----------------------
+Since I was using Google Maps for very first time,
+ I struggled little bit to setup it for first time. 
+But main problem was Google Map was not being displayed in Release built. 
+After an hour of search, I came to know that I have to add SHA-1 key
+ generated from our Release jks file to Google Developer Console
+ under Google Maps section. 
+After adding this SHA-1 key, Google Map was loaded successfully.	</end>
+<hitle>	**********************	<chare>	1	<pext>	********************************************	</end>
+<hitle>	What methodology	<chare>	1	<pext>	What methodology do you guys follow?
+1. We followed Agile methodology.
+2. Project was divided into various modules
+ and each module had different tasks to be completed. 
+Tasks were converted into story points. 
+These story points were implemented sprint by sprint; 
+And our typical sprint duration was 2 weeks.
+3. We had daily standup meetings
+ where we discussed our project progress, issues(roadBlocks)
+ and dependencies
+ and used this information to plan our day accordingly.
+4. We also had sprint review meetings towards the end of the sprint
+ to showcase and demonstrate work progress
+ to managers, stakeholders, product owners etc.
+5. At the end of each sprint, we conducted retrospective meetings
+ to analyze what went wrong and what went well in the previous sprint. 
+Our retrospective meetings helped us to figure out
+ how to overcome the things that didn’t go so well in the previous sprint.	</end>
+<hitle>	Motive	<chare>	1	<pext>	1. I’ve been honing my android development skills for a few years
+ now and, first and foremost, I’m looking for a position
+ where I can continue to exercise those skills.
+2. Another thing that’s important to me is that the position allows me to
+ not only write the code, but also present my findings and suggestions
+ directly to the team members. 
+That would be really refreshing! 
+I’m always very motivated by being able to see the impact of my work
+ on other people.
+3. And, I’m definitely looking for a position where I can grow.
+Professional development is something that’s really important to me
+ since I hope to take on managerial responsibilities in the future.
+4. To sum it up, I’d love a position where I can use my skills
+ to make an impact that I can see with my own eyes. 
+Being at a company
+ where I can grow and work toward something I care about
+ matters, too. 	</end>
+<hitle>	Contract ended	<chare>	1	<pext>	--------------Why are you looking for a new position?------------
+My contract with a client ended. Hence looking for a new position.
+-------------Why didn’t they renew your contract?--------------
+Features for which I was hired were implemented successfully. They have their own in-house developers for project maintenance.	</end>
+<hitle>	When you find it difficult to work with someone, how did you handle the situation?	<chare>	1	<pext>	I had to try to find a way to communicate
+ which is less time consuming.
+Before communication with someone,
+ I spent some time thoroughly reading and understanding the work details
+ and write down what I think the problem is.
+And then I spent some time looking at the code
+ and thinking up a proper solution. 
+And I wrote down in a new paragraph
+ what I believe the ideal solution would be. 
+And then I communicated on both paragraphs
+ of me outlining the problem and the solution. 
+And then I asked if he agrees with my solution, and took his feedback if any
+ and modified my solution if need be. 
+And then implemented the solution and only after all of that, submitted my work done.
+
+So:
+1. Thoroughly read and understand the work details (on my own)
+2. Write down the problem in my own words
+3. Spend time reading the code and thinking of a solution
+4. Write down the solution
+5. Communicate with someone on my understanding of the problem / solution
+6. Incorporate any feedback and implement the solution
+7. Finally submit my work	</end>
+<hitle>	couldn’t complete story points	<chare>	1	<pext>	What do you do when you or your team member couldn’t complete some story points?
+
+If some story point couldn’t be completed within the sprint time,
+ I first analyze the reasons for not being able to complete it. 
+I would discuss with the team lead and project manager
+ about the reasons for not being able to complete story points. 
+After communicating with project leads, I would still put extra effort
+ into completing story points if they are a higher priority
+ than my other work. 
+But at the end if I couldn’t complete,
+ then I would request the project manager to add it
+ to the backlog for the next sprint.	</end>
+<hitle>	Troubleshooting crash	<chare>	1	<pext>	If an Android application is crashing frequently,
+1. Compatibility Check:
+It is not possible to test an application for all kinds of devices
+ and operating systems. 
+There might be a possibility that an application
+ is not compatible with your OS.
+2. Memory Management:
+2-1. Some apps run perfectly on one mobile device
+ but might crash on other devices. 
+This is where processing power, memory management,
+ and CPU speed are considered.
+2-2. As there is a limited amount of memory space on mobile devices,
+ we can free up memory space for the application to function properly.
+2-3. If an application is frequently crashing,
+ we can delete the application’s data, which will clear its cache memory
+ and allow some free space on the device
+ and it might boost the app’s performance.
+</ending>	</end>
+<hitle>	prevent memory	<chare>	1	<pext>	how to prevent memory leaks?
+1. Use Application Context rather than Activity Context
+ because Activities are more likely to be leaked.
+2. Avoid long-lived references to Activities i.e.AsyncTask.
+3. Avoid non-static inner classes in Activities. 
+Use static inner classes with weak references
+ so they can't be Garbge Collected when they are not used.
+4. Use LeakCanary - A memory leak detection library for Android.	</end>
+<hitle>	deal app crashes	<chare>	1	<pext>	How do you deal with real time app crashes?
+
+1. We integrated Firebase crashlytics in our app. 
+Whenever an app crashes we get the crash log and related stack traces
+ on the Firebase console.
+2. By observing the crash report and stack traces,
+ I found the root cause of the bug and fixed it.
+3. After fixing bugs, we plan to release an updated version of the app. 
+Sometimes for a few bugs we updated the app immediately
+ and sometimes our lead decided to publish bug fixes
+ along with the next upcoming sprint release.	</end>
+<hitle>	one thing that really proud of	<chare>	1	<pext>	Tell me one thing that you are really proud of?
+
+I am very good at tracking bugs in asynchronous programming.
+I have my own skill to track bugs which produced in asynchronous flow. 
+For example, During Chase bank app, there was one ticket
+ “after logout still previous user session affects some screens”. 
+The ticket had been taken by several developers and done by their own way. 
+But the problem had not been solved essentially. 
+Finally I could complete that ticket and my solution
+ had been accepted as the right way and the best.
+This was because of my good tracking bugs
+ in asynchronous combinations of modules. 
+
+------------Howto track bugs in async--------------
+Of course there are lots things introduced to track bugs.
+And most of developers are rely on Logcat.
+First of all, I plant my own timer to spy when and what happened.
+And I plant very minium spy code to track bug.
+Once I fix the bug, I clean my spy code with only one search.
+It looks like very simple and easy
+ but in fact, deciding what code and where to put is not that easy.	</end>
+<hitle>	like more about Android	<chare>	1	<pext>	What do you like more about Android?
+
+1. Honestly said, Android development is not convenient rather than iOS. 
+But it has one thing that I like more than iOS. 
+That is the apk file can be delivered easily for any device
+ so that we can test the app during development along with many devices
+ without any effort. Just sending apk file to the device owners. That’s it. 
+But for iOS, it not that easy
+ like we need to upload the build file to Appstore, and invite the test users,
+ like that there are so many extra steps to test on many devices.
+2. Android provides lots of open source library supports.
+3. Jetpack components like ViewModel, RoomDB, WorkManager,
+ Pagination Libraries, DataBinding, ViewBinding, NavigationGraphs etc.
+ are really useful
+4. Google itself provides various services
+ such as Google Maps, Firebase, Google Vision Library etc.,
+ which helps us to implement complex tasks easily.
+5. Android OS architecture is itself designed in a very good manner. 
+So implementing an application with various capabilities
+ such as a Multilingual app, an app with different themes,
+ security concerns, data sharing capabilities,
+ ability of applications to use some tasks in background
+ can be done in an effective and easy way.	</end>
+<hitle>	dislike more about Android	<chare>	1	<pext>	What do you dislike more about Android?
+1. Google introduces some libraries in a current version
+ and very quickly may be in the next update,
+ they will deprecate some of the functions and libraries
+ which leads to learning new alternatives
+ for that deprecated functions is quite painful.
+2. There are frequent changes in Google’s privacy and policy. 
+Each time when a new privacy policy is introduced,
+ we have to check if our app is adhering to Google’s privacy and policies. 
+If not, then we have to make changes to comply with new privacy policies.	</end>
+<hitle>	keep updated latest technology	<chare>	1	<pext>	How do you keep updated on the latest technology?
+
+I mainly rely on Google Android documentation. 
+I also follow some articles over medium. 
+Also keep an eye of new features introduced by Google and JetBrains. 
+I also prefer to read articles related to new technologies introduced.	</end>
+<hitle>	communicate discussion backend developers	<chare>	1	<pext>	How do you communicate with backend developers? or What type of discussions do you have with the back end developers? (slack)
+
+At the beginning of the project,
+ we discussed API requirements with the backend team. 
+We created an API document where we mentioned
+ all the required APIs, their inputs and outputs.
+Sometimes it also required that we need some extra data
+ in either API input/output, we discussed these things
+ either in daily stand up meetings or over communication channels
+ we used to communicate in our organization.
+Sometimes we also discussed optimization of some APIs
+ with respect to application flow and API calls involved at different stages.
+Sometimes we also discuss optimization of API
+ with respect to format of input and output of some complicated APIs.	</end>
+<hitle>	communicate discussion QA team	<chare>	1	<pext>	How do you communicate with the QA team? Or what type of discussions do you have with the QA team?
+
+Whenever I work with new QA team members,
+ I try to understand their way of testing applications
+ and based on that I code accordingly.
+Sometimes, QA assigns bugs to me, but I couldn’t reproduce the bug. 
+In that case, I used to discuss with QA to understand
+ how to reproduce the same bug so that I can fix it.
+Sometimes if a bug is assigned to me by QA
+ but the backend developer is responsible(API handling), I report this to QA.	</end>
+<hitle>	communicate discussion Design Team	<chare>	1	<pext>	How do you communicate with the Design Team? Or what type of discussions do you have with the Design team.
+
+Our design team uses Zeplin/Figma to share app designs and resources
+ such as icons, fonts and colors.
+Sometimes I suggest application flow for better user experience.	</end>
+<hitle>	MyQuestions	<chare>	1	<pext>	Questions to be asked by interviewee to interviewer at the end of interview:
+1. What's a life on the job like?
+2. What is the next process in the interview?
+3. What methodology you guys follow?
+4. What is your expectation from developer joining this project?
+5. What is the tech stack you guys generally use?
+6. What type of projects you are working right now?
+7. What type of project I will be working on?
+8. Is the project already started or I am going to develop this project from scratch?
+9 Can you tell me about the other people I'll be working with closely?
+10. In your experience, what are some of the highlights of working here?
+11. What other departments does our team most frequently interact with, either on formal or a casual level?
+12. Do you have any advice for me if I get selected for this role?
+13. How big is the team I will be working with?	</end>
+<hitle>	App Link	<chare>	1	<pext>	I have developed about 8 apps but I'm not sure they are still alive on google play store.  
+But I have an amazing app that I worked on while working for Walt Disney which is very famous on the appstore having more than 50 Millions of Users and that is covering most of my skills.
+https://play.google.com/store/apps/details?id=me.tidesnear.free&hl=en
+https://play.google.com/store/apps/details?id=com.espn.score_center&hl=en&gl=US
+
+https://play.google.com/store/apps/details?id=com.chase.sig.android
+https://play.google.com/store/apps/details?id=com.cider
+https://play.google.com/store/apps/details?id=co.dwella.app
+https://play.google.com/store/apps/details?id=com.holidatorvillas.app	</end>
+<hitle>	♣NEWAGESURFACES	<chare>	1	<pext>	NEWAGESURFACES is a small countertop store manufacturing showers,
+ vanity tops, and decorative bathroom surfaces for remodeling businesses.
+Before I was employed, they had no website, no apps.
+I created everything from the scratch,
+ so yes It was a good experience for me creating Android app
+ from the scratch.
+
+NEWAGESURFACES app has the features of manaing user accounts,
+Listing products, placing orders, comprehensive analytics about the products,
+ chat feature between users and the management team,
+ notifications about oder status and delivery status.
+*****My Responsibility*****
+1. I was responsible to build the app foundation
+ to follow MVVM architecture pattern using Jetpack components,
+ like ViewModel, LiveData, Data Binding, View Binding,
+ adapting asynchronous programming by RxJava2,
+ avoiding hard coupling and reusability of code
+ by using Dagger2 + Hilt dependency injection.
+2. I was responsible to develop Remote Repository module
+ to fetch all the information used in the app, and store all the information
+ generated by app users using Volley+Gson, RxJava.
+3. I was responsible to implement Authentication module which enables users
+ to sign-in, sign-up, forget password and reset password
+ using Firebase authorization service.
+4. I also worked on the Dashboard module to show
+ product visit and ordering analysis using line graphs
+ by using AChartEngine for chats.
+5. I worked on Chat module to provide communication
+ between app users and company management team
+ by using Firebase Cloud Messaging and Firebase realtime database.
+6. I was responsible for designing and developing Product Listing module
+ where products are listed in Grids, categorized them in many category tabs
+ using Recyclerview, TabView, ViewPage2.
+7. I also worked on Push Notifications about new orders, new delivery status,
+ new message arrivals using FCM.
+8. I was responsible for writing Unit Test cases for various test cases
+ using Junit, MockK and used Espresso for UI testing.
+******Additionally***********
+1. Unfortunately I could not follow Agile methology since the manager
+ was out of knowledge about it.
+Instead we had daily meetings for one or two hours for project tracking
+ and bug reporting.
+2. I used Git and Github as a project version controller.
+---------------Challenge-----------------------
+As it was using most of features of Firebase service, It was a bit of challenge.
+Before this, I had only experience of Firebase Authentication.
+I followed Firebase documentation to understand how to integrate
+ Firebase Cloud Messaging, Firebase Realtime Database,
+ how to implement Push Notification using FCM.
+Along with, I watched some videos on Youtube, and read some articles
+ to learn more about the integration of Firebase service.
+After some of days of learning curve,
+ I was able to implement them successfully.	</end>
+<hitle>	♣Espn (Walt Disney)	<chare>	1	<pext>	It was a very important experience for my life working for Walt Disney.
+I could have trained myself 90% of my android skills in this company.
+Also It gave me good experience of following Agile metholodogy,
+ collaborating with teams, mastering project version controls.
+Walt Disney has one of business of Software engineering,
+ they call this team DMED has more than hundereds developers.
+I worked on ESPN adroid app development
+ and I don’t know how many apps Walt Disney is developing.
+Even they have many teams for ESPN android app only, 
+ I worked in Android modernization team.
+
+Espn app provides thousabds of sports live events and getting scores,
+ on-demand sports news, highlights, expert analysis.
+It has the feature of managing user accounts,
+ managing of notification channels, managing of favorite sports teams,
+ providing sports news articles, watching sports live events videos and
+ highlight videos, watching live streamings, displaying matches of scores.
+*****My Responsibility*****
+Applied new application architecture design pattern - MVVM replacing old MVP designed before.
+Used Kotlin language replacing old Java code and applied Dagger2 + Hilt dependency injection.
+Extensively worked on asynchronous programming using RxJava 2 along with OkHttp+Retrofit+Moshi for API Call
+1. I was responsible library customization,
+ exactly I customized ExoPlayer library to make custom video player.
+There’s video player additionally before playing the video content, 
+ It was needed to play Google Advertising video content.
+So we had to customize video player library to achive that.
+2. I also worked on Authentication module which enables users
+ to sign-in, sign-up, forget password and reset password using OneID sdk.
+3. Worked on Article Module using Recyclerview, Bottom Navigation bar, TabLayout and ViewPager.
+4. I was responsible to implement Language module
+ to support multi language.
+Originally Android supports multi language feature by values resource file.
+But Espn uses server-downloaded language file
+Worked with Junit, Mokito for unit test, Espresso for UI testing with 95% code coverage.
+Collaborated with the team, Project Manager and Technical Architecture during Iteration planning meetings to understand the technical specifications and provide developer insight.
+Worked in an Agile team, with a two weeks sprint circle and used JIRA to assign, audit, track issues and the progress of the sprints.
+*********Additionall**************
+1. The application was implemented using Kotlin and Java as language
+ and we followed MVVM as design architecture. 
+During this project Implementation we have used various frameworks
+ such like Dagger-Hilts, Retrofit, Coroutines, RoomDB,
+ and we followed TDD and used JUnit and Mockito  framework
+ for Local Unit testing and used Espresso Framework for UI testing
+ of the screens to achieve 95% code coverage.
+2. We used NewRelic for continuous monitoring app crashes
+ on the clients devices.
+2. We used  GitHub as a project version controller
+ and worked in an Agile team, with a two weeks sprint circle and used JIRA
+ to assign, audit, track issues and the progress of the sprints.
+----------------Challenge----------------
+As it was my first attempt to customize existing ExoPlayer library
+ for custom video player, I read some articles to learn how to achieve it,
+ and also communicated with team members to find out better approach.
+And I realized rather than my own researching, it’s more valuable
+ to have more collaborations with team members.
+They gave me a lot of useful articles and sample codes,
+ and also helps me a lot whenever I met obstacles.
+Under the good collaboration I could have done
+ ExoPlayer library customization successfully.
+----------------Customize Library--------------
+1. Added dependency of the library which I’m going to customize.
+2. Tested library in existing state to expose all features.
+3. Explored library files
+Just click Project mode on left side and navigate to External libraries
+ and I could find the library and all its code.
+4. Made customized library by copying existing library files.
+5. Created my own code and modified existing code
+ to achieve the project requirements.
+6. Removed old library to avoid conflicting with new library.	</end>
+<hitle>	____________________________	<chare>	1	<pext>	xxx	</end>
+<hitle>	____________________________	<chare>	1	<pext>	xxx	</end>
+<hitle>	____________________________	<chare>	1	<pext>	xxx	</end>
